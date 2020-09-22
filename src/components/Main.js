@@ -4,7 +4,7 @@ import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
 
 import Contact from './Contact';
-import Home from './Home';
+import Home from './home';
 import Registration from './Registration';
 import Glory from './Glory';
 import Courses from './Courses';
