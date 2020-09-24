@@ -1,39 +1,42 @@
-.header  > h2 {
-    color: #0A79DF;
-    margin-left: 30px;
+.header > h2 {
+  color: #0a79df;
+  margin-left: 30px;
 }
-.btn-group{
+.btn-group {
   margin-left: 16px;
   margin-top: 50px;
-
 }
-.hr{
-    border-bottom: 5px solid;
-}
-
-.btn-group > button{
-   color: aliceblue;
-   width: 300px;
-   height: 44px;
+.hr {
+  border-bottom: 5px solid;
 }
 
-.col-sm{
-padding: 30px;
+.upload > button {
+  height: 40px;
+  width: 200px;
 }
-.volun{
-    margin-top: 60px;
-}
-.upload{
 
-   margin-top: 90px;
-   margin-left: 410px;
+.sub > button {
+  color: aliceblue;
+  height: 40px;
+  width: 200px;
 }
-.sub{
-    padding-left: 240px;
-    margin-left: 170px;
+
+.col-sm {
+  padding: 30px;
 }
-.tex{
-    padding: 30px;
-    align-items: center;
-    text-align: justify;
+.volun {
+  margin-top: 60px;
+}
+.upload {
+  margin-top: 90px;
+  margin-left: 410px;
+}
+.sub {
+  padding-left: 240px;
+  margin-left: 170px;
+}
+.tex {
+  padding: 30px;
+  align-items: center;
+  text-align: justify;
 }
