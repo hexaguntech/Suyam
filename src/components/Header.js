@@ -27,6 +27,7 @@ export default class Header extends React.Component {
                 </Link>
               </li>
               <li className='nav-item'>
+
                 <Link className='nav-link'>
                 <div class="dropdown">
                   <button class="dropbtn">Courses</button>
@@ -39,6 +40,7 @@ export default class Header extends React.Component {
                       </Link>
                     </div>
                 </div>
+
                 </Link>
               </li>
               <li className='nav-item'>

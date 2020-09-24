@@ -1,129 +1,178 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+}
 .row {
   
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 0;
-    
-  }
-  .timeline {
-    width: 80%;
-    height: auto;
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-  }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
   
-  .timeline ul {
-    list-style: none;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+ 
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+color: blue;
+  margin-top: 24px;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
   }
   .timeline ul li {
-    padding: 20px;
-   
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
   }
-  .timeline ul li:last-child {
-    margin-bottom: 0;
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
   }
-  .timeline-content h1 {
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-    margin-bottom: 10px;
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
   }
-  .timeline-content p {
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 300;
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
   }
   .timeline-content .date {
-  color: blue;
-    margin-top: 24px;
-    font-size: 12px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
+    position: absolute;
+    top: -30px;
   }
-  @media only screen and (min-width: 768px) {
-    .timeline:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 2px;
-      height: 100%;
-      background-color: gray;
-    }
-    .timeline ul li {
-      width: 50%;
-      position: relative;
-      margin-bottom: 50px;
-    }
-    .timeline ul li:nth-child(odd) {
-      float: left;
-      clear: right;
-      transform: translateX(-30px);
-      border-radius: 20px 0px 20px 20px;
-    }
-    .timeline ul li:nth-child(even) {
-      float: right;
-      clear: left;
-      transform: translateX(30px);
-      border-radius: 0px 20px 20px 20px;
-    }
-    .timeline ul li::before {
-      content: "";
-      position: absolute;
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-      background-color: gray;
-      top: 0px;
-    }
-    .timeline ul li:nth-child(odd)::before {
-      transform: translate(50%, -50%);
-      right: -30px;
-    }
-    .timeline ul li:nth-child(even)::before {
-      transform: translate(-50%, -50%);
-      left: -30px;
-    }
-    .timeline-content .date {
-      position: absolute;
-      top: -30px;
-    }
-    .timeline ul li:hover::before {
-      background-color: #0a79df;
-    }
+  .timeline ul li:hover::before {
+    background-color: aqua;
   }
-  .box{
-      background-color: #0a79df;
+}
+.box{
+    background-color: #0a79df;
+  width: 330px;
+  height: 20px;
+  padding: 20px;
+  margin-left: 10px;
+
+  
+  
+}
+.box > h3{
+    text-align: center;
+    margin-top:-19px;
+}
+.boxc{
+    background-color:#0a79df;
     width: 290px;
     height: 20px;
     padding: 20px;
-    margin-left: 60px;
+    margin-left: 10px;
   
-    
-    
+}
+.boxc > h3{
+    text-align: center;
+    margin-top:-19px;
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #0a79df;
+  color: aliceblue;
+  height: 190px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-  .box > h3{
-      text-align: center;
-      margin-top:-19px;
-  }
-  .boxc{
-      background-color:#0a79df;
-      width: 290px;
-      height: 20px;
-      padding: 20px;
-      margin-left: 10px;
-    
-  }
-  .boxc > h3{
-      text-align: center;
-      margin-top:-19px;
-  
-  }
+}
