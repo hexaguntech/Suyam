@@ -13,7 +13,6 @@
     top: 7px;
     transition: width .5s;
 }
-
 */
 .navbar{
     background-color: #0A79DF;
@@ -75,6 +74,8 @@
   
   .dropdown-content a:hover {background-color: white ;
     color:black;}
+
+  .dropdown-content .drophover:hover {background-color: black;}
   
   .dropdown:hover .dropdown-content {display: block;}
   

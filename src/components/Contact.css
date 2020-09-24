@@ -1,0 +1,52 @@
+.contacth{
+    display: flex;
+    background-color: #F5F5F5;
+}
+
+.htext{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.crow1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.cimage{
+    width: 90px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+.crow2{
+    display: flex;
+    background-color: #0A79DF;
+    color: white;
+    justify-content: center;
+    padding: 30px;
+}
+.crow3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+.crow4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.line{
+    padding-bottom: 1px; 
+    border-bottom-style: solid; 
+    border-bottom-width: 3px; 
+    width: fit-content; 
+}
