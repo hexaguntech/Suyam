@@ -1,21 +1,90 @@
 import React from 'react';
 import "./Home.css";
+import { Button } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 export default class Home extends React.Component {
   render() {
     return <div>
       <div className="home">
-        <section className="wimage">
-          <img 
-            className="tagline" src="assets/welcome_image-08.png"/>
+        <section className="welcome">
+          <div className="htext">
+            <h2> <span style={{color: `#0A79DF`}}>"An Institute that endeavours to create</span> <br/> SELF ESTEEMED, SELF CONFIDENT <span style={{color: `#0A79DF`}}>Government Servants who can render</span> SELFLESS <span style={{color: `#0A79DF`}}>service to the humanity"</span></h2>
+          </div>
+          <div className="himage">
+            <img 
+            className="tagline" src="assets/wimage.png"/>
+          </div>
         </section>
-
-        <div className="coffered">
-          <h2 className="offered">COURSES OFFERED</h2>
+        <div style={{marginTop: `30px`}}>
+          <h2 style={{textAlign: `center`}}>COURSES OFFERED</h2>
           <hr color="#0A79DF" width="15%"></hr>
           <div className="courses">
-            <img className="banner1"src="assets/course_offered_banner01-04.png"/>
-            <img  className="banner2"src="assets/course_offered_banner02-05.png"/>
+            <div className="mp">
+              <p>GENERAL PREAPARATORY COURSE</p>
+              <h3 className="line"><span style={{color: `#0A79DF`}}>MISSION PERSEVERANCE 2020</span></h3>
+              
+              <div className="row1">
+                <div className="col1">
+                  <h6>Online video class through</h6>
+                  <img style={{ height: `50px`, width: `50px`, marginTop: `10px`}} src="assets/suyamapplogo.png" alt="suyam app logo" />
+                  <h6 style={{paddingTop: `20px`}}><span style={{color: `#0A79DF`}}>SUYAM</span> I.A.S App</h6>
+                </div>
+                <div className="col1">
+                  <h6>Class commences on</h6>
+                  <h2><span style={{color: `#0A79DF`}}>9th Sep</span></h2>
+                  <h6><span style={{color: `#0A79DF`}}>2020</span></h6>
+                  <vr color="black"></vr>
+                </div>
+                <div className="col2">
+                  <h6>Course Fee</h6>
+                  <h2><span style={{color: `#0A79DF`}}>Rs. 6000</span></h2>
+                </div>
+              </div>
+              <div>
+                <h6><span style={{color: `#0A79DF`}}>Suitable for</span></h6>
+                <div style={{display:`flex`}}>
+                  <p>Puducherry<br/>recruitments</p>
+                  <h5 style={{paddingLeft:`30px`, paddingTop: `10px`}}>UDC | VAO | SI | LDC | VA | PC</h5>
+                </div>
+                <div style={{display:`flex`}}>
+                  <p>Also For</p>
+                  <h5 style={{paddingLeft:`60px`}}>TNPSC | SSC | RRB</h5>
+                </div>
+              </div>
+              <p>and such other exams</p>
+              <Link to="/MissionPerseverance2020">
+                <Button className="btn btn-default" type="link">More Details</Button>
+              </Link>
+            </div>
+            <div className="rk">
+              <p>SPL. COACHING FOR POLICE CONSTABLE EXAM IN PUDUCHERRY</p>
+              <h3 className="line"><span style={{color: `#0A79DF`}}>OPERATION RED KEPI 2020</span></h3>
+              <div className="row1">
+                <img style={{height: `100px`,width: `300px`}} src="assets/suyam_header_logo-02.png" alt="redkepi-logo"/>
+              </div>
+              <div className="row2">
+                <div className="col1">
+                  <h6>Online video class through</h6>
+                  <img style={{ height: `50px`, width: `50px`, marginTop: `10px`}} src="assets/suyamapplogo.png" alt="suyam app logo" />
+                  <h6 style={{paddingTop: `20px`}}><span style={{color: `#0A79DF`}}>SUYAM</span> I.A.S App</h6>
+                </div>
+                <div className="col1">
+                  <h6>Class commences on</h6>
+                  <h2><span style={{color: `#0A79DF`}}>9th Sep</span></h2>
+                  <h6><span style={{color: `#0A79DF`}}>2020</span></h6>
+                  <vr color="black"></vr>
+                </div>
+                <div className="col2">
+                  <h6>Course Fee</h6>
+                  <h2><span style={{color: `#0A79DF`}}>Rs. 6000</span></h2>
+                </div>
+              </div>
+              <h5 style={{ paddingBottom: `10px`}}>Bilingual - <br />Both in Tamizh and English</h5>
+              <Link to="/OperationRedKEPI2020">
+                <Button className="btn btn-default" type="link">More Details</Button>
+              </Link>
+            </div>
           </div>
         </div>
         <div className="onvideo">
@@ -47,9 +116,64 @@ export default class Home extends React.Component {
         <div className="curaffairs">
           <h2 className="cahead">CURRENT AFFAIRS</h2>
           <hr color="#0A79DF" width="15%"></hr>
-          <div className="caffairs">
-            <img className="cbanner1" src="assets/current_affairsbanner02-06.png"/>
-            <img  className="cbanner2" src="assets/course_offered_banner02-05.png"/>
+          <div className="courses">
+            <div className="mp">
+              <p>NEWS BITS OF NATIONAL AND INTERNATIONAL IMPORTANCE</p>
+              <h3 className="line"><span style={{color: `#0A79DF`}}>CURRENT AFFAIRS</span></h3>
+              
+              <div>
+                <div className="row3">
+                  <img className="dog" src="assets/dog.png" alt="redkepi-logo"/>
+                </div>
+                <div>
+                <h4 className="line" style={{paddingBottom: `5px`}}><span style={{color: `#0A79DF`}}>Weekly Update</span></h4>
+                <div style={{display:`flex`, marginTop: `20px`}}>
+                  <div> 
+                    <h5><span style={{color: `#0A79DF`}}>14th Sep</span></h5>
+                    <p><span style={{color: `#0A79DF`}}>2020</span></p>
+                  </div>
+                  <div style={{paddingLeft: "20px", paddingRight: "20px"}}>
+                    <p>to</p>
+                  </div>
+                  <div>
+                    <h5><span style={{color: `#0A79DF`}}>20th Sep</span></h5>
+                    <p><span style={{color: `#0A79DF`}}>2020</span></p>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <Link to="/">
+                <Button className="btn btn-default" type="link">DOWNLOAD PDF</Button>
+              </Link>
+            </div>
+            <div className="rk">
+              <p>SPL. COACHING FOR POLICE CONSTABLE EXAM IN PUDUCHERRY</p>
+              <h3 className="line"><span style={{color: `#0A79DF`}}>OPERATION RED KEPI 2020</span></h3>
+              <div className="row1">
+                <img style={{height: `100px`,width: `300px`}} src="assets/suyam_header_logo-02.png" alt="redkepi-logo"/>
+              </div>
+              <div className="row2">
+                <div className="col1">
+                  <h6>Online video class through</h6>
+                  <img style={{ height: `50px`, width: `50px`, marginTop: `10px`}} src="assets/suyamapplogo.png" alt="suyam app logo" />
+                  <h6 style={{paddingTop: `20px`}}><span style={{color: `#0A79DF`}}>SUYAM</span> I.A.S App</h6>
+                </div>
+                <div className="col1">
+                  <h6>Class commences on</h6>
+                  <h2><span style={{color: `#0A79DF`}}>9th Sep</span></h2>
+                  <h6><span style={{color: `#0A79DF`}}>2020</span></h6>
+                  <vr color="black"></vr>
+                </div>
+                <div className="col2">
+                  <h6>Course Fee</h6>
+                  <h2><span style={{color: `#0A79DF`}}>Rs. 6000</span></h2>
+                </div>
+              </div>
+              <h5 style={{ paddingBottom: `10px`}}>Bilingual - <br />Both in Tamizh and English</h5>
+              <Link to="/OperationRedKEPI2020">
+                <Button className="btn btn-default" type="link">More Details</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -3,33 +3,80 @@
     width: 100%;
     padding: 50px;
 }
-.wimage{
+.welcome{
+    display: flex;
     background-color: #F5F5F5;
+}
+.htext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.himage{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .courses{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 30px;
     background-color: white;
 }
-.coffered{
-    margin-top: 30px;
-}
-.offered{
-    text-align: center;
-}
 
-.banner1{
+.mp{
+    background-color: #F5F5F5;
     width: 50%;
+    padding: 20px;
+    margin: 10px;
+}
+.rk{
+    background-color: #F5F5F5;
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+}
+.line{
+    padding-bottom: 1px; 
+    border-bottom-style: solid; 
+    border-bottom-width: 3px; 
+    width: fit-content; 
+}
+.row1{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.row2{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.row3{
+    display: flex;
+    margin-top: 40px;
+}
+.dog{
+    height: 300px;
+    width: 450px;
+    padding-bottom: 30px;
+    
+}
+.col1{
+    padding: 20px;
+    border-right: 3px solid black;
+}
+.col2{
     padding: 20px;
 }
 
-.banner2{
-    width: 50%;
-    padding: 20px;
+.btn-default{
+    background-color: #0A79DF;
 }
-
 .onvideo{
     background-color: #F5F5F5;
     height: 300px;
