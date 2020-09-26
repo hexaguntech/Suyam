@@ -27,29 +27,25 @@ export default class Header extends React.Component {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link">
-                <div class="dropdown">
-                  <button class="dropbtn">Courses</button>
-                  <div class="dropdown-content">
-                    <Link
-                      to={'/Missionperseverance2020'}
-                      className="nav-link drophover"
-                    >
-                      <span className="text-light">
-                        Mission perseverance 2020
-                      </span>
-                    </Link>
-                    <Link
-                      to={'/OperationRedKEPI2020'}
-                      className="nav-link drophover"
-                    >
-                      <span className="text-light">
-                        Operation Red KEPI 2020
-                      </span>
-                    </Link>
-                  </div>
+              <div className="dropdown">
+                <button className="dropbtn">Courses</button>
+                <div className="dropdown-content">
+                  <Link
+                    to={'/Missionperseverance2020'}
+                    className="nav-link drophover"
+                  >
+                    <span className="text-light">
+                      Mission perseverance 2020
+                    </span>
+                  </Link>
+                  <Link
+                    to={'/OperationRedKEPI2020'}
+                    className="nav-link drophover"
+                  >
+                    <span className="text-light">Operation Red KEPI 2020</span>
+                  </Link>
                 </div>
-              </Link>
+              </div>
             </li>
             <li className="nav-item">
               <Link to={'/Register'} className="nav-link">

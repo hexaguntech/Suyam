@@ -86,7 +86,8 @@ export default class Registration extends Component {
   onImageUpload(e) {
     e.preventDefault();
     const formData = new FormData();
-    formData.append('meta_data', this.state.photoFile);
+    formData.append('profileImg', this.state.photoFile);
+    formData.append('name', this.state.name);
     // var data = {
     //   meta_data: this.state.photoFile,
     //   userEmail: this.state.email,
@@ -97,7 +98,7 @@ export default class Registration extends Component {
       },
     };
     axios
-      .post('http://localhost:8080/api/applicant/upload/image', formData, {})
+      .post('http://localhost:8080/api/applicant/upload', formData, {})
       .then((response) => {
         alert('The file is successfully uploaded', response);
       })
@@ -105,7 +106,7 @@ export default class Registration extends Component {
   }
 
   onChangeImage(e) {
-    this.setState({ photoFile: e.target.files });
+    this.setState({ photoFile: e.target.files[0] });
     console.log(this.state.photoFile);
   }
   handleChange(event) {
@@ -391,13 +392,19 @@ export default class Registration extends Component {
                 </div>
               </div>
             </Form.Group>
-            {/* <Form.Group>
+            {/* <FilesUploadComponent /> */}
+            <Form.Group>
               <div className="upload">
                 <Form.File
                   id="exampleFormControlFile1"
                   label="Upload your picture"
                   required
                   onChange={this.onChangeImage}
+                />
+                <img
+                  src={this.state.photoFile}
+                  alt="upload-image"
+                  className="process__image"
                 />
                 <Button
                   variant="primary"
@@ -407,13 +414,13 @@ export default class Registration extends Component {
                   upload
                 </Button>
               </div>
-            </Form.Group> */}
+            </Form.Group>
             <div className="tex">
-              <div class="form-check-inline">
-                <label class="form-check-label" for="check1">
+              <div className="form-check-inline">
+                <label className="form-check-label">
                   <input
                     type="checkbox"
-                    class="form-check-input"
+                    className="form-check-input"
                     checked={this.state.agree}
                     onChange={this.handleCheckClickAgreement}
                     name="agreement"
