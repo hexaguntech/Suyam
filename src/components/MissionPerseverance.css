@@ -1,0 +1,44 @@
+.mp__list{
+    display: flex;
+}
+
+.mp__list > ul li {
+    color: #0a79df;
+    padding-right: 50px;
+  }
+  
+.mp__list >  ul li span{
+    color: black; 
+  }
+
+  .mp__list2 > ul li {
+    color: #0a79df;
+    padding-right: 50px;
+  }
+  
+.mp__list2 >  ul li span{
+    color: black; 
+}
+
+.btn{
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.mp__footer{
+    display: flex;
+}
+
+.mp__vector{
+    height: 400px;
+    width: 500px;
+    padding-bottom: 20px;
+    margin-left: 300px;
+    flex: 0.6;
+}
+
+.mp__reg{
+    flex: auto;
+    min-width: 300px;
+    
+}

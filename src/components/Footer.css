@@ -9,10 +9,16 @@
 
 .footer-list{
     list-style-type: none;
-
+    font-weight: 700;
     text-decoration: none;
+}
+
+.footer-list > li{
+    padding-bottom: 3px;
 }
 
 .mail{
     color: white;
+    padding-top: 15px;
+    font-weight: 700;
 }

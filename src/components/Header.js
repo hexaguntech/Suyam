@@ -5,12 +5,16 @@ import "./Header.css";
 
 export default class Header extends React.Component {
   render() {
-    return <div>
+    return <div className="jumbotron">
+      <div>
         <div className="logo">
             <img src="assets/suyam_header_logo-02.png" />
         </div>
-        <nav className='navbar navbar-expand'>
-            <div className='navbar-nav mr-auto navbar-center'>
+        <nav className='navbar navbar-expand-sm navbar-inverse bg-inverse'>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon text-light">|=|</span>
+            </button>
+            <div className='navbar-nav mr-auto navbar-center collapse navbar-collapse' id="Navbar">
               <li className='nav-item'>
                 <Link to={'/Home'} className='nav-link'>
                   <span className="text-light">Home</span>
@@ -61,6 +65,7 @@ export default class Header extends React.Component {
             </div>
           </nav>
           <div className="announcement"><marquee>Online Video Coaching Programme for Competitive Exams in Puducherry Government as well as TNPSC, SSC, RRB and such other exams commences on August 15,2020. Register Immediately!</marquee></div>
+      </div>
     </div>;
   }
 }
