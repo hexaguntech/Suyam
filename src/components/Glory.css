@@ -7,7 +7,8 @@
 html {
   font-family: "Montserrat";
 }
-.row {
+
+.hexa > row {
   
   width: 100%;
   display: flex;
@@ -175,4 +176,7 @@ body {
     display: block;
     margin-bottom: 20px;
   }
+}
+.hexat > ro{
+  margin-left: 500px;
 }
