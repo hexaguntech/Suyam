@@ -4,25 +4,24 @@ import './Glory.css';
 export default class Glory extends React.Component {
   render() {
     return <div>
-     <div class="row">
-  <div class="column">
-    <div class="card">
-      <h1>2</h1><br/>
-      <h6>Civil Services</h6>
-      <h5>I.R.A.S/I.R.S</h5>
-    </div>
-  </div>
-  <div class="column">
-    <div class="card">
-    <h1>600+</h1><br/>
-      <h6>Puducherry goverment services</h6>
-
-    </div>
-  </div>
-  </div>
-        
       <div class="row">
-  <div class="timeline">
+        <div class="column">
+          <div class="card">
+            <h1>2</h1><br/>
+            <h6>Civil Services</h6>
+            <h5>I.R.A.S/I.R.S</h5>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+          <h1>600+</h1><br/>
+            <h6>Puducherry goverment services</h6>
+          </div>
+        </div>
+      </div>
+      <div className="hexa">
+      <div class="row">
+        <div class="timeline">
     <ul>
       <li>
         <div class="timeline-content">
@@ -296,6 +295,7 @@ Selected as I.R.A.S. </th>
         
     </ul>
   </div>
+</div>
 </div>
     </div>;
   }

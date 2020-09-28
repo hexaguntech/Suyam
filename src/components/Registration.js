@@ -6,7 +6,7 @@ export default class Registration extends React.Component {
   render() {
     return  <div className="container col-sm">
       <div className="header col-sm">
-        <h2>ONLINE REGISTRATION</h2>
+        <h2 style={{fontWeight:`700`}}>ONLINE REGISTRATION</h2>
         <hr color="black" className="col-sm-11" />
         <form className="col-sm">  
           <Form.Group controlId="exampleForm.ControlSelect1">
@@ -142,8 +142,8 @@ export default class Registration extends React.Component {
             <h6> </h6>
           </div>
           <div className="sub">
-            <Button variant="primary" type="submit">
-              Submit
+            <Button className="btn btn-default" type="submit">
+              SUBMIT
             </Button>
           </div>
         </form>   

@@ -6,7 +6,7 @@ export default class Contact extends React.Component {
     return <div>
       <section className="contacth">
           <div className="htext">
-            <h1><span style={{color: `#0A79DF`, paddingLeft: `70px`}}>CONTACT US</span><br /><span style={{fontSize: `small`,paddingLeft:`75px`}}><b>and we will get back to you!</b></span></h1>
+            <h1><span style={{color: `#0A79DF`, paddingLeft: `70px`,fontWeight:`700`}}>CONTACT US</span><br /><span style={{fontSize: `small`,paddingLeft:`75px`}}><b>and we will get back to you!</b></span></h1>
           </div>
           <div style={{paddingLeft: `300px`}}>
             <img 
@@ -36,7 +36,7 @@ export default class Contact extends React.Component {
           </div>
         </div>
         <div className="crow2">
-          <h1>LOCATION</h1>
+          <h1 style={{fontWeight: `700`}}>LOCATION</h1>
         </div>
         <div>
           <img style={{width:`100%`}} src="assets/map.png" alt="map"/>
@@ -45,7 +45,7 @@ export default class Contact extends React.Component {
           <h3 className="line">OUR ADDRESS</h3>
         </div>
         <div className="crow4">
-          <h4><span style={{color: `#0A79DF`}}>"Thirukudil"<br />14, First cross<br />Natesan Nagar - East<br />Puducherry – 605 005.</span></h4>
+          <h4><span style={{color: `#0A79DF`,fontWeight:`700`}}>"Thirukudil"<br />14, First cross<br />Natesan Nagar - East<br />Puducherry – 605 005.</span></h4>
         </div>
     </div>;
   }
