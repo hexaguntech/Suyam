@@ -19,7 +19,7 @@ export default class Main extends React.Component {
     return (
       <div>
         <Header />
-        <div className="container mt-3">
+        <div>
           <Switch>
             <Route exact path={['/', '/Home']} component={Home} />
             <Route exact path="/Institute" component={Institute} />
