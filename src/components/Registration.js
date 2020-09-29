@@ -101,6 +101,9 @@ export default class Registration extends Component {
       .post('http://localhost:8080/api/applicant/upload', formData, {})
       .then((response) => {
         alert('The file is successfully uploaded', response);
+        this.setState({
+          photoFile: response.imagepath,
+        });
       })
       .catch((error) => {});
   }
