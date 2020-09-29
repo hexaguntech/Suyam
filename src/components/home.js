@@ -8,7 +8,6 @@ export default class Home extends React.Component {
     return (
       <div>
         <div className="home">
-          <div className="proverb"></div>
           <div className="welcome">
             <div className="container mt3 welcome">
               <div className="htext">

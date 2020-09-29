@@ -81,3 +81,8 @@
 .dropdown:hover .dropbtn {
   background-color: #105998;
 }
+
+.proverb {
+  height: 85px;
+  background-color: #ebebeb;
+}
