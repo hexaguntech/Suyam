@@ -426,6 +426,36 @@ export default class Home extends React.Component {
             </div>
           </div>
         </div>
+        <div className="gservices">
+
+          <div className="left">
+            <h2 className="sixhundred">2</h2>
+            <span className="text-light"> CIVIL SERVICES</span>
+            <p className="text-light"> I.R.A.S/I.R.S </p>
+          </div>
+          <div className="right">
+            <h2 className="sixhundred">600+</h2>
+            <span className="text-light"> PUDUCHERRY GOVERNMENT SERVICES</span>
+          </div>
+          
+        </div>
+        <div className="onvideo">
+          <h2 style={{fontWeight: `700`}}>ONLINE VIDEO CLASSES: A TRAILER</h2>
+          <p>
+            Have A Glance Of This Video To Have A Glimpse Of Online Video Classes In The Suyam App..
+          </p>
+        </div>
+        <div className="team">
+          <h2 className="jteam" style={{fontWeight: `700`}}>JOIN OUR TEAM</h2>
+          <hr color="#0A79DF" width="15%"></hr>
+          <div>
+            <img className="hiring" src="assets/hiring.png"/>
+          </div>
+        </div>
+        <div>
+          <h2 className="jteam" style={{fontWeight: `700`}}>TESTIMONIAL</h2>
+          <hr color="#0A79DF" width="15%"></hr>
+        </div>
       </div>
     );
   }
