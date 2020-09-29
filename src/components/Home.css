@@ -1,3 +1,4 @@
+
 .jumbotron{
     margin: 0;
     padding:0;
@@ -7,6 +8,7 @@
     height: 100%;
     width: 100%;
     padding: 50px;
+
 }
 .welcome{
     display: flex;
@@ -88,57 +90,60 @@
     padding: 20px;
 }
 
-.team{
-    padding: 20px;
-    margin-top: 30px;
+.team {
+  padding: 20px;
+  margin-top: 30px;
 }
-.jteam{
-    text-align: center;
+.jteam {
+  text-align: center;
 }
-.hiring{
-    height: 100%;
-    width: 100%;
-    padding: 20px;
+.hiring {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
 }
+
 .gservices{
     background-color: #0A79DF;
     display: flex;
     font-weight: 700;   
 }
-.left{
-    margin: auto;
+.left {
+  margin: auto;
 }
-.right{
-    margin: auto;
+.right {
+  margin: 0px;
+  padding: 0px;
 }
-.sixhundred{
-    color: white;
-    text-align: center;
-    height: 100px;
-    padding: 30px;
+.sixhundred {
+  color: white;
+  text-align: center;
+  height: 100px;
+  padding: 30px;
 }
-.curaffairs{
-    margin-top: 50px;
+.curaffairs {
+  margin-top: 50px;
 }
+
 .cahead{
     text-align: center;
     font-weight: 700;
 }
-.caffairs{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px;
-    background-color: white;
+.caffairs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  background-color: white;
 }
-.cbanner1{
-    width: 50%;
-    padding: 20px;
+.cbanner1 {
+  width: 50%;
+  padding: 20px;
 }
 
-.cbanner2{
-    width: 50%;
-    padding: 20px;
+.cbanner2 {
+  width: 50%;
+  padding: 20px;
 }
 
 .btn{

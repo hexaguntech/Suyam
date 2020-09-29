@@ -5,20 +5,21 @@
   font-weight: 700;
 }
 
+
 .navbar{
     background-color: #0A79DF;
     height: 50px;
 }
-.logo{
-    text-align: center;
+.logo {
+  text-align: center;
 }
-.logo > img{
-    height: 100px;
-    width: 250px;
-    padding: 20px;
+.logo > img {
+  height: 100px;
+  width: 250px;
+  padding: 20px;
 }
-.announcement{
-    color: red;
+.announcement {
+  color: red;
 }
 .navbar-nav.navbar-center {
     margin-left: auto;
@@ -73,4 +74,5 @@
   
   .dropdown:hover .dropdown-content {display: block;}
   
+
   .dropdown:hover .dropbtn {background-color: #105998;}
