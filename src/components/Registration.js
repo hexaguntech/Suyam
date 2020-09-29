@@ -448,7 +448,10 @@ export default class Registration extends Component {
                     type="submit"
                     className="btn btn-default"
                     onClick={this.saveApplication}
-                    //disabled={!this.state.agree}
+                    disabled={!this.state.agree}
+                    // onClick={() => {
+                    //   navigation('SubmitApplication', data);
+                    // }}
                   >
                     View Application
                   </Button>
