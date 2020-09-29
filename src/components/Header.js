@@ -95,6 +95,7 @@ export default class Header extends React.Component {
               exams commences on August 15,2020. Register Immediately!
             </marquee>
           </div>
+          <div className="proverb"></div>
         </div>
       </div>
     );
