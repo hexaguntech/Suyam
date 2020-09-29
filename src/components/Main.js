@@ -12,6 +12,7 @@ import MissionPerseverance from './MissionPerseverance';
 import RedKepi from './RedKepi';
 import Institute from './Institute';
 import Payment from './Payment';
+import SubmitApplication from './SubmitApplication';
 
 export default class Main extends React.Component {
   render() {
@@ -31,6 +32,7 @@ export default class Main extends React.Component {
             <Route path="/Register" component={Registration} />
             <Route path="/Payment" component={Payment} />
             <Route path="/Contactus" component={Contact} />
+            <Route path="/SubmitApplication" component={SubmitApplication} />
           </Switch>
         </div>
         <Footer />
