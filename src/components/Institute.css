@@ -2,7 +2,15 @@
     display: flex;
     background-color: #F5F5F5;
 }
-
+.ip__right{
+    margin-left: 400px;
+}
+.ip__left{
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 .f{
     color:#797979;
 }
@@ -77,3 +85,4 @@
     padding-right: 120px;
     padding-bottom: 20px;
 }
+

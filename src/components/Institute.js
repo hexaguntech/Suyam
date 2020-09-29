@@ -5,7 +5,7 @@ export default class Institute extends React.Component {
   render() {
     return <div className="institute">
       <div className="about">
-        <div className="left">
+        <div className="ip__left">
           <h1 style={{fontWeight:`700`}}>ABOUT SUYAM</h1>
           <div className="foundername">
             <p className="f">Founder</p>
@@ -13,7 +13,7 @@ export default class Institute extends React.Component {
             <h5 className="k">KALLADAN</h5>
           </div>
         </div>
-        <div className="right">
+        <div className="ip__right">
           <img src="assets/founder.png"/>
         </div>
       </div>
