@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 export default class Home extends React.Component {
   render() {
     return <div>
+      
       <div className="home">
         <section className="welcome">
           <div className="htext">
@@ -16,6 +17,7 @@ export default class Home extends React.Component {
             className="tagline" src="assets/wimage.png"/>
           </div>
         </section>
+    
         <div style={{marginTop: `30px`}}>
           <h2 style={{textAlign: `center`,fontWeight: `700`}}>COURSES OFFERED</h2>
           <hr color="#0A79DF" width="15%"></hr>
