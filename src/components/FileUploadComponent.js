@@ -19,7 +19,7 @@ export default class FilesUploadComponent extends Component {
     };
   }
 
-  onFileChange(e) {
+  onFileChange(e) { 
     this.setState({ profileImg: e.target.files[0] });
   }
 

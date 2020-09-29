@@ -5,6 +5,7 @@ import axios from 'axios';
 import FilesUploadComponent from './FileUploadComponent';
 
 import { Form, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 export default class Registration extends Component {
   constructor(props) {
     super(props);
@@ -441,15 +442,17 @@ export default class Registration extends Component {
                 <h6> </h6>
               </div>
               <div className="sub">
+              <Link to="/SubmitApplication">
                 <Button
-                  variant="primary"
-                  type="submit"
-                  className="btn btn-default"
-                  onClick={this.saveApplication}
-                  disabled={!this.state.agree}
-                >
-                  View Applicantion
+                    variant="primary"
+                    type="submit"
+                    className="btn btn-default"
+                    onClick={this.saveApplication}
+                    //disabled={!this.state.agree}
+                  >
+                    View Application
                 </Button>
+              </Link>
               </div>
             </Form.Group>
           </form>
