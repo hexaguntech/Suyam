@@ -125,6 +125,7 @@ export default class Registration extends Component {
   };
 
   render() {
+// image-upload
     return (
       <div className="container col-sm">
         <div className="header col-sm">
@@ -197,6 +198,44 @@ export default class Registration extends Component {
                     <option>Prefer not say</option>
                   </Form.Control>
                 </div>
+//breakline
+    return  <div className="container col-sm">
+      <div className="header col-sm">
+        <h2 style={{fontWeight:`700`}}>ONLINE REGISTRATION</h2>
+        <hr color="black" className="col-sm-11" />
+        <form className="col-sm">  
+          <Form.Group controlId="exampleForm.ControlSelect1">
+            <Form.Label><b>COURSES<span style={{color: `red`}}>*</span></b></Form.Label>
+            <Form.Control as="select" required>
+              <option>Mission perseverance 2020</option>
+              <option>Operation Red KEPI 2020</option>
+            </Form.Control>
+            <hr/>
+            <Form.Group>
+              <Form.Label><b>My Name is<span style={{color: `red`}}>*</span></b></Form.Label>
+              <Form.Control as="input" placeholder="Enter your name" required></Form.Control>
+            </Form.Group>
+            <div className="row">
+              <div className="col-sm-6" >
+                <Form.Label><b>Date of Birth<span style={{color: `red`}}>*</span></b></Form.Label>
+                <Form.Control as="input" required></Form.Control>
+              </div>
+              <div className="col-sm-6" >
+                <Form.Label><b>Gender<span style={{color: `red`}}>*</span></b></Form.Label>
+                <Form.Control as="select" required>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Prefer not say</option>
+                </Form.Control>
+              </div>
+            </div>  
+          </Form.Group>
+          <Form.Group>
+            <div className="row">
+              <div className="col-sm-6" >
+                <Form.Label><b>Phone number<span style={{color: `red`}}>*</span></b></Form.Label>
+                <Form.Control as="input" required></Form.Control>
+// master
               </div>
             </Form.Group>
             <Form.Group>
@@ -420,7 +459,7 @@ export default class Registration extends Component {
             </Form.Group>
             <div className="tex">
               <div className="form-check-inline">
-                <label className="form-check-label">
+                <label className="form-check-label" for="check1">
                   <input
                     type="checkbox"
                     className="form-check-input"
@@ -443,6 +482,7 @@ export default class Registration extends Component {
               <Button
                 variant="primary"
                 type="submit"
+                className="btn btn-default
                 onClick={this.saveApplication}
                 disabled={!this.state.agree}
               >
@@ -451,6 +491,24 @@ export default class Registration extends Component {
             </div>
           </form>
         </div>
+
+//           </Form.Group>
+//           <div className="tex">
+//             <div class="form-check-inline">
+//               <label class="form-check-label" for="check1">
+//                 <input type="checkbox" class="form-check-input" /> I assure that I will put in utmost perseverance, preparation and performance while looking forward to intellectual, academic, material and moral support from the organizers/ faculty of the Coaching Programme
+//                   I clearly understand that only upon payment of course fee, my admission will be confirmed. I clearly understand that fees once paid will not be refunded under any circumstances.
+//               </label>
+//              </div>
+//             <h6> </h6>
+//           </div>
+//           <div className="sub">
+//             <Button " type="submit">
+//               SUBMIT
+//             </Button>
+//           </div>
+//         </form>   
+
       </div>
     );
   }

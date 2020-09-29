@@ -1,7 +1,14 @@
-.tagline {
-  height: 100%;
-  width: 100%;
-  padding: 50px;
+
+.jumbotron{
+    margin: 0;
+    padding:0;
+}
+
+.tagline{
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+
 }
 .welcome{
     display: flex;
@@ -68,7 +75,7 @@
 }
 .col1{
     padding: 20px;
-    border-right: 3px solid black;
+    border-right: 2px solid #C0C0C0;
 }
 .col2{
     padding: 20px;
@@ -95,9 +102,11 @@
   width: 100%;
   padding: 20px;
 }
-.gservices {
-  background-color: #0a79df;
-  display: flex;
+
+.gservices{
+    background-color: #0A79DF;
+    display: flex;
+    font-weight: 700;   
 }
 .left {
   margin: auto;
@@ -115,8 +124,10 @@
 .curaffairs {
   margin-top: 50px;
 }
-.cahead {
-  text-align: center;
+
+.cahead{
+    text-align: center;
+    font-weight: 700;
 }
 .caffairs {
   display: flex;
@@ -133,4 +144,8 @@
 .cbanner2 {
   width: 50%;
   padding: 20px;
+}
+
+.btn{
+    font-weight: 700;
 }

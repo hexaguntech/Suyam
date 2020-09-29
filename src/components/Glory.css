@@ -1,20 +1,10 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-family: "Montserrat";
-}
-.row {
+.hexa > row {
   
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 100px 0;
-  
 }
 .timeline {
   width: 80%;
@@ -106,7 +96,7 @@ color: blue;
     top: -30px;
   }
   .timeline ul li:hover::before {
-    background-color: aqua;
+    background-color: #0a79df;
   }
 }
 .box{
