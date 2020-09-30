@@ -7,7 +7,7 @@ export default class Contact extends React.Component {
       <div>
         <div className="contacth">
           <div className="htext">
-            <div className="container">
+            <div className="container mt3">
               <h1>
                 <span
                   style={{

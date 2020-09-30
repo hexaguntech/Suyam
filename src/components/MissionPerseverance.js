@@ -7,6 +7,7 @@ export default class MissionPerseverance extends React.Component {
   render() {
     return (
       <div style={{ textAlign: `justify`,padding:`50px` }}>
+
         <h1 style={{ color: `#0a79df`, fontWeight: `700` }}>
           MISSION PERSEVERANCE 2020
         </h1>

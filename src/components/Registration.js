@@ -129,7 +129,7 @@ export default class Registration extends Component {
     // >>>>>> image-upload
     return (
       <div className="container col-sm">
-        <div className="header col-sm">
+        <div className="container mt3 header">
           <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
           <hr color="black" className="col-sm-11" />
           <form className="col-sm">
@@ -442,17 +442,20 @@ export default class Registration extends Component {
                 <h6> </h6>
               </div>
               <div className="sub">
-              <Link to="/SubmitApplication">
-                <Button
+                <Link to="/SubmitApplication">
+                  <Button
                     variant="primary"
                     type="submit"
                     className="btn btn-default"
                     onClick={this.saveApplication}
-                    //disabled={!this.state.agree}
+                    disabled={!this.state.agree}
+                    // onClick={() => {
+                    //   navigation('SubmitApplication', data);
+                    // }}
                   >
                     View Application
-                </Button>
-              </Link>
+                  </Button>
+                </Link>
               </div>
             </Form.Group>
           </form>
