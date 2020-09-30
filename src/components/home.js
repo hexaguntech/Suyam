@@ -382,53 +382,54 @@ export default class Home extends React.Component {
               <img className="hiring" src="assets/hiring.png" />
             </div>
           </div>
-          
         </div>
         <div>
-          <h2 className="jteam" style={{fontWeight: `700`}}>TESTIMONIAL</h2>
+          <h2 className="jteam" style={{ fontWeight: `700` }}>
+            TESTIMONIAL
+          </h2>
           <hr color="#0A79DF" width="15%"></hr>
         </div>
         <div className="gservices">
+          <div
+            className="container mt3"
+            style={{
+              marginTop: `30px`,
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'space-evenly',
+            }}
+          >
             <div
-              className="container mt3"
+              className="left"
               style={{
                 marginTop: `30px`,
                 display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-evenly',
+                flexDirection: 'column',
+                alignItems: 'center',
+                marginLeft: `30px`,
               }}
             >
-              <div
-                className="left"
-                style={{
-                  marginTop: `30px`,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  marginLeft: `30px`
-                }}
-              >
-                <h2 className="sixhundred">2</h2>
-                <span className="text-light"> CIVIL SERVICES</span>
-                <p className="text-light"> I.R.A.S/I.R.S </p>
-              </div>
-              <div
-                className="right"
-                style={{
-                  marginTop: `30px`,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                }}
-              >
-                <h2 className="sixhundred">600+</h2>
-                <span className="text-light">
-                  {' '}
-                  PUDUCHERRY GOVERNMENT SERVICES
-                </span>
-              </div>
+              <h2 className="sixhundred">2</h2>
+              <span className="text-light"> CIVIL SERVICES</span>
+              <p className="text-light"> I.R.A.S/I.R.S </p>
+            </div>
+            <div
+              className="right"
+              style={{
+                marginTop: `30px`,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}
+            >
+              <h2 className="sixhundred">600+</h2>
+              <span className="text-light">
+                {' '}
+                PUDUCHERRY GOVERNMENT SERVICES
+              </span>
             </div>
           </div>
+        </div>
       </div>
     );
   }

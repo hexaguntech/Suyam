@@ -58,10 +58,10 @@ const obj = (req, res) => {
         res.status(201).json({
           message: 'Image uploaded successfully!',
           userCreated: {
-            _id: result._id,
             imagepath: result.profileImg,
           },
         });
+        console.log(result.profileImg);
       })
       .catch((err) => {
         console.log(err),

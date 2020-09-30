@@ -44,6 +44,10 @@ let Applicant = mongoose.Schema(
     },
     bloodDonorVolunteer: {
       type: Boolean,
+      required: false,
+    },
+    studied: {
+      type: String,
       required: true,
     },
     studying: {
@@ -54,10 +58,7 @@ let Applicant = mongoose.Schema(
       type: String,
       required: true,
     },
-    belongTo: {
-      type: String,
-      required: false,
-    },
+
     verticalReservation: {
       type: String,
       required: true,
@@ -71,8 +72,8 @@ let Applicant = mongoose.Schema(
       default: Date.now,
     },
     photo: {
-      data: Buffer,
-      contentType: String,
+      type: String,
+      required: false,
     },
   },
   { timeStamps: true }
