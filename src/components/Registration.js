@@ -463,23 +463,26 @@ export default class Registration extends Component {
                 <h6> </h6>
               </div>
               <div className="sub">
-                <Link
+                {/* <Link
                   to={{ pathname: '/SubmitApplication', state: this.state }}
+                > */}
+                <Button
+                  variant="primary"
+                  type="submit"
+                  className="btn btn-default"
+                  // onClick={this.saveApplication}
+                  disabled={!this.state.agree}
+                  onClick={() => {
+                    // navigation('SubmitApplication', data);
+                    this.props.history.push({
+                      pathname: '/SubmitApplication',
+                      state: this.state,
+                    });
+                  }}
                 >
-                  <Button
-                    variant="primary"
-                    type="submit"
-                    className="btn btn-default"
-                    // onClick={this.saveApplication}
-                    disabled={!this.state.agree}
-                    onClick={() => {
-                      // navigation('SubmitApplication', data);
-                      // this.props.history.push('/SubmitApplication', stateData: this.state);
-                    }}
-                  >
-                    View Application
-                  </Button>
-                </Link>
+                  View Application
+                </Button>
+                {/* </Link> */}
               </div>
             </Form.Group>
           </form>

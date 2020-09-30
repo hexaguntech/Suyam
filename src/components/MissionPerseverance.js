@@ -6,8 +6,10 @@ import './MissionPerseverance.css';
 export default class MissionPerseverance extends React.Component {
   render() {
     return (
-      <div style={{ textAlign: `justify`,padding:`50px` }}>
-
+      <div
+        style={{ textAlign: `justify`, paddingTop: `20px` }}
+        className="container mt3"
+      >
         <h1 style={{ color: `#0a79df`, fontWeight: `700` }}>
           MISSION PERSEVERANCE 2020
         </h1>

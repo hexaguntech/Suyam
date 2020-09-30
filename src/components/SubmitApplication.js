@@ -66,7 +66,7 @@ export default class SubmitApplication extends React.Component {
       belongTo: this.props.location.state.belongTo,
       verticalReservation: this.props.location.state.verticalReservation,
       horizontalReservation: this.props.location.state.horizontalReservation,
-      photoPath: this.props.location.photoPath,
+      photoPath: this.props.location.state.photoPath,
     };
 
     console.log(data);
@@ -86,7 +86,9 @@ export default class SubmitApplication extends React.Component {
         //   output: './pdf/generate.pdf',
         // });
         // this.printDocument();
-        this.pdfToHTML();
+        // this.pdfToHTML();
+
+        this.props.history.replace('/home');
       })
       .catch((e) => {
         console.log(e);
