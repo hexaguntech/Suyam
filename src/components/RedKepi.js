@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 
 export default class RedKepi extends React.Component {
     render() {
-     
+      
         return <div style={{textAlign:`justify`}}>
+          < meta name="viewport" content="width=device-width, initial-scale=1.0" ></meta>
         <h1 style={{color: `#0a79df`, fontWeight: `700`}}>OPERATION RED KEPI</h1><br/>
         <p><b>Online Video Classes</b></p>
         <img style={{height: `100px`, width: `100px`, padding: `20px`}}src="assets/suyamapplogo.png" alt="suyamapplogo"/>
@@ -15,7 +16,8 @@ export default class RedKepi extends React.Component {
         <p>This Special Preparatory Course is a mission to keep the persevering Government service aspirants equipped to crack any recruitment exams like UDC, LDC, VAO, VA, SI and DT in Puducherry Government as well as TNPSC, SSC, RRB and such other exams that are anticipated in the near or foreseeable future.</p>
         <p><b>The following subjects will be taught by way of a range of pre-recorded video classes, learning materials and online tests through “SUYAM I.A.S.” App :</b></p>
         <h5><b>PART-1</b></h5> 
-       <table>
+    <div className="abc">
+  <table>
   <tr>
     <th>Subject</th>
     <th>Maximum Marks</th>
@@ -61,6 +63,7 @@ export default class RedKepi extends React.Component {
     <td><b>100</b></td>
   </tr>
 </table>
+</div>
 &nbsp;
 <hr/>
 <p>The above subjects will be taught by way of a range of pre-recorded video classes, learning materials and online tests through “SUYAM I.A.S.” App.</p>
@@ -76,9 +79,7 @@ export default class RedKepi extends React.Component {
 &nbsp;
 <hr/>
 Besides the above learning tools, well edited, exam oriented and bilingual (both in English and Tamil) books on the required subjects based on the Tamil Nadu Text Books (6th to 10th Standard) will be provided.</p>
-<p>Register here to avail the benefits of Operation Red Kepi 2020, Special Coaching for Police Constable Exam in Puducherry through “SUYAM I.A.S.” Mobile App.</p>
-<br/>
-<p><b>Course Fee : Rs.7500</b></p>
+
 <p>Register here to avail the benefits of Mission Perseverance 2020, Special Preparatory Course through “SUYAM I.A.S.” Mobile App.</p><br />
         <h4><b>Course Fee : Rs.7500</b></h4>
         <div className="mp__footer">

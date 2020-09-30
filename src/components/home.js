@@ -2,12 +2,14 @@ import React from 'react';
 import "./Home.css";
 import { Button } from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import Carousel from 'react-bootstrap/Carousel'
+import Card from 'react-bootstrap/Card'
 
 export default class Home extends React.Component {
   render() {
-    return <div>
-      
-      <div className="home">
+  
+  return <div>
+    <div className="home">
         <section className="welcome">
           <div className="htext">
             <h2 style={{fontWeight: `700`}}> <span style={{color: `#0A79DF`}}>"An Institute that endeavours to create</span> <br/> SELF ESTEEMED, SELF CONFIDENT <span style={{color: `#0A79DF`}}>Government Servants who can render</span> SELFLESS <span style={{color: `#0A79DF`}}>service to the humanity"</span></h2>
@@ -102,9 +104,40 @@ export default class Home extends React.Component {
             <img className="hiring" src="assets/hiring.png"/>
           </div>
         </div>
-        <div className="gservices">
+        <h2 style={{textAlign: `center`,fontWeight: `700`}}>TESTMONIAL</h2>
+          <hr color="#0A79DF" width="15%"></hr>
+          <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="assets/cor1.jpg"
+      alt="First slide"
+    />
+   
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="assets/cor2.jpg"
+      alt="Third slide"
+    />
 
-          <div className="left">
+  
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="assets/cor3 (2).jpg"
+      alt="Third slide"
+    />
+
+  
+  </Carousel.Item>
+</Carousel>
+&nbsp;
+<br/>
+         <div className="gservices">
+            <div className="left">
             <h2 className="sixhundred">2</h2>
             <span className="text-light"> CIVIL SERVICES</span>
             <p className="text-light"> I.R.A.S/I.R.S </p>
@@ -179,6 +212,6 @@ export default class Home extends React.Component {
           </div>
         </div>
       </div>
-    </div>;
+      </div>; 
   }
 }

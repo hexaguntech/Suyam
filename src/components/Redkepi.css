@@ -1,8 +1,8 @@
-table {
+.abc > table {
     border-collapse: collapse;
   }
   
-  table, th, td {
+ .abc > table  > th > td {
     border: 3px solid black;
   }
   .mp__footer{
