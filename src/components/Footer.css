@@ -2,8 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #0A79DF;
-    color: white;
+    background-color: white;
     border-top: #707070 solid .1px;
 }
 
@@ -18,7 +17,6 @@
 }
 
 .mail{
-    color: white;
     padding-top: 15px;
     font-weight: 700;
 }
