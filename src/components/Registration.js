@@ -68,10 +68,7 @@ export default class Registration extends Component {
       const formData = new FormData();
       formData.append('profileImg', this.state.photoFile);
       formData.append('name', this.state.name);
-      // var data = {
-      //   meta_data: this.state.photoFile,
-      //   userEmail: this.state.email,
-      // };
+
       const config = {
         headers: {
           'content-type': 'multipart/form-data',
@@ -106,11 +103,6 @@ export default class Registration extends Component {
   }
 
   handleCheckClickBloodVol = () => {
-    // if (this.state.bloodDonorVolunteer == 'no') {
-    //   this.setState({ bloodDonorVolunteer: 'yes' });
-    // } else {
-    //   this.setState({ bloodDonorVolunteer: 'no' });
-    // }
     this.setState({
       bloodDonorVolunteer: !this.state.bloodDonorVolunteer,
     });
@@ -453,13 +445,6 @@ export default class Registration extends Component {
                   className="btn btn-default"
                   onClick={this.saveApplication}
                   disabled={!this.state.agree}
-                  // onClick={() => {
-                  //   // navigation('SubmitApplication', data);
-                  //   this.props.history.push({
-                  //     pathname: '/SubmitApplication',
-                  //     state: this.state,
-                  //   });
-                  // }}
                 >
                   View Application
                 </Button>
