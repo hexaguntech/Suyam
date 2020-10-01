@@ -41,13 +41,11 @@ export default class Registration extends Component {
       submitted: false,
       agree: false,
       counter: 0,
-
       photoLink: '',
     };
   }
 
   saveApplication() {
-
     // if (
     //   this.state.course == 'Select a option' ||
     //   this.state.gender == 'Select a option' ||
@@ -85,7 +83,6 @@ export default class Registration extends Component {
           });
           console.log(response);
           console.log(this.state.photoPath);
-
           this.setState({
             photoLink: 'http://localhost:8080/' + this.state.photoPath,
           });
@@ -106,7 +103,6 @@ export default class Registration extends Component {
   }
 
   handleCheckClickBloodVol = () => {
-
     this.setState({
       bloodDonorVolunteer: !this.state.bloodDonorVolunteer,
     });
@@ -118,11 +114,11 @@ export default class Registration extends Component {
 
   render() {
     return (
-      <div className="container col-sm">
-        <div className="container mt3 header">
+      <div className="container mt3">
+        <div className="header">
           <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
           <hr color="black" className="col-sm-11" />
-          <form className="col-sm">
+          <form className="col-sm" onSubmit={this.saveApplication}>
             <Form.Group controlId="exampleForm.ControlSelect1">
               <Form.Label>
                 <b>
@@ -443,13 +439,12 @@ export default class Registration extends Component {
                 <h6> </h6>
               </div>
               <div className="sub">
-
-                
                 <Button
                   variant="primary"
                   type="submit"
                   className="btn btn-default"
-                  onClick={this.saveApplication}
+
+                  // onClick={this.saveApplication}
                   disabled={!this.state.agree}
                 >
                   View Application

@@ -144,6 +144,7 @@ export default class Home extends React.Component {
                     src="assets/suyam_header_logo-02.png"
                     alt="redkepi-logo"
                   />
+
                 </div>
                 <div className="row2">
                   <div className="col1">
@@ -184,6 +185,7 @@ export default class Home extends React.Component {
                     </h2>
                   </div>
                 </div>
+
                 <h5 style={{ paddingBottom: `10px` }}>
                   Bilingual - <br />
                   Both in Tamizh and English

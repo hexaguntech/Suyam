@@ -1,22 +1,24 @@
-.footer{ 
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: white;
-    border-top: #707070 solid .1px;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  border-top: #707070 solid 0.1px;
 }
 
-.footer-list{
-    list-style-type: none;
-    font-weight: 700;
-    text-decoration: none;
+.footer-list {
+  list-style-type: none;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.footer-list > li{
-    padding-bottom: 3px;
+.footer-list > li {
+  padding-top: 20px;
 }
 
-.mail{
-    padding-top: 15px;
-    font-weight: 700;
+
+.mail {
+  padding-top: 15px;
+  font-weight: 700;
 }
