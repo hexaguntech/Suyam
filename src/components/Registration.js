@@ -41,11 +41,13 @@ export default class Registration extends Component {
       submitted: false,
       agree: false,
       counter: 0,
+
       photoLink: '',
     };
   }
 
   saveApplication() {
+
     // if (
     //   this.state.course == 'Select a option' ||
     //   this.state.gender == 'Select a option' ||
@@ -83,6 +85,7 @@ export default class Registration extends Component {
           });
           console.log(response);
           console.log(this.state.photoPath);
+
           this.setState({
             photoLink: 'http://localhost:8080/' + this.state.photoPath,
           });
@@ -103,6 +106,7 @@ export default class Registration extends Component {
   }
 
   handleCheckClickBloodVol = () => {
+
     this.setState({
       bloodDonorVolunteer: !this.state.bloodDonorVolunteer,
     });
@@ -439,6 +443,8 @@ export default class Registration extends Component {
                 <h6> </h6>
               </div>
               <div className="sub">
+
+                
                 <Button
                   variant="primary"
                   type="submit"
