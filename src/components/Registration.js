@@ -41,7 +41,6 @@ export default class Registration extends Component {
       submitted: false,
       agree: false,
       counter: 0,
-
       photoLink: '',
     };
   }
@@ -84,7 +83,6 @@ export default class Registration extends Component {
           });
           console.log(response);
           console.log(this.state.photoPath);
-
           this.setState({
             photoLink: 'http://localhost:8080/' + this.state.photoPath,
           });
@@ -445,6 +443,7 @@ export default class Registration extends Component {
                   variant="primary"
                   type="submit"
                   className="btn btn-default"
+
                   // onClick={this.saveApplication}
                   disabled={!this.state.agree}
                 >

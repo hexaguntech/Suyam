@@ -24,7 +24,9 @@ export default class Contact extends React.Component {
                 </span>
               </h1>
             </div>
+
             <div>
+
               <img
                 style={{ height: `250px`, width: `300px` }}
                 src="assets/contactus.png"

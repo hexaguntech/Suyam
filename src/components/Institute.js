@@ -5,6 +5,7 @@ export default class Institute extends React.Component {
   render() {
     return (
       <div className="institute">
+
         <div className="about ">
           <div className="abt2  container mt3">
             <div className="ip__left">

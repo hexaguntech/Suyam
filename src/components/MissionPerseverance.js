@@ -7,6 +7,7 @@ export default class MissionPerseverance extends React.Component {
   render() {
     return (
       <div
+
         style={{
           textAlign: `justify`,
           paddingTop: `20px`,

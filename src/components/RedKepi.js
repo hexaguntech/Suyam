@@ -7,6 +7,7 @@ export default class RedKepi extends React.Component {
   render() {
     return (
       <div className="container mt3 redkepi">
+
         <h1 style={{ color: `#0a79df`, fontWeight: `700` }}>
           OPERATION RED KEPI
         </h1>
@@ -163,3 +164,4 @@ export default class RedKepi extends React.Component {
     );
   }
 }
+
