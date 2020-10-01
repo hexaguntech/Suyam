@@ -1,26 +1,26 @@
-.sa__imagecon{
-    height: 160px; 
-    width: 120px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-bottom:20px;
-    margin-top: 20px;
+.sa__imagecon {
+  height: 160px;
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .sa__table > table {
-    border-collapse: collapse;
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-  
-.sa__table > table td{
-    border: 1px solid black;
-    min-width: 500px;
-    padding: 10px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
-.btn{
-    background-color: #0A79DF;
-    color: white;
-    font-weight: 700;
+.sa__table > table td {
+  border: 1px solid black;
+  min-width: 500px;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #0a79df;
+  color: white;
+  font-weight: 700;
 }

@@ -9,6 +9,10 @@ export default class SubmitApplication extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      photoLink: 'http://localhost:8080/' + this.props.location.state.photoPath,
+    };
+
     this.saveApplication = this.saveApplication.bind(this);
     this.printDocument = this.printDocument.bind(this);
     this.pdfToHTML = this.pdfToHTML.bind(this);
@@ -92,6 +96,7 @@ export default class SubmitApplication extends React.Component {
       })
       .catch((e) => {
         console.log(e);
+        alert('some error occured, try again');
       });
   }
 
@@ -106,14 +111,29 @@ export default class SubmitApplication extends React.Component {
     });
   }
 
+
   render() {
     return (
       <div id="HTMLtoPDF">
         <div className="container mt3" id="applicationForm">
-          <h1 style={{ color: `#0A79DF`, fontWeight: `700` }}>
+
+          <h1
+            style={{ color: `#0A79DF`, fontWeight: `700`, marginTop: '20px' }}
+          >
             My Profile & Application
           </h1>
-          <div className="sa__imagecon"></div>
+
+          <img
+            src={this.state.photoLink}
+            alt="Applicant photo"
+            width="130"
+            height="170"
+            style={{
+              marginTop: '20px',
+            }}
+          ></img>
+
+
           <div className="sa__table">
             <table>
               <tr>

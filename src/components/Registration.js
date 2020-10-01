@@ -41,48 +41,26 @@ export default class Registration extends Component {
       submitted: false,
       agree: false,
       counter: 0,
+
+      photoLink: '',
     };
   }
 
   saveApplication() {
-    var data = {
-      course: this.state.course,
-      name: this.state.name,
-      dob: this.state.dob,
-      gender: this.state.gender,
-      email: this.state.email,
-      phone: this.state.phone,
-      addressLine1: this.state.addressLine1,
-      addressLine2: this.state.addressLine2,
-      state: this.state.state,
-      pincode: this.state.pincode,
-      bloodGroup: this.state.bloodGroup,
-      bloodDonorVolunteer: this.state.bloodDonorVolunteer,
-      studying: this.state.studying,
-      working: this.state.working,
-      verticalReservation: this.state.verticalReservation,
-      horizontalReservation: this.state.horizontalReservation,
-    };
 
     // if (
-    //   data.course == 'Select a option' ||
-    //   data.gender == 'Select a option' ||
-    //   data.horizontalReservation == 'Select a option' ||
-    //   data.verticalReservation == 'Select a option'
+    //   this.state.course == 'Select a option' ||
+    //   this.state.gender == 'Select a option' ||
+    //   this.state.horizontalReservation == 'Select a option' ||
+    //   this.state.verticalReservation == 'Select a option'
     // ) {
-    // }
+    //   alert('choose the dropdowns');
+    // } else {
 
-    console.log(data);
-
-    ApplicantDataService.registerApplicant(data)
-      .then((data) => {
-        this.setState({
-          submitted: true,
-        });
-      })
-      .catch((e) => {
-        console.log(e);
-      });
+    this.props.history.push({
+      pathname: '/SubmitApplication',
+      state: this.state,
+    });
   }
 
   onImageUpload(e) {
@@ -92,10 +70,7 @@ export default class Registration extends Component {
       const formData = new FormData();
       formData.append('profileImg', this.state.photoFile);
       formData.append('name', this.state.name);
-      // var data = {
-      //   meta_data: this.state.photoFile,
-      //   userEmail: this.state.email,
-      // };
+
       const config = {
         headers: {
           'content-type': 'multipart/form-data',
@@ -110,6 +85,10 @@ export default class Registration extends Component {
           });
           console.log(response);
           console.log(this.state.photoPath);
+
+          this.setState({
+            photoLink: 'http://localhost:8080/' + this.state.photoPath,
+          });
         })
         .catch((error) => {});
     } else {
@@ -127,11 +106,7 @@ export default class Registration extends Component {
   }
 
   handleCheckClickBloodVol = () => {
-    // if (this.state.bloodDonorVolunteer == 'no') {
-    //   this.setState({ bloodDonorVolunteer: 'yes' });
-    // } else {
-    //   this.setState({ bloodDonorVolunteer: 'no' });
-    // }
+
     this.setState({
       bloodDonorVolunteer: !this.state.bloodDonorVolunteer,
     });
@@ -253,6 +228,7 @@ export default class Registration extends Component {
                   </b>
                 </Form.Label>
                 <Form.Control
+                  required
                   placeholder="Line 1"
                   name="addressLine1"
                   onChange={(event) => this.handleChange(event)}
@@ -428,10 +404,14 @@ export default class Registration extends Component {
                     onChange={this.onChangeImage}
                   />
                   <img
-                    src={this.state.photoFile}
-                    alt="upload-image"
-                    className="process__image"
-                  />
+                    src={this.state.photoLink}
+                    alt="Applicant photo"
+                    width="130"
+                    height="170"
+                    style={{
+                      marginTop: '20px',
+                    }}
+                  ></img>
                   <Button
                     variant="primary"
                     type="submit"
@@ -463,26 +443,17 @@ export default class Registration extends Component {
                 <h6> </h6>
               </div>
               <div className="sub">
-                {/* <Link
-                  to={{ pathname: '/SubmitApplication', state: this.state }}
-                > */}
+
+                
                 <Button
                   variant="primary"
                   type="submit"
                   className="btn btn-default"
-                  // onClick={this.saveApplication}
+                  onClick={this.saveApplication}
                   disabled={!this.state.agree}
-                  onClick={() => {
-                    // navigation('SubmitApplication', data);
-                    this.props.history.push({
-                      pathname: '/SubmitApplication',
-                      state: this.state,
-                    });
-                  }}
                 >
                   View Application
                 </Button>
-                {/* </Link> */}
               </div>
             </Form.Group>
           </form>
