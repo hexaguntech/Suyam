@@ -47,7 +47,6 @@ export default class Registration extends Component {
   }
 
   saveApplication() {
-
     // if (
     //   this.state.course == 'Select a option' ||
     //   this.state.gender == 'Select a option' ||
@@ -106,7 +105,6 @@ export default class Registration extends Component {
   }
 
   handleCheckClickBloodVol = () => {
-
     this.setState({
       bloodDonorVolunteer: !this.state.bloodDonorVolunteer,
     });
@@ -118,8 +116,8 @@ export default class Registration extends Component {
 
   render() {
     return (
-      <div className="container col-sm">
-        <div className="container mt3 header">
+      <div className="container mt3">
+        <div className="header">
           <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
           <hr color="black" className="col-sm-11" />
           <form className="col-sm" onSubmit={this.saveApplication}>
@@ -443,8 +441,6 @@ export default class Registration extends Component {
                 <h6> </h6>
               </div>
               <div className="sub">
-
-                
                 <Button
                   variant="primary"
                   type="submit"
