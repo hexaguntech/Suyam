@@ -129,7 +129,6 @@ export default class SubmitApplication extends React.Component {
               marginTop: '20px',
             }}
           ></img>
-
           <div className="sa__table">
             <table>
               <tr>

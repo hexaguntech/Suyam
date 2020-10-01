@@ -7,7 +7,12 @@ export default class MissionPerseverance extends React.Component {
   render() {
     return (
       <div
-        style={{ textAlign: `justify`, paddingTop: `20px` }}
+
+        style={{
+          textAlign: `justify`,
+          paddingTop: `20px`,
+          flexDirection: 'column',
+        }}
         className="container mt3"
       >
         <h1 style={{ color: `#0a79df`, fontWeight: `700` }}>

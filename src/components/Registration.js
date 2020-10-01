@@ -114,11 +114,11 @@ export default class Registration extends Component {
 
   render() {
     return (
-      <div className="container col-sm">
-        <div className="container mt3 header">
+      <div className="container mt3">
+        <div className="header">
           <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
           <hr color="black" className="col-sm-11" />
-          <form className="col-sm">
+          <form className="col-sm" onSubmit={this.saveApplication}>
             <Form.Group controlId="exampleForm.ControlSelect1">
               <Form.Label>
                 <b>
@@ -443,7 +443,8 @@ export default class Registration extends Component {
                   variant="primary"
                   type="submit"
                   className="btn btn-default"
-                  onClick={this.saveApplication}
+
+                  // onClick={this.saveApplication}
                   disabled={!this.state.agree}
                 >
                   View Application

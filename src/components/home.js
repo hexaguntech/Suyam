@@ -5,45 +5,6 @@ import { Link } from 'react-router-dom';
 
 export default class Home extends React.Component {
   render() {
-<<<<<<< HEAD
-    return <div>
-      
-      <div className="home">
-        <section className="welcome">
-          <div className="htext">
-            <h2 style={{fontWeight: `700`}}> <span style={{color: `#0A79DF`}}>"An Institute that endeavours to create</span> <br/> SELF ESTEEMED, SELF CONFIDENT <span style={{color: `#0A79DF`}}>Government Servants who can render</span> SELFLESS <span style={{color: `#0A79DF`}}>service to the humanity"</span></h2>
-          </div>
-          <div className="himage">
-            <img 
-            className="tagline" src="assets/wimage.png"/>
-          </div>
-        </section>
-    
-        <div style={{marginTop: `30px`}}>
-          <h2 style={{textAlign: `center`,fontWeight: `700`}}>COURSES OFFERED</h2>
-          <hr color="#0A79DF" width="15%"></hr>
-          <div className="courses">
-            <div className="mp">
-              <p style={{fontWeight:`500`,color:`#8D8D8D`}}>GENERAL PREPARATORY COURSE</p>
-              <h3 className="line"><span style={{color: `#0A79DF`,fontWeight: `700`}}>MISSION PERSEVERANCE 2020</span></h3>
-              
-              <div className="row1">
-                <div className="col1">
-                  <h6>Online video class through</h6>
-                  <img style={{ height: `50px`, width: `50px`, marginTop: `10px`}} src="assets/suyamapplogo.png" alt="suyam app logo" />
-                  <h6 style={{paddingTop: `20px`,fontWeight: `700`}}><span style={{color: `#0A79DF`}}>SUYAM</span> I.A.S App</h6>
-                </div>
-                <div className="col1">
-                  <h6>Class commences on</h6>
-                  <h2><span style={{color: `#0A79DF`,fontWeight: `700`}}>9th Sep</span></h2>
-                  <h6><span style={{color: `#0A79DF`,fontWeight: `700`}}>2020</span></h6>
-                  <vr color="black"></vr>
-                </div>
-                <div className="col2">
-                  <h6>Course Fee</h6>
-                  <h2><span style={{color: `#0A79DF`,fontWeight: `700`}}>Rs. 6000</span></h2>
-                </div>
-=======
     return (
       <div>
         <div className="home">
@@ -64,7 +25,6 @@ export default class Home extends React.Component {
                     service to the humanity"
                   </span>
                 </h2>
->>>>>>> 79191388faa6ce77501aabb9c593374ac5340de8
               </div>
               <div className="himage">
                 <img className="tagline" src="assets/wimage.png" />
@@ -184,6 +144,7 @@ export default class Home extends React.Component {
                     src="assets/suyam_header_logo-02.png"
                     alt="redkepi-logo"
                   />
+
                 </div>
                 <div className="row2">
                   <div className="col1">
@@ -224,6 +185,7 @@ export default class Home extends React.Component {
                     </h2>
                   </div>
                 </div>
+
                 <h5 style={{ paddingBottom: `10px` }}>
                   Bilingual - <br />
                   Both in Tamizh and English
