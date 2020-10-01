@@ -1,7 +1,13 @@
 .about{
     display: flex;
     background-color: #F5F5F5;
+    justify-content: space-between;
+    align-items: center;
 }
+.container{
+  display: flex;
+}
+
 .ip__right{
     margin-left: 400px;
 }
