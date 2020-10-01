@@ -1,5 +1,7 @@
 .redkepi {
   padding-top: 30px;
+
+  flex-direction: column;
 }
 .rk__table1 > table {
   border-collapse: collapse;
@@ -26,8 +28,11 @@
   width: 500px;
   padding-bottom: 20px;
   margin-left: 300px;
+
+  margin-top: -80px;
   flex: 0.6;
   object-fit: contain;
+  align-items: flex-end;
 }
 
 .rk__reg {
