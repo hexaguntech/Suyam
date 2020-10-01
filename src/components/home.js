@@ -2,6 +2,8 @@ import React from 'react';
 import './Home.css';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Carousel from 'react-bootstrap/Carousel';
+import Card from 'react-bootstrap/Card';
 
 export default class Home extends React.Component {
   render() {
@@ -144,7 +146,6 @@ export default class Home extends React.Component {
                     src="assets/suyam_header_logo-02.png"
                     alt="redkepi-logo"
                   />
-
                 </div>
                 <div className="row2">
                   <div className="col1">
@@ -202,6 +203,33 @@ export default class Home extends React.Component {
               </div>
             </div>
           </div>
+
+          <h2 style={{ textAlign: `center`, fontWeight: `700` }}>TESTMONIAL</h2>
+          <hr color="#0A79DF" width="15%"></hr>
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="assets/cor1.jpg"
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="assets/cor2.jpg"
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="assets/cor3 (2).jpg"
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
+
           <div
             className="curaffairs"
             style={{
@@ -230,7 +258,6 @@ export default class Home extends React.Component {
                     CURRENT AFFAIRS
                   </span>
                 </h3>
-
                 <div>
                   <div className="row3">
                     <img
