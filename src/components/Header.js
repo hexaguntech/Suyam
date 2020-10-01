@@ -35,17 +35,23 @@ export default class Header extends React.Component {
             >
               <li className="nav-item">
                 <Link to={'/Home'} className="nav-link">
-                  <span className="text-light" style={{fontWeight:`700`}}>Home</span>
+                  <span className="text-light" style={{ fontWeight: `700` }}>
+                    Home
+                  </span>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to={'/Institute'} className="nav-link">
-                  <span className="text-light" style={{fontWeight:`700`}}>The Institute</span>
+                  <span className="text-light" style={{ fontWeight: `700` }}>
+                    The Institute
+                  </span>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to={'/Glory'} className="nav-link">
-                  <span className="text-light" style={{fontWeight:`700`}}>The Glory</span>
+                  <span className="text-light" style={{ fontWeight: `700` }}>
+                    The Glory
+                  </span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -56,7 +62,10 @@ export default class Header extends React.Component {
                       to={'/Missionperseverance2020'}
                       className="nav-link drophover"
                     >
-                      <span className="text-light" style={{fontWeight:`700`}}>
+                      <span
+                        className="text-light"
+                        style={{ fontWeight: `700` }}
+                      >
                         Mission perseverance 2020
                       </span>
                     </Link>
@@ -64,7 +73,10 @@ export default class Header extends React.Component {
                       to={'/OperationRedKEPI2020'}
                       className="nav-link drophover"
                     >
-                      <span className="text-light" style={{fontWeight:`700`}}>
+                      <span
+                        className="text-light"
+                        style={{ fontWeight: `700` }}
+                      >
                         Operation Red KEPI 2020
                       </span>
                     </Link>
@@ -73,23 +85,29 @@ export default class Header extends React.Component {
               </li>
               <li className="nav-item">
                 <Link to={'/Register'} className="nav-link">
-                  <span className="text-light" style={{fontWeight:`700`}}>Registration</span>
+                  <span className="text-light" style={{ fontWeight: `700` }}>
+                    Registration
+                  </span>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to={'/Payment'} className="nav-link">
-                  <span className="text-light" style={{fontWeight:`700`}}>Payment</span>
+                  <span className="text-light" style={{ fontWeight: `700` }}>
+                    Payment
+                  </span>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to={'/Contactus'} className="nav-link">
-                  <span className="text-light" style={{fontWeight:`700`}}>Contact us</span>
+                  <span className="text-light" style={{ fontWeight: `700` }}>
+                    Contact us
+                  </span>
                 </Link>
               </li>
             </div>
           </nav>
           <div className="announcement">
-            <marquee style={{fontWeight:`700`}}>
+            <marquee style={{ fontWeight: `400` }}>
               Online Video Coaching Programme for Competitive Exams in
               Puducherry Government as well as TNPSC, SSC, RRB and such other
               exams commences on August 15,2020. Register Immediately!

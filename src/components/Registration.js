@@ -31,14 +31,16 @@ export default class Registration extends Component {
       pincode: '',
       bloodGroup: '',
       bloodDonorVolunteer: false,
+      studied: '',
       studying: '',
       working: '',
-      belongTo: '',
       verticalReservation: '',
       horizontalReservation: '',
       photoFile: '',
+      photoPath: 'path',
       submitted: false,
       agree: false,
+      counter: 0,
     };
   }
 
@@ -58,7 +60,6 @@ export default class Registration extends Component {
       bloodDonorVolunteer: this.state.bloodDonorVolunteer,
       studying: this.state.studying,
       working: this.state.working,
-      belongTo: this.state.belongTo,
       verticalReservation: this.state.verticalReservation,
       horizontalReservation: this.state.horizontalReservation,
     };
@@ -86,31 +87,39 @@ export default class Registration extends Component {
 
   onImageUpload(e) {
     e.preventDefault();
-    const formData = new FormData();
-    formData.append('profileImg', this.state.photoFile);
-    formData.append('name', this.state.name);
-    // var data = {
-    //   meta_data: this.state.photoFile,
-    //   userEmail: this.state.email,
-    // };
-    const config = {
-      headers: {
-        'content-type': 'multipart/form-data',
-      },
-    };
-    axios
-      .post('http://localhost:8080/api/applicant/upload', formData, {})
-      .then((response) => {
-        alert('The file is successfully uploaded', response);
-        this.setState({
-          photoFile: response.imagepath,
-        });
-      })
-      .catch((error) => {});
+
+    if (this.state.photoFile != '') {
+      const formData = new FormData();
+      formData.append('profileImg', this.state.photoFile);
+      formData.append('name', this.state.name);
+      // var data = {
+      //   meta_data: this.state.photoFile,
+      //   userEmail: this.state.email,
+      // };
+      const config = {
+        headers: {
+          'content-type': 'multipart/form-data',
+        },
+      };
+      axios
+        .post('http://localhost:8080/api/applicant/upload', formData, {})
+        .then((response) => {
+          alert('The file is successfully uploaded');
+          this.setState({
+            photoPath: response.data.userCreated.imagepath,
+          });
+          console.log(response);
+          console.log(this.state.photoPath);
+        })
+        .catch((error) => {});
+    } else {
+      alert('upload a image');
+    }
   }
 
   onChangeImage(e) {
     this.setState({ photoFile: e.target.files[0] });
+    console.log(this.state.photoFile);
     console.log(this.state.photoFile);
   }
   handleChange(event) {
@@ -118,7 +127,14 @@ export default class Registration extends Component {
   }
 
   handleCheckClickBloodVol = () => {
-    this.setState({ bloodDonorVolunteer: !this.state.bloodDonorVolunteer });
+    // if (this.state.bloodDonorVolunteer == 'no') {
+    //   this.setState({ bloodDonorVolunteer: 'yes' });
+    // } else {
+    //   this.setState({ bloodDonorVolunteer: 'no' });
+    // }
+    this.setState({
+      bloodDonorVolunteer: !this.state.bloodDonorVolunteer,
+    });
   };
 
   handleCheckClickAgreement = () => {
@@ -126,7 +142,6 @@ export default class Registration extends Component {
   };
 
   render() {
-    // >>>>>> image-upload
     return (
       <div className="container col-sm">
         <div className="container mt3 header">
@@ -315,7 +330,13 @@ export default class Registration extends Component {
                     I studied<span style={{ color: `red` }}>*</span>
                   </b>
                 </Form.Label>
-                <Form.Control as="textarea" rows="3" required />
+                <Form.Control
+                  as="textarea"
+                  rows="3"
+                  required
+                  name="studied"
+                  onChange={(event) => this.handleChange(event)}
+                />
               </Form.Group>
               <Form.Group controlId="exampleForm.ControlTextarea1">
                 <Form.Control
@@ -442,20 +463,26 @@ export default class Registration extends Component {
                 <h6> </h6>
               </div>
               <div className="sub">
-                <Link to="/SubmitApplication">
-                  <Button
-                    variant="primary"
-                    type="submit"
-                    className="btn btn-default"
-                    onClick={this.saveApplication}
-                    disabled={!this.state.agree}
-                    // onClick={() => {
-                    //   navigation('SubmitApplication', data);
-                    // }}
-                  >
-                    View Application
-                  </Button>
-                </Link>
+                {/* <Link
+                  to={{ pathname: '/SubmitApplication', state: this.state }}
+                > */}
+                <Button
+                  variant="primary"
+                  type="submit"
+                  className="btn btn-default"
+                  // onClick={this.saveApplication}
+                  disabled={!this.state.agree}
+                  onClick={() => {
+                    // navigation('SubmitApplication', data);
+                    this.props.history.push({
+                      pathname: '/SubmitApplication',
+                      state: this.state,
+                    });
+                  }}
+                >
+                  View Application
+                </Button>
+                {/* </Link> */}
               </div>
             </Form.Group>
           </form>

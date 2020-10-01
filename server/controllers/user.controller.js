@@ -17,11 +17,12 @@ exports.create = (req, res) => {
     pincode: req.body.pincode,
     bloodGroup: req.body.bloodGroup,
     bloodDonorVolunteer: req.body.bloodDonorVolunteer,
+    studied: req.body.studied,
     studying: req.body.studying,
     working: req.body.working,
-    belongTo: req.body.belongTo,
     verticalReservation: req.body.verticalReservation,
     horizontalReservation: req.body.horizontalReservation,
+    photo: req.body.photoPath,
     dateApplied: req.body.dateApplied,
   });
   applicant
