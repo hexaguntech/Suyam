@@ -21,13 +21,16 @@
   display: flex;
 }
 
-.rk__vector {
-  height: 400px;
-  width: 500px;
-  padding-bottom: 20px;
-  margin-left: 300px;
-  flex: 0.6;
-  object-fit: contain;
+.rk__vector{
+    height: 400px;
+    width: 500px;
+    padding-bottom: 20px;
+    margin-left: 300px;
+    margin-top: -80px;
+    flex: 0.6;
+    object-fit: contain;
+    align-items: flex-end;
+
 }
 
 .rk__reg {

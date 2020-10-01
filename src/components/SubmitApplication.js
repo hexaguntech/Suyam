@@ -8,6 +8,7 @@ import html2canvas from 'html2canvas';
 export default class SubmitApplication extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       photoLink: 'http://localhost:8080/' + this.props.location.state.photoPath,
     };
@@ -110,10 +111,12 @@ export default class SubmitApplication extends React.Component {
     });
   }
 
+
   render() {
     return (
       <div id="HTMLtoPDF">
         <div className="container mt3" id="applicationForm">
+
           <h1
             style={{ color: `#0A79DF`, fontWeight: `700`, marginTop: '20px' }}
           >
@@ -129,6 +132,7 @@ export default class SubmitApplication extends React.Component {
               marginTop: '20px',
             }}
           ></img>
+
 
           <div className="sa__table">
             <table>
