@@ -1,146 +1,173 @@
-.jumbotron{
-    margin: 0;
-    padding:0;
+.jumbotron {
+  margin: 0;
+  padding: 0;
 }
 
-.tagline{
-    height: 100%;
-    width: 100%;
-    padding: 50px;
+.tagline {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
 }
-.welcome{
-    display: flex;
-    background-color: #F5F5F5;
+.welcome {
+  display: flex;
+  background-color: #f5f5f5;
 }
-.htext{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+.htext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-.himage{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+.himage {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-.courses{
-    display: flex;
-    margin: 30px;
-    background-color: white;
-}
-
-.mp{
-    background-color: #F5F5F5;
-    width: 50%;
-    padding: 20px;
-    margin: 10px;
-}
-.rk{
-    background-color: #F5F5F5;
-    width: 50%;
-    padding: 20px;
-    margin: 10px;
-}
-.line{
-    padding-bottom: 1px; 
-    border-bottom-style: solid; 
-    border-bottom-width: 3px; 
-    width: fit-content; 
-}
-.row1{
-    display: flex;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-.row2{
-    display: flex;
-    margin-top: 40px;
-    margin-bottom: 10px;
-}
-.row3{
-    display: flex;
-    margin-top: 40px;
-}
-.dog{
-    height: 300px;
-    width: 450px;
-    padding-bottom: 30px;
-    
-}
-.col1{
-    padding: 20px;
-    border-right: 2px solid #C0C0C0;
-}
-.col2{
-    padding: 20px;
+.courses {
+  display: flex;
+  margin: 30px;
+  background-color: white;
 }
 
-.btn-default{
-    background-color: #0A79DF;
+.mp {
+  background-color: #f5f5f5;
+  width: 50%;
+  padding: 20px;
+  margin: 10px;
 }
+.rk {
+  background-color: #f5f5f5;
+  width: 50%;
+  padding: 20px;
+  margin: 10px;
+}
+.line {
+  padding-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  width: fit-content;
+}
+.row1 {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.row2 {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.row3 {
+  display: flex;
+  margin-top: 40px;
+}
+.dog {
+  height: 300px;
+  width: 450px;
+  padding-bottom: 30px;
+}
+.col1 {
+  padding: 20px;
+  border-right: 2px solid #c0c0c0;
+}
+.col2 {
+  padding: 20px;
+}
+
+.btn-default {
+  background-color: #0a79df;
+}
+
 .onvideo{
     background-color: #F5F5F5;
     height: 300px;
     padding: 20px;
+    margin-top: 20px;
 }
 
-.team{
-    padding: 20px;
-    margin-top: 30px;
+.team {
+  padding: 20px;
+  margin-top: 30px;
 }
-.jteam{
-    text-align: center;
+.jteam {
+  text-align: center;
 }
-.hiring{
-    height: 100%;
-    width: 100%;
-    padding: 20px;
+.hiring {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
 }
-.gservices{
-    background-color: #0A79DF;
-    display: flex;
-    font-weight: 700;   
+
+.gservices {
+  background-color: #0a79df;
+  display: flex;
+  font-weight: 700;
 }
 .left{
-    margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 250px;
+  margin-right: 40px;
 }
+
 .right{
-    margin: auto;
+  margin-left: 50px;
 }
-.sixhundred{
-    color: white;
-    text-align: center;
-    height: 100px;
-    padding: 30px;
+.sixhundred {
+  color: white;
+  text-align: center;
+  height: 100px;
+  font-weight: 700;
+  font-size: 65px;
 }
-.curaffairs{
-    margin-top: 50px;
-}
-.cahead{
-    text-align: center;
-    font-weight: 700;
-}
-.caffairs{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px;
-    background-color: white;
-}
-.cbanner1{
-    width: 50%;
-    padding: 20px;
+.curaffairs {
+  margin-top: 50px;
 }
 
-.cbanner2{
-    width: 50%;
-    padding: 20px;
+.cahead {
+  text-align: center;
+  font-weight: 700;
+}
+.caffairs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  background-color: white;
+}
+.cbanner1 {
+  width: 50%;
+  padding: 20px;
 }
 
-.btn{
-    font-weight: 700;
+.cbanner2 {
+  width: 50%;
+  padding: 20px;
+}
+
+.btn {
+  font-weight: 700;
+}
+
+.v2 {
+  border-bottom: 4px solid #0a79df;
+  width: 7%;
+}
+
+.text-light {
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.proverb {
+  height: 85px;
+  background-color: #ebebeb;
+}
+
+.carousel{
+  background-color: #F5F5F5;
 }
