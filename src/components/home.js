@@ -204,32 +204,6 @@ export default class Home extends React.Component {
             </div>
           </div>
 
-          <h2 style={{ textAlign: `center`, fontWeight: `700` }}>TESTMONIAL</h2>
-          <hr color="#0A79DF" width="15%"></hr>
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="assets/cor1.jpg"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="assets/cor2.jpg"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="assets/cor3 (2).jpg"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-          </Carousel>
-
           <div
             className="curaffairs"
             style={{
@@ -412,11 +386,42 @@ export default class Home extends React.Component {
             </div>
           </div>
         </div>
-        <div>
+        <div
+          style={{
+            marginTop: `30px`,
+            marginBottom: `20px`,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
           <h2 className="jteam" style={{ fontWeight: `700` }}>
             TESTIMONIAL
           </h2>
-          <hr color="#0A79DF" width="15%"></hr>
+          <div className="v2"></div>
+          <Carousel className="container mt3">
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="assets/cor1.jpg"
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="assets/cor2.jpg"
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="assets/cor3 (2).jpg"
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
         </div>
         <div className="gservices">
           <div
