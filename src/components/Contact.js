@@ -6,31 +6,34 @@ export default class Contact extends React.Component {
     return (
       <div>
         <div className="contacth">
-          <div className="htext">
-            <div className="container mt3">
+          <div className="container mt3">
+            <div className="htex">
               <h1>
                 <span
                   style={{
                     color: `#0A79DF`,
-                    paddingLeft: `70px`,
                     fontWeight: `700`,
+                    fontSize: `55px`,
                   }}
                 >
                   CONTACT US
                 </span>
                 <br />
-                <span style={{ fontSize: `small`, paddingLeft: `75px` }}>
-                  <b>and we will get back to you!</b>
+                <span
+                  style={{
+                    fontSize: `small`,
+                    fontWeight: `400`,
+                    fontSize: `18px`,
+                    color: `#666666`,
+                  }}
+                >
+                  <b>And we will get back to you!</b>
                 </span>
               </h1>
-            </div>
 
-            <div>
-
-              <img
-                style={{ height: `250px`, width: `300px` }}
-                src="assets/contactus.png"
-              />
+              <div>
+                <img style={{ height: `350px` }} src="assets/contactus.png" />
+              </div>
             </div>
           </div>
         </div>
@@ -97,7 +100,7 @@ export default class Contact extends React.Component {
         </div>
 
         <div className="crow2">
-          <h1 style={{ fontWeight: `700` }}>LOCATION</h1>
+          <h1 style={{ fontWeight: `600` }}>LOCATION</h1>
         </div>
         <div>
           <img style={{ width: `100%` }} src="assets/map.png" alt="map" />
