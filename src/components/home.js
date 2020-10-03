@@ -121,15 +121,18 @@ export default class Home extends React.Component {
                   </div>
                 </div>
                 <p>and such other exams</p>
-                <Link to="/MissionPerseverance2020">
-                  <Button
-                    className="btn btn-default"
-                    type="link"
-                    style={{ fontWeight: `700` }}
-                  >
-                    MORE DETAILS
-                  </Button>
-                </Link>
+                <div style={{display: `flex`,justifyContent:`space-between`}}>
+                  <Link to="/MissionPerseverance2020">
+                    <Button
+                      className="btn btn-default"
+                      type="link"
+                      style={{ fontWeight: `700` }}
+                    >
+                      MORE DETAILS
+                    </Button>
+                  </Link>
+                  <img src="assets/mpvector.png" alt="rk-illustration" style={{height:`300px`,width:`300px`,marginTop:`-120px`,objectFit:`contain`,marginRight:`-20px`}} />
+                </div>
               </div>
               <div className="rk">
                 <p style={{ fontWeight: `500`, color: `#8D8D8D` }}>
@@ -186,20 +189,23 @@ export default class Home extends React.Component {
                     </h2>
                   </div>
                 </div>
-
+                
                 <h5>
                   Bilingual - <br />
                   Both in Tamizh and English
                 </h5>
-                <Link to="/OperationRedKEPI2020">
-                  <Button
-                    className="btn btn-default"
-                    type="link"
-                    style={{ fontWeight: `700` }}
-                  >
-                    MORE DETAILS
-                  </Button>
-                </Link>
+                <div style={{display: `flex`,justifyContent:`space-between`}}>
+                  <Link to="/OperationRedKEPI2020">
+                    <Button
+                      className="btn btn-default"
+                      type="link"
+                      style={{ fontWeight: `700` }}
+                    >
+                      MORE DETAILS
+                    </Button>
+                  </Link>
+                  <img src="assets/rk.png" alt="rk-illustration" style={{objectFit: `contain`,height:`200px`,width:`200px`,marginTop:`-50px`}} />
+                </div>
               </div>
             </div>
           </div>

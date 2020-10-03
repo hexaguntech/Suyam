@@ -105,7 +105,7 @@ export default class Institute extends React.Component {
           <div className="content5">
             <div className="abt2 container mt3">
               <img src="assets/transplant.png" />
-              <b>
+              <b style={{marginLeft:`20px`}}>
                 Suyamites collectively contributed funds and supported their
                 Co-Suyamites who underwent surgeries like Kidney
                 transplantation, financially and mentally.

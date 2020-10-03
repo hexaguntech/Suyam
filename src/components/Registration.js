@@ -4,6 +4,7 @@ import ApplicantDataService from '../services/ApplicantDataService';
 import axios from 'axios';
 import FilesUploadComponent from './FileUploadComponent';
 
+
 import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 export default class Registration extends Component {
@@ -139,7 +140,7 @@ export default class Registration extends Component {
               <Form.Group>
                 <Form.Label>
                   <b>
-                    My Name is<span style={{ color: `red` }}>*</span>
+                  My Name is <span style={{ color: `red` }}>*</span>
                   </b>
                 </Form.Label>
                 <Form.Control
