@@ -38,9 +38,8 @@
   justify-content: space-between;
 }
 .content2 > img {
-  height: 300px;
-  width: 300px;
-  padding: 20px;
+  height: 200px;
+  width: 200px;
 }
 .content3 {
   text-align: justify;

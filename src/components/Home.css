@@ -56,9 +56,15 @@
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
+.quizbanner{
+  margin-top: 40px;
+  padding-bottom: 45px;
+}
+
 .row2 {
   display: flex;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 .row3 {
@@ -166,4 +172,15 @@
 .proverb {
   height: 85px;
   background-color: #ebebeb;
+}
+
+.d-block{
+  object-fit: contain;
+  height: 300px;
+  width: 500px;
+}
+
+.hcarousel{
+  margin-top: 60px;
+  margin-bottom: 130px;
 }

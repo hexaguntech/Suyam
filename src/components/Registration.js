@@ -115,7 +115,7 @@ export default class Registration extends Component {
   render() {
     return (
       <div className="container mt3">
-        <div className="header">
+        <div className="header" style={{marginTop: `30px`}}>
           <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
           <hr color="black" className="col-sm-11" />
           <form className="col-sm" onSubmit={this.saveApplication}>

@@ -48,18 +48,24 @@ export default class Institute extends React.Component {
             <img />
           </div>
           <div className="content2 container mt3">
-            <p>
-              To be frank, the Institute had achieved only a small proportion of
-              its dream on the Civil Services front in this tiny town, grooming
-              only one aspirant as a{' '}
-              <b>
-                Civil Servant who himself selected as I.R.A.S. once and as
-                I.R.S.
-              </b>{' '}
-              the subsequent year, a few Civil Services Preliminary Exam
-              Pass-outs and a very few Interview candidates.
-            </p>
-            <img src="assets/ips.png" />
+            <div style={{paddingRight:`60px`}}>
+              <p>
+                To be frank, the Institute had achieved only a small proportion of
+                its dream on the Civil Services front in this tiny town, grooming
+                only one aspirant as a{' '}
+                <b>
+                  Civil Servant who himself selected as I.R.A.S. once and as
+                  I.R.S.
+                </b>{' '}
+                the subsequent year, a few Civil Services Preliminary Exam
+                Pass-outs and a very few Interview candidates.
+              </p>
+            </div>
+            <div>
+              <img style={{height:`300px`,width: `300px`}} src="assets/ips.png" />
+              <b>P. Suthandira Balan, IRS</b>
+              <p style={{color: `#0a79df`}}>Assistant Commissioner of Income Tax, Bengaluru</p>
+            </div>
           </div>
           <div className="content3">
             <div className="container mt3">
