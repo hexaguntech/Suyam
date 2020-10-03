@@ -367,6 +367,32 @@ export default class Home extends React.Component {
               </p>
             </div>
           </div>
+          <div className="applive">
+            <div className="container mt3" style={{display: `flex`, justifyContent: `space-between`, alignItems: `center`}}>
+              <div>
+                <img src="assets/mobmockup.png" alt="mobmockup"/>
+              </div>
+              <div style={{display: `flex`, flexDirection: `column`, alignItems: `center`, justifyContent: `space-between`, marginTop: `30px`, marginBottom: `30px`}}>
+                <h1 style={{fontWeight: `700`,color:`white`}}>OUR APP IS LIVE!</h1>
+                <div style={{display: `flex`, flexDirection: `column`}}>
+                <img src="assets/appsuyamlogo.png" alt="appsuyamlogo" style={{height: `100px`, width: `100px`}}/>
+                <p style={{color:`white`, fontWeight: `700`}}>SUYAM I.A.S</p>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=in.testpress.suyamias"><img src="assets/playstore.png" alt="playstore-button" style={{width: `200px`, marginTop: `20px`}} /></a>
+              </div>
+              <div>
+                <Link to="/AppLive">
+                    <Button
+                      className="btn btn-default"
+                      type="link"
+                      style={{ fontWeight: `700`, color:`#0a79df`,backgroundColor: `white`, marginBottom: `-180px` }}
+                    >
+                      MORE DETAILS
+                    </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
           <div
             className="team container mt3"
             style={{

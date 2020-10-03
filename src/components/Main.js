@@ -13,6 +13,7 @@ import RedKepi from './RedKepi';
 import Institute from './Institute';
 import Payment from './Payment';
 import SubmitApplication from './SubmitApplication';
+import AppLive from './AppLive';
 
 export default class Main extends React.Component {
   render() {
@@ -33,6 +34,7 @@ export default class Main extends React.Component {
             <Route path="/Payment" component={Payment} />
             <Route path="/Contactus" component={Contact} />
             <Route path="/SubmitApplication" component={SubmitApplication} />
+            <Route path="/AppLive" component={AppLive} />
           </Switch>
         </div>
         <Footer />
