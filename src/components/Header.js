@@ -64,9 +64,9 @@ export default class Header extends React.Component {
                     >
                       <span
                         className="text-light"
-                        style={{ fontWeight: `700` }}
+                        style={{ fontWeight: `400` }}
                       >
-                        Mission perseverance 2020
+                        Mission Perseverance
                       </span>
                     </Link>
                     <Link
@@ -75,9 +75,9 @@ export default class Header extends React.Component {
                     >
                       <span
                         className="text-light"
-                        style={{ fontWeight: `700` }}
+                        style={{ fontWeight: `400`}}
                       >
-                        Operation Red KEPI 2020
+                        Operation Red KEPI
                       </span>
                     </Link>
                   </div>

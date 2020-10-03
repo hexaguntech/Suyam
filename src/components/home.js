@@ -121,15 +121,18 @@ export default class Home extends React.Component {
                   </div>
                 </div>
                 <p>and such other exams</p>
-                <Link to="/MissionPerseverance2020">
-                  <Button
-                    className="btn btn-default"
-                    type="link"
-                    style={{ fontWeight: `700` }}
-                  >
-                    MORE DETAILS
-                  </Button>
-                </Link>
+                <div style={{display: `flex`,justifyContent:`space-between`}}>
+                  <Link to="/MissionPerseverance2020">
+                    <Button
+                      className="btn btn-default"
+                      type="link"
+                      style={{ fontWeight: `700` }}
+                    >
+                      MORE DETAILS
+                    </Button>
+                  </Link>
+                  <img src="assets/mpvector.png" alt="rk-illustration" style={{height:`300px`,width:`300px`,marginTop:`-120px`,objectFit:`contain`,marginRight:`-20px`}} />
+                </div>
               </div>
               <div className="rk">
                 <p style={{ fontWeight: `500`, color: `#8D8D8D` }}>
@@ -142,8 +145,8 @@ export default class Home extends React.Component {
                 </h3>
                 <div className="row1">
                   <img
-                    style={{ height: `100px`, width: `300px` }}
-                    src="assets/suyam_header_logo-02.png"
+                    style={{ height: `80px`, width: `100px`,objectFit: `contain` }}
+                    src="assets/redkepilogo.jpg"
                     alt="redkepi-logo"
                   />
                 </div>
@@ -186,20 +189,23 @@ export default class Home extends React.Component {
                     </h2>
                   </div>
                 </div>
-
-                <h5 style={{ paddingBottom: `10px` }}>
+                
+                <h5>
                   Bilingual - <br />
                   Both in Tamizh and English
                 </h5>
-                <Link to="/OperationRedKEPI2020">
-                  <Button
-                    className="btn btn-default"
-                    type="link"
-                    style={{ fontWeight: `700` }}
-                  >
-                    MORE DETAILS
-                  </Button>
-                </Link>
+                <div style={{display: `flex`,justifyContent:`space-between`}}>
+                  <Link to="/OperationRedKEPI2020">
+                    <Button
+                      className="btn btn-default"
+                      type="link"
+                      style={{ fontWeight: `700` }}
+                    >
+                      MORE DETAILS
+                    </Button>
+                  </Link>
+                  <img src="assets/rk.png" alt="rk-illustration" style={{objectFit: `contain`,height:`200px`,width:`200px`,marginTop:`-50px`}} />
+                </div>
               </div>
             </div>
           </div>
@@ -291,66 +297,65 @@ export default class Home extends React.Component {
               </div>
               <div className="rk">
                 <p style={{ color: `#8D8D8D` }}>
-                  SPL. COACHING FOR POLICE CONSTABLE EXAM IN PUDUCHERRY
+                  MULTIPLE CHOICE QUESTIONS WITH ANSWERS FOR QUICK REVISION
                 </p>
                 <h3 className="line">
                   <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                    OPERATION RED KEPI 2020
+                    CURRENT AFFAIRS
                   </span>
                 </h3>
-                <div className="row1">
+                <div className="quizbanner">
                   <img
-                    style={{ height: `100px`, width: `300px` }}
-                    src="assets/suyam_header_logo-02.png"
-                    alt="redkepi-logo"
+                    style={{ height: `250px`, width: `450px` }}
+                    src="assets/quiztime.png"
+                    alt="quiztime-pic"
                   />
                 </div>
-                <div className="row2">
-                  <div className="col1">
-                    <h6>Online video class through</h6>
-                    <img
-                      style={{
-                        height: `50px`,
-                        width: `50px`,
-                        marginTop: `10px`,
-                      }}
-                      src="assets/suyamapplogo.png"
-                      alt="suyam app logo"
-                    />
-                    <h6 style={{ paddingTop: `20px`, fontWeight: `700` }}>
-                      <span style={{ color: `#0A79DF` }}>SUYAM</span> I.A.S App
-                    </h6>
-                  </div>
-                  <div className="col1">
-                    <h6>Class commences on</h6>
-                    <h2>
+                <div>
+                    <h4 className="line" style={{ paddingBottom: `5px` }}>
                       <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                        9th Sep
+                        Weekly Update
                       </span>
-                    </h2>
-                    <h6>
-                      <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                        2020
-                      </span>
-                    </h6>
-                    <vr color="black"></vr>
+                    </h4>
+                    <div style={{ display: `flex`, marginTop: `20px` }}>
+                      <div>
+                        <h5>
+                          <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                            14th Sep
+                          </span>
+                        </h5>
+                        <p>
+                          <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                            2020
+                          </span>
+                        </p>
+                      </div>
+                      <div
+                        style={{
+                          paddingLeft: '20px',
+                          paddingRight: '20px',
+                          fontWeight: `700`,
+                        }}
+                      >
+                        <p>to</p>
+                      </div>
+                      <div>
+                        <h5>
+                          <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                            20th Sep
+                          </span>
+                        </h5>
+                        <p>
+                          <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                            2020
+                          </span>
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="col2">
-                    <h6>Course Fee</h6>
-                    <h2>
-                      <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                        Rs. 6000
-                      </span>
-                    </h2>
-                  </div>
-                </div>
-                <h5 style={{ paddingBottom: `10px` }}>
-                  Bilingual - <br />
-                  Both in Tamizh and English
-                </h5>
-                <Link to="/OperationRedKEPI2020">
+                  <Link to="/">
                   <Button className="btn btn-default" type="link">
-                    MORE DETAILS
+                    DOWNLOAD PDF
                   </Button>
                 </Link>
               </div>
@@ -366,6 +371,32 @@ export default class Home extends React.Component {
                 Classes In The Suyam App.
                 <br />
               </p>
+            </div>
+          </div>
+          <div className="applive">
+            <div className="container mt3" style={{display: `flex`, justifyContent: `space-between`, alignItems: `center`}}>
+              <div>
+                <img src="assets/mobmockup.png" alt="mobmockup"/>
+              </div>
+              <div style={{display: `flex`, flexDirection: `column`, alignItems: `center`, justifyContent: `space-between`, marginTop: `30px`, marginBottom: `30px`}}>
+                <h1 style={{fontWeight: `700`,color:`white`}}>OUR APP IS LIVE!</h1>
+                <div style={{display: `flex`, flexDirection: `column`}}>
+                <img src="assets/appsuyamlogo.png" alt="appsuyamlogo" style={{height: `100px`, width: `100px`}}/>
+                <p style={{color:`white`, fontWeight: `700`}}>SUYAM I.A.S</p>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=in.testpress.suyamias"><img src="assets/playstore.png" alt="playstore-button" style={{width: `200px`, marginTop: `20px`}} /></a>
+              </div>
+              <div>
+                <Link to="/AppLive">
+                    <Button
+                      className="btn btn-default"
+                      type="link"
+                      style={{ fontWeight: `700`, color:`#0a79df`,backgroundColor: `white`, marginBottom: `-180px` }}
+                    >
+                      MORE DETAILS
+                    </Button>
+                </Link>
+              </div>
             </div>
           </div>
           <div
@@ -399,7 +430,7 @@ export default class Home extends React.Component {
             TESTIMONIAL
           </h2>
           <div className="v2"></div>
-          <Carousel className="container mt3">
+          <Carousel className="container mt3 hcarousel">
             <Carousel.Item>
               <img
                 className="d-block w-100"
