@@ -131,7 +131,7 @@ export default class Home extends React.Component {
                       MORE DETAILS
                     </Button>
                   </Link>
-                  <img src="assets/mpvector.png" alt="rk-illustration" style={{height:`300px`,width:`300px`,marginTop:`-120px`,objectFit:`contain`,marginRight:`-20px`}} />
+                  <img src="assets/mpvector.png" alt="rk-illustration" style={{height:`300px`,width:`300px`,marginTop:`-120px`,objectFit:`contain`,marginRight:`20px`}} />
                 </div>
               </div>
               <div className="rk">
