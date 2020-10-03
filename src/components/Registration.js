@@ -4,7 +4,6 @@ import ApplicantDataService from '../services/ApplicantDataService';
 import axios from 'axios';
 import FilesUploadComponent from './FileUploadComponent';
 
-
 import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 export default class Registration extends Component {
@@ -55,11 +54,14 @@ export default class Registration extends Component {
     // ) {
     //   alert('choose the dropdowns');
     // } else {
-
-    this.props.history.push({
-      pathname: '/SubmitApplication',
-      state: this.state,
-    });
+    if (this.state.photoLink == '') {
+      alert('select a image and click upload');
+    } else {
+      this.props.history.push({
+        pathname: '/SubmitApplication',
+        state: this.state,
+      });
+    }
   }
 
   onImageUpload(e) {
@@ -116,7 +118,7 @@ export default class Registration extends Component {
   render() {
     return (
       <div className="container mt3">
-        <div className="header" style={{marginTop: `30px`}}>
+        <div className="header" style={{ marginTop: `30px` }}>
           <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
           <hr color="black" className="col-sm-11" />
           <form className="col-sm" onSubmit={this.saveApplication}>
@@ -132,15 +134,15 @@ export default class Registration extends Component {
                 name="course"
                 onChange={this.handleChange}
               >
-                <option>Select a option</option>
-                <option>Mission perseverance 2020</option>
-                <option>Operation Red KEPI 2020</option>
+                <option>Select</option>
+                <option>Mission Perseverance 2020</option>
+                <option>Operation Red Kepi 2020</option>
               </Form.Control>
               <hr />
               <Form.Group>
                 <Form.Label>
                   <b>
-                  My Name is <span style={{ color: `red` }}>*</span>
+                    My Name is <span style={{ color: `red` }}>*</span>
                   </b>
                 </Form.Label>
                 <Form.Control
@@ -181,7 +183,7 @@ export default class Registration extends Component {
                     name="gender"
                     onChange={this.handleChange}
                   >
-                    <option>Select a option</option>
+                    <option>Select</option>
                     <option>Male</option>
                     <option>Female</option>
                     <option>Prefer not say</option>
@@ -240,7 +242,9 @@ export default class Registration extends Component {
               <Form.Group>
                 <div className="row">
                   <div className="col-sm-6">
-                    <Form.Label>State</Form.Label>
+                    <Form.Label>
+                      <b></b>State
+                    </Form.Label>
                     <Form.Control
                       as="input"
                       placeholder="State"
@@ -272,7 +276,7 @@ export default class Registration extends Component {
                     onChange={(event) => this.handleChange(event)}
                     name="bloodGroup"
                   >
-                    <option>Select a option</option>
+                    <option>Select</option>
                     <option>A+</option>
                     <option>A-</option>
                     <option>B+</option>
@@ -319,9 +323,7 @@ export default class Registration extends Component {
               </Form.Group>
               <Form.Group>
                 <Form.Label>
-                  <b>
-                    I am now studying<span style={{ color: `red` }}>*</span>
-                  </b>
+                  <b>I am now studying</b>
                 </Form.Label>
                 <Form.Control
                   as="input"
@@ -332,13 +334,10 @@ export default class Registration extends Component {
               </Form.Group>
               <Form.Group>
                 <Form.Label>
-                  <b>
-                    I am now working as<span style={{ color: `red` }}>*</span>
-                  </b>
+                  <b>I am now working as</b>
                 </Form.Label>
                 <Form.Control
                   as="input"
-                  required
                   name="working"
                   onChange={(event) => this.handleChange(event)}
                 />
@@ -349,7 +348,7 @@ export default class Registration extends Component {
                   <div className="col-sm-6">
                     <Form.Label>
                       <b>
-                        I belong to (category for vertical reservation)
+                        I belong to (category for Vertical Reservation)
                         <span style={{ color: `red` }}>*</span>
                       </b>
                     </Form.Label>
@@ -359,12 +358,13 @@ export default class Registration extends Component {
                       onChange={(event) => this.handleChange(event)}
                       name="verticalReservation"
                     >
-                      <option>Select a option</option>
+                      <option>Select</option>
 
                       <option>General</option>
                       <option>OBC</option>
                       <option>MBC</option>
                       <option>SC</option>
+                      <option>ST</option>
                       <option>EBC</option>
                       <option>BCM</option>
                       <option>BT</option>
@@ -372,18 +372,14 @@ export default class Registration extends Component {
                   </div>
                   <div className="col-sm-6">
                     <Form.Label>
-                      <b>
-                        I am a/an (category for Horizontal Reservation)
-                        <span style={{ color: `red` }}>*</span>
-                      </b>
+                      <b>I am a/an (category for Horizontal Reservation)</b>
                     </Form.Label>
                     <Form.Control
                       as="select"
-                      required
                       onChange={(event) => this.handleChange(event)}
                       name="horizontalReservation"
                     >
-                      <option>Select a option</option>
+                      <option>Select</option>
                       <option>XSM</option>
                       <option>PH</option>
                       <option>MSP</option>
@@ -444,7 +440,6 @@ export default class Registration extends Component {
                   variant="primary"
                   type="submit"
                   className="btn btn-default"
-
                   // onClick={this.saveApplication}
                   disabled={!this.state.agree}
                 >

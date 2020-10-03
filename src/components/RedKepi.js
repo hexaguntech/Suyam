@@ -1,13 +1,12 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Redkepi.css';
+import './RedKepi.css';
 
 export default class RedKepi extends React.Component {
   render() {
     return (
       <div className="container mt3 redkepi">
-
         <h1 style={{ color: `#0a79df`, fontWeight: `700` }}>
           OPERATION RED KEPI
         </h1>
@@ -164,4 +163,3 @@ export default class RedKepi extends React.Component {
     );
   }
 }
-
