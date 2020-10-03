@@ -26,7 +26,7 @@ export default class Payment extends React.Component {
         </div>
         <div className="container mt3" style={{fontWeight:`500`,marginBottom:`30px`,marginTop:`30px`}} >
           <p>Kindly pay the fees for the course concerned into the following Bank Account.</p><br/><br />
-          <b>Bank Account Details :</b><br/><br/>
+          <i>Bank Account Details :</i><br/><br/>
           <p style={{color: `#0A79DF`}} >Name of the Account Holder : KOPPEROUNDEVI<br/>
           Account Number : 76720100001634<br/>
           Bank Name : Bank of Baroda<br/>
@@ -60,20 +60,20 @@ export default class Payment extends React.Component {
           </p><br/>
           <p>
             Fee Payment in cash may also be made in person by visiting the Institute’s office at
-            Timing: 11 a.m. to 4 p.m. (Monday to Saturday)<br/><br/> 
+            <br/><br/> 
           </p>
           <b style={{color:`#0A79DF`}}>
             ADDRESS 
             14, First Cross,<br/>
             Natesan Nagar – East,<br/>
             Puducherry – 605 005.<br/>
-            Timing : 11 a.m. to 4 p.m.<br/>
+            Timing : 11 a.m. to 4 p.m. (Monday to Saturday)<br/>
           </b><br/><br/>
           <p><b>NOTE:</b>
           <div className="p__list">
             <ul>
               <li><span>Login ID and Password for “SUYAM I.A.S.” Mobile App, through which the course is conducted,
-              will be sent through SMS / e-Mail only after Registration and payment of Fees.</span></li>
+              will be sent through <br />SMS / e-mail only after Registration and payment of Fees.</span></li>
               <li><span>Fees once paid is non-refundable and non-transferable.</span></li>
             </ul>
           </div>

@@ -63,7 +63,7 @@ export default class Institute extends React.Component {
             </div>
             <div>
               <img style={{height:`300px`,width: `300px`}} src="assets/ips.png" />
-              <b>P. Suthandira Balan, IRS</b>
+              <b>P. Suthandira Balan, IRS.</b>
               <p style={{color: `#0a79df`}}>Assistant Commissioner of Income Tax, Bengaluru</p>
             </div>
           </div>

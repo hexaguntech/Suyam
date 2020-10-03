@@ -5,7 +5,7 @@ export default class Glory extends React.Component {
   render() {
     return (
       <div>
-        <div class="row">
+        <div class="row" style={{display:`flex`,justifyContent: `space-around`, alignItems:'center',paddingLeft:`150px`,marginBottom:`30px`}}>
           <div class="column">
             <div class="card">
               <h1>2</h1>
