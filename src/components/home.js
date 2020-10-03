@@ -121,7 +121,9 @@ export default class Home extends React.Component {
                   </div>
                 </div>
                 <p>and such other exams</p>
-                <div style={{display: `flex`,justifyContent:`space-between`}}>
+                <div
+                  style={{ display: `flex`, justifyContent: `space-between` }}
+                >
                   <Link to="/MissionPerseverance2020">
                     <Button
                       className="btn btn-default"
@@ -131,7 +133,17 @@ export default class Home extends React.Component {
                       MORE DETAILS
                     </Button>
                   </Link>
-                  <img src="assets/mpvector.png" alt="rk-illustration" style={{height:`300px`,width:`300px`,marginTop:`-120px`,objectFit:`contain`,marginRight:`-20px`}} />
+                  <img
+                    src="assets/mpvector.png"
+                    alt="rk-illustration"
+                    style={{
+                      height: `300px`,
+                      width: `300px`,
+                      marginTop: `-120px`,
+                      objectFit: `contain`,
+                      marginRight: `-20px`,
+                    }}
+                  />
                 </div>
               </div>
               <div className="rk">
@@ -145,7 +157,11 @@ export default class Home extends React.Component {
                 </h3>
                 <div className="row1">
                   <img
-                    style={{ height: `80px`, width: `100px`,objectFit: `contain` }}
+                    style={{
+                      height: `80px`,
+                      width: `100px`,
+                      objectFit: `contain`,
+                    }}
                     src="assets/redkepilogo.jpg"
                     alt="redkepi-logo"
                   />
@@ -189,12 +205,14 @@ export default class Home extends React.Component {
                     </h2>
                   </div>
                 </div>
-                
+
                 <h5>
                   Bilingual - <br />
                   Both in Tamizh and English
                 </h5>
-                <div style={{display: `flex`,justifyContent:`space-between`}}>
+                <div
+                  style={{ display: `flex`, justifyContent: `space-between` }}
+                >
                   <Link to="/OperationRedKEPI2020">
                     <Button
                       className="btn btn-default"
@@ -204,7 +222,16 @@ export default class Home extends React.Component {
                       MORE DETAILS
                     </Button>
                   </Link>
-                  <img src="assets/rk.png" alt="rk-illustration" style={{objectFit: `contain`,height:`200px`,width:`200px`,marginTop:`-50px`}} />
+                  <img
+                    src="assets/rk.png"
+                    alt="rk-illustration"
+                    style={{
+                      objectFit: `contain`,
+                      height: `200px`,
+                      width: `200px`,
+                      marginTop: `-50px`,
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -301,7 +328,7 @@ export default class Home extends React.Component {
                 </p>
                 <h3 className="line">
                   <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                    CURRENT AFFAIRS
+                    CURRENT AFFAIRS QUIZ
                   </span>
                 </h3>
                 <div className="quizbanner">
@@ -312,48 +339,48 @@ export default class Home extends React.Component {
                   />
                 </div>
                 <div>
-                    <h4 className="line" style={{ paddingBottom: `5px` }}>
-                      <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                        Weekly Update
-                      </span>
-                    </h4>
-                    <div style={{ display: `flex`, marginTop: `20px` }}>
-                      <div>
-                        <h5>
-                          <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                            14th Sep
-                          </span>
-                        </h5>
-                        <p>
-                          <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                            2020
-                          </span>
-                        </p>
-                      </div>
-                      <div
-                        style={{
-                          paddingLeft: '20px',
-                          paddingRight: '20px',
-                          fontWeight: `700`,
-                        }}
-                      >
-                        <p>to</p>
-                      </div>
-                      <div>
-                        <h5>
-                          <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                            20th Sep
-                          </span>
-                        </h5>
-                        <p>
-                          <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                            2020
-                          </span>
-                        </p>
-                      </div>
+                  <h4 className="line" style={{ paddingBottom: `5px` }}>
+                    <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                      Weekly Update
+                    </span>
+                  </h4>
+                  <div style={{ display: `flex`, marginTop: `20px` }}>
+                    <div>
+                      <h5>
+                        <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                          14th Sep
+                        </span>
+                      </h5>
+                      <p>
+                        <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                          2020
+                        </span>
+                      </p>
+                    </div>
+                    <div
+                      style={{
+                        paddingLeft: '20px',
+                        paddingRight: '20px',
+                        fontWeight: `700`,
+                      }}
+                    >
+                      <p>to</p>
+                    </div>
+                    <div>
+                      <h5>
+                        <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                          20th Sep
+                        </span>
+                      </h5>
+                      <p>
+                        <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                          2020
+                        </span>
+                      </p>
                     </div>
                   </div>
-                  <Link to="/">
+                </div>
+                <Link to="/">
                   <Button className="btn btn-default" type="link">
                     DOWNLOAD PDF
                   </Button>
@@ -374,27 +401,62 @@ export default class Home extends React.Component {
             </div>
           </div>
           <div className="applive">
-            <div className="container mt3" style={{display: `flex`, justifyContent: `space-between`, alignItems: `center`}}>
+            <div
+              className="container mt3"
+              style={{
+                display: `flex`,
+                justifyContent: `space-between`,
+                alignItems: `center`,
+              }}
+            >
               <div>
-                <img src="assets/mobmockup.png" alt="mobmockup"/>
+                <img src="assets/mobmockup.png" alt="mobmockup" />
               </div>
-              <div style={{display: `flex`, flexDirection: `column`, alignItems: `center`, justifyContent: `space-between`, marginTop: `30px`, marginBottom: `30px`}}>
-                <h1 style={{fontWeight: `700`,color:`white`}}>OUR APP IS LIVE!</h1>
-                <div style={{display: `flex`, flexDirection: `column`}}>
-                <img src="assets/appsuyamlogo.png" alt="appsuyamlogo" style={{height: `100px`, width: `100px`}}/>
-                <p style={{color:`white`, fontWeight: `700`}}>SUYAM I.A.S</p>
+              <div
+                style={{
+                  display: `flex`,
+                  flexDirection: `column`,
+                  alignItems: `center`,
+                  justifyContent: `space-between`,
+                  marginTop: `30px`,
+                  marginBottom: `30px`,
+                }}
+              >
+                <h1 style={{ fontWeight: `700`, color: `white` }}>
+                  OUR APP IS LIVE!
+                </h1>
+                <div style={{ display: `flex`, flexDirection: `column` }}>
+                  <img
+                    src="assets/appsuyamlogo.png"
+                    alt="appsuyamlogo"
+                    style={{ height: `100px`, width: `100px` }}
+                  />
+                  <p style={{ color: `white`, fontWeight: `700` }}>
+                    SUYAM I.A.S
+                  </p>
                 </div>
-                <a href="https://play.google.com/store/apps/details?id=in.testpress.suyamias"><img src="assets/playstore.png" alt="playstore-button" style={{width: `200px`, marginTop: `20px`}} /></a>
+                <a href="https://play.google.com/store/apps/details?id=in.testpress.suyamias">
+                  <img
+                    src="assets/playstore.png"
+                    alt="playstore-button"
+                    style={{ width: `200px`, marginTop: `20px` }}
+                  />
+                </a>
               </div>
               <div>
                 <Link to="/AppLive">
-                    <Button
-                      className="btn btn-default"
-                      type="link"
-                      style={{ fontWeight: `700`, color:`#0a79df`,backgroundColor: `white`, marginBottom: `-180px` }}
-                    >
-                      MORE DETAILS
-                    </Button>
+                  <Button
+                    className="btn btn-default"
+                    type="link"
+                    style={{
+                      fontWeight: `700`,
+                      color: `#0a79df`,
+                      backgroundColor: `white`,
+                      marginBottom: `-180px`,
+                    }}
+                  >
+                    MORE DETAILS
+                  </Button>
                 </Link>
               </div>
             </div>
@@ -455,6 +517,16 @@ export default class Home extends React.Component {
           </Carousel>
         </div>
         <div className="gservices">
+          <h2
+            style={{
+              textAlign: `center`,
+              fontWeight: `700`,
+            }}
+          >
+            COURSES OFFERED
+          </h2>
+          <div className="v2"></div>
+
           <div
             className="container mt3"
             style={{
