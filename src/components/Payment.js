@@ -66,7 +66,7 @@ export default class Payment extends React.Component {
             <br/><br/> 
           </p>
           <b style={{color:`#0A79DF`}}>
-            ADDRESS 
+            ADDRESS:<br/><br/> 
             14, First Cross,<br/>
             Natesan Nagar – East,<br/>
             Puducherry – 605 005.<br/>

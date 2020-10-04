@@ -407,8 +407,8 @@ export default class Home extends React.Component {
               </p>
             </div>
             <div>
-            <video width="320" height="240" controls>
-              <source src="Suyam Logo Animation.mp4" type="video/mp4" />
+            <video autoplay width="320" height="240" controls>
+              <source src="assets/Suyam Logo Animation.mp4" type="video/mp4" muted/>
             </video>
             </div>
           </div>
@@ -493,7 +493,7 @@ export default class Home extends React.Component {
             </h2>
             <div className="v2"></div>
             <div>
-              <img className="hiring" src="assets/hiring.png" />
+              <img className="hiring" src="assets/hiring.jpg" />
             </div>
           </div>
         </div>
