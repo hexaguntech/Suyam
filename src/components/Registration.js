@@ -132,7 +132,7 @@ export default class Registration extends Component {
               <Form.Group>
                 <Form.Label>
                   <b>
-                    COURSES<span style={{ color: `red` }}>*</span>
+                    Course<span style={{ color: `red` }}>*</span>
                   </b>
                 </Form.Label>
                 <Form.Control

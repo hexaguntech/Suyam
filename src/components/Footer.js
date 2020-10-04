@@ -6,15 +6,8 @@ export default class Footer extends React.Component {
   render() {
     return (
       <div>
-        <div className="footer">
-          <div
-            className="container mt3"
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-            }}
-          >
+        <div className="footer scl">
+          <div className="container mt3 scl">
             <div className="logo">
               <img src="assets/suyamheaderlogo.jpg" />
             </div>
@@ -52,7 +45,14 @@ export default class Footer extends React.Component {
                 </li>
               </ul>
             </div>
-            <div>
+            <div
+              style={{
+                display: `flex`,
+                justifyContent: `center`,
+                alignItems: `center`,
+                flexDirection: `column`,
+              }}
+            >
               <h2 style={{ fontWeight: `700` }}>Contact Us</h2>
               <p style={{ fontWeight: `500` }}>
                 if you have a question or just want to contact us write to
