@@ -1,11 +1,29 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding-top: 20px;
   background-color: white;
   border-top: #707070 solid 0.1px;
   border-bottom: solid 1px black;
   margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.scl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .scl {
+    display: flex;
+    /* align-content: space-around;
+    flex-flow: row; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .footer-list {
