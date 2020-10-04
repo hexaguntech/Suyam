@@ -119,339 +119,359 @@ export default class Registration extends Component {
     return (
       <div>
         <div className="proverb">
-          <p style={{textAlign:`center`,padding:`20px`}}>எண்ணித் துணிக கருமம் துணிந்தபின் <br/>எண்ணுவம் என்பது இழுக்கு. .</p>
+          <p style={{ textAlign: `center`, padding: `20px` }}>
+            எண்ணித் துணிக கருமம் துணிந்தபின் <br />
+            எண்ணுவம் என்பது இழுக்கு. .
+          </p>
         </div>
         <div className="container mt3">
-        <div className="header" style={{ marginTop: `30px` }}>
-          <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
-          <hr color="black" className="" />
-          <form className="" onSubmit={this.saveApplication}>
-            <Form.Group>
-              <Form.Label>
-                <b>
-                  COURSES<span style={{ color: `red` }}>*</span>
-                </b>
-              </Form.Label>
-              <Form.Control
-                as="select"
-                required
-                name="course"
-                onChange={this.handleChange}
-              >
-                <option>Select</option>
-                <option>Mission Perseverance 2020</option>
-                <option>Operation Red Kepi 2020</option>
-              </Form.Control>
-              <hr />
+          <div className="header" style={{ marginTop: `30px` }}>
+            <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
+            <hr color="black" className="" />
+            <form className="" onSubmit={this.saveApplication}>
               <Form.Group>
                 <Form.Label>
                   <b>
-                    My Name is <span style={{ color: `red` }}>*</span>
+                    COURSES<span style={{ color: `red` }}>*</span>
                   </b>
                 </Form.Label>
                 <Form.Control
-                  as="input"
-                  placeholder="Enter your name"
+                  as="select"
                   required
-                  type="text"
-                  className="form-control"
-                  value={this.state.name}
+                  name="course"
                   onChange={this.handleChange}
-                  name="name"
-                ></Form.Control>
-              </Form.Group>
-              <div className="row">
-                <div className="col-sm-6">
+                >
+                  <option>Select</option>
+                  <option>Mission Perseverance 2020</option>
+                  <option>Operation Red Kepi 2020</option>
+                </Form.Control>
+                <hr />
+                <Form.Group>
                   <Form.Label>
                     <b>
-                      Date of Birth<span style={{ color: `red` }}>*</span>
+                      My Name is <span style={{ color: `red` }}>*</span>
                     </b>
                   </Form.Label>
                   <Form.Control
                     as="input"
+                    placeholder="Enter your name"
                     required
-                    name="dob"
-                    onChange={(event) => this.handleChange(event)}
-                  ></Form.Control>
-                </div>
-
-                <div className="col-sm-6">
-                  <Form.Label>
-                    <b>
-                      Gender<span style={{ color: `red` }}>*</span>
-                    </b>
-                  </Form.Label>
-                  <Form.Control
-                    as="select"
-                    required
-                    name="gender"
+                    type="text"
+                    className="form-control"
+                    value={this.state.name}
                     onChange={this.handleChange}
-                  >
-                    <option>Select</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Prefer not say</option>
-                  </Form.Control>
-                </div>
-              </div>
-              <Form.Group>
-                <div className="row">
-                  <div className="col-sm-6">
+                    name="name"
+                  ></Form.Control>
+                </Form.Group>
+                <div className="regrow">
+                  <div className="smtag">
                     <Form.Label>
                       <b>
-                        Phone number<span style={{ color: `red` }}>*</span>
+                        Date of Birth<span style={{ color: `red` }}>*</span>
                       </b>
                     </Form.Label>
                     <Form.Control
                       as="input"
                       required
-                      name="phone"
+                      name="dob"
                       onChange={(event) => this.handleChange(event)}
                     ></Form.Control>
                   </div>
-                  <div className="col-sm-6">
+
+                  <div className="smtag">
                     <Form.Label>
                       <b>
-                        Email<span style={{ color: `red` }}>*</span>
+                        Gender<span style={{ color: `red` }}>*</span>
                       </b>
                     </Form.Label>
                     <Form.Control
-                      as="input"
-                      placeholder="name@example.com"
-                      name="email"
+                      as="select"
+                      required
+                      name="gender"
                       onChange={this.handleChange}
-                    ></Form.Control>
+                    >
+                      <option>Select</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Prefer not say</option>
+                    </Form.Control>
                   </div>
                 </div>
-              </Form.Group>
-              <Form.Group controlId="formGridAddress1">
-                <Form.Label>
-                  <b>
-                    My Address<span style={{ color: `red` }}>*</span>
-                  </b>
-                </Form.Label>
-                <Form.Control
-                  required
-                  placeholder="Line 1"
-                  name="addressLine1"
-                  onChange={(event) => this.handleChange(event)}
-                />
-                <Form.Label></Form.Label>
-                <Form.Control
-                  placeholder="Line 2"
-                  name="addressLine2"
-                  onChange={(event) => this.handleChange(event)}
-                />
-              </Form.Group>
-              <Form.Group>
-                <div className="row">
-                  <div className="col-sm-6">
-                    <Form.Label>
-                      <b></b>State
-                    </Form.Label>
-                    <Form.Control
-                      as="input"
-                      placeholder="State"
-                      name="state"
-                      onChange={(event) => this.handleChange(event)}
-                    ></Form.Control>
+                <Form.Group>
+                  <div className="regrow">
+                    <div className="smtag">
+                      <Form.Label>
+                        <b>
+                          Phone number<span style={{ color: `red` }}>*</span>
+                        </b>
+                      </Form.Label>
+                      <Form.Control
+                        as="input"
+                        required
+                        name="phone"
+                        onChange={(event) => this.handleChange(event)}
+                      ></Form.Control>
+                    </div>
+                    <div className="smtag">
+                      <Form.Label>
+                        <b>
+                          Email<span style={{ color: `red` }}>*</span>
+                        </b>
+                      </Form.Label>
+                      <Form.Control
+                        as="input"
+                        placeholder="name@example.com"
+                        name="email"
+                        onChange={this.handleChange}
+                      ></Form.Control>
+                    </div>
                   </div>
-                  <div className="col-sm-6">
-                    <Form.Label>Pincode</Form.Label>
-                    <Form.Control
-                      as="input"
-                      placeholder="Pincode"
-                      name="pincode"
-                      onChange={(event) => this.handleChange(event)}
-                    ></Form.Control>
-                  </div>
-                </div>
-              </Form.Group>
-              <Form.Group>
-                <div className="row col-sm-6">
+                </Form.Group>
+                <Form.Group controlId="formGridAddress1">
                   <Form.Label>
                     <b>
-                      Blood Group<span style={{ color: `red` }}></span>
+                      My Address<span style={{ color: `red` }}>*</span>
                     </b>
                   </Form.Label>
                   <Form.Control
-                    as="select"
-                    placeholder="State"
+                    required
+                    placeholder="Line 1"
+                    name="addressLine1"
                     onChange={(event) => this.handleChange(event)}
-                    name="bloodGroup"
-                  >
-                    <option>Select</option>
-                    <option>A+</option>
-                    <option>A-</option>
-                    <option>B+</option>
-                    <option>B-</option>
-                    <option>O+</option>
-                    <option>O-</option>
-                    <option>AB+</option>
-                    <option>AB-</option>
-                  </Form.Control>
-                </div>
-              </Form.Group>
-              <div className="volun">
-                <input
-                  type="checkbox"
-                  checked={this.state.bloodDonorVolunteer}
-                  onChange={this.handleCheckClickBloodVol}
-                  name="bloodDonorVol"
-                /> {' '}
+                  />
+                  <Form.Label></Form.Label>
+                  <Form.Control
+                    placeholder="Line 2"
+                    name="addressLine2"
+                    onChange={(event) => this.handleChange(event)}
+                  />
+                </Form.Group>
+                <Form.Group>
+                  <div className="regrow">
+                    <div className="smtag">
+                      <Form.Label>
+                        <b>
+                          State <span style={{ color: `red` }}>*</span>
+                        </b>
+                      </Form.Label>
+                      <Form.Control
+                        as="input"
+                        placeholder="State"
+                        name="state"
+                        onChange={(event) => this.handleChange(event)}
+                      ></Form.Control>
+                    </div>
+                    <div className="smtag">
+                      <Form.Label>
+                        <b>
+                          Pincode <span style={{ color: `red` }}>*</span>
+                        </b>
+                      </Form.Label>
+                      <Form.Control
+                        as="input"
+                        placeholder="Pincode"
+                        name="pincode"
+                        onChange={(event) => this.handleChange(event)}
+                      ></Form.Control>
+                    </div>
+                  </div>
+                </Form.Group>
+                <Form.Group>
+                  <div className="smtag">
+                    <Form.Label>
+                      <b>Blood Group</b>
+                    </Form.Label>
+                    <Form.Control
+                      as="select"
+                      placeholder="State"
+                      onChange={(event) => this.handleChange(event)}
+                      name="bloodGroup"
+                    >
+                      <option>Select</option>
+                      <option>A+</option>
+                      <option>A-</option>
+                      <option>B+</option>
+                      <option>B-</option>
+                      <option>O+</option>
+                      <option>O-</option>
+                      <option>AB+</option>
+                      <option>AB-</option>
+                    </Form.Control>
+                  </div>
+                </Form.Group>
+                <div className="volun">
+                  <input
+                    type="checkbox"
+                    checked={this.state.bloodDonorVolunteer}
+                    onChange={this.handleCheckClickBloodVol}
+                    name="bloodDonorVol"
+                  />{' '}
                   I am willing to be a Voluntary Blood Donor and I may be
                   approached for the need of blood any patient in emergency
-              </div>
-
-              <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Label>
-                  <b>
-                    I studied<span style={{ color: `red` }}>*</span>
-                  </b>
-                </Form.Label>
-                <Form.Control
-                  as="input"
-                  rows="3"
-                  required
-                  name="studied"
-                  onChange={(event) => this.handleChange(event)}
-                />
-              </Form.Group>
-              <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Control
-                  as="input"
-                  placeholder="additional qualications,if any"
-                />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>
-                  <b>I am now studying</b>
-                </Form.Label>
-                <Form.Control
-                  as="input"
-                  required
-                  name="studying"
-                  onChange={(event) => this.handleChange(event)}
-                />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>
-                  <b>I am now working as</b>
-                </Form.Label>
-                <Form.Control
-                  as="input"
-                  name="working"
-                  onChange={(event) => this.handleChange(event)}
-                />
-              </Form.Group>
-
-              <Form.Group>
-                <div className="row">
-                  <div className="col-sm-6">
-                    <Form.Label>
-                      <b>
-                        I belong to (category for Vertical Reservation)
-                        <span style={{ color: `red` }}>*</span>
-                      </b>
-                    </Form.Label>
-                    <Form.Control
-                      as="select"
-                      required
-                      onChange={(event) => this.handleChange(event)}
-                      name="verticalReservation"
-                    >
-                      <option>Select</option>
-
-                      <option>General</option>
-                      <option>OBC</option>
-                      <option>MBC</option>
-                      <option>SC</option>
-                      <option>ST</option>
-                      <option>EBC</option>
-                      <option>BCM</option>
-                      <option>BT</option>
-                    </Form.Control>
-                  </div>
-                  <div className="col-sm-6">
-                    <Form.Label>
-                      <b>I am a/an (category for Horizontal Reservation)</b>
-                    </Form.Label>
-                    <Form.Control
-                      as="select"
-                      onChange={(event) => this.handleChange(event)}
-                      name="horizontalReservation"
-                    >
-                      <option>Select</option>
-                      <option>XSM</option>
-                      <option>PH</option>
-                      <option>MSP</option>
-                    </Form.Control>
-                  </div>
                 </div>
-              </Form.Group>
-              {/* <FilesUploadComponent /> */}
-              <Form.Group>
-                <div className="upload">
-                  <Form.File
-                    id="exampleFormControlFile1"
-                    label="Upload your picture"
+
+                <Form.Group controlId="exampleForm.ControlTextarea1">
+                  <Form.Label>
+                    <b>
+                      I studied<span style={{ color: `red` }}>*</span>
+                    </b>
+                  </Form.Label>
+                  <Form.Control
+                    as="input"
+                    rows="3"
                     required
-                    onChange={this.onChangeImage}
+                    name="studied"
+                    onChange={(event) => this.handleChange(event)}
                   />
-                  <img
-                    src={this.state.photoLink}
-                    alt="Applicant photo"
-                    width="130"
-                    height="170"
-                    style={{
-                      marginTop: '20px',
-                    }}
-                  ></img>
+                </Form.Group>
+                <Form.Group controlId="exampleForm.ControlTextarea1">
+                  <Form.Control
+                    as="input"
+                    placeholder="additional qualications,if any"
+                  />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>
+                    <b>I am now studying</b>
+                  </Form.Label>
+                  <Form.Control
+                    as="input"
+                    required
+                    name="studying"
+                    onChange={(event) => this.handleChange(event)}
+                  />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>
+                    <b>I am now working as</b>
+                  </Form.Label>
+                  <Form.Control
+                    as="input"
+                    name="working"
+                    onChange={(event) => this.handleChange(event)}
+                  />
+                </Form.Group>
+
+                <Form.Group>
+                  <div className="regrow">
+                    <div className="smtag">
+                      <Form.Label>
+                        <b>
+                          I belong to (category for Vertical Reservation)
+                          <span style={{ color: `red` }}>*</span>
+                        </b>
+                      </Form.Label>
+                      <Form.Control
+                        as="select"
+                        required
+                        onChange={(event) => this.handleChange(event)}
+                        name="verticalReservation"
+                      >
+                        <option>Select</option>
+
+                        <option>General</option>
+                        <option>OBC</option>
+                        <option>MBC</option>
+                        <option>SC</option>
+                        <option>ST</option>
+                        <option>EBC</option>
+                        <option>BCM</option>
+                        <option>BT</option>
+                      </Form.Control>
+                    </div>
+                    <div className="smtag">
+                      <Form.Label>
+                        <b>I am a/an (category for Horizontal Reservation)</b>
+                      </Form.Label>
+                      <Form.Control
+                        as="select"
+                        onChange={(event) => this.handleChange(event)}
+                        name="horizontalReservation"
+                      >
+                        <option>Select</option>
+                        <option>XSM</option>
+                        <option>PH</option>
+                        <option>MSP</option>
+                      </Form.Control>
+                    </div>
+                  </div>
+                </Form.Group>
+                {/* <FilesUploadComponent /> */}
+                <Form.Group>
+                  <div className="upload">
+                    <b>
+                      Upload image <span style={{ color: `red` }}>*</span>
+                    </b>
+                    <Form.File
+                      id="exampleFormControlFile1"
+                      required
+                      onChange={this.onChangeImage}
+                      style={{
+                        marginTop: `15px`,
+                      }}
+                    />
+                    <img
+                      src={this.state.photoLink}
+                      alt="Applicant photo"
+                      width="130"
+                      height="170"
+                      hidden={() => {
+                        if (this.state.photoLink != '') {
+                          return true;
+                        }
+
+                        return false;
+                      }}
+                    ></img>
+                    <Button
+                      variant="primary"
+                      type="submit"
+                      onClick={this.onImageUpload}
+                      style={{
+                        marginTop: `5px`,
+                      }}
+                    >
+                      upload
+                    </Button>
+                  </div>
+                </Form.Group>
+                <div className="tex">
+                  <div className="form-check-inline">
+                    <label className="form-check-label" for="check1">
+                      <input
+                        type="checkbox"
+                        className="form-check-input"
+                        checked={this.state.agree}
+                        onChange={this.handleCheckClickAgreement}
+                        name="agreement"
+                      />{' '}
+                      I assure that I will put in utmost perseverance,
+                      preparation and performance while looking forward to
+                      intellectual, academic, material and moral support from
+                      the organizers/ faculty of the Coaching Programme I
+                      clearly understand that only upon payment of course fee,
+                      my admission will be confirmed. I clearly understand that
+                      fees once paid will not be refunded under any
+                      circumstances.
+                    </label>
+                  </div>
+                  <h6> </h6>
+                </div>
+                <div className="sub">
                   <Button
                     variant="primary"
                     type="submit"
-                    onClick={this.onImageUpload}
+                    className="btn btn-default"
+                    // onClick={this.saveApplication}
+                    disabled={!this.state.agree}
                   >
-                    upload
+                    View Application
                   </Button>
                 </div>
               </Form.Group>
-              <div className="tex">
-                <div className="form-check-inline">
-                  <label className="form-check-label" for="check1">
-                    <input
-                      type="checkbox"
-                      className="form-check-input"
-                      checked={this.state.agree}
-                      onChange={this.handleCheckClickAgreement}
-                      name="agreement"
-                    />{' '}
-                    I assure that I will put in utmost perseverance, preparation
-                    and performance while looking forward to intellectual,
-                    academic, material and moral support from the organizers/
-                    faculty of the Coaching Programme I clearly understand that
-                    only upon payment of course fee, my admission will be
-                    confirmed. I clearly understand that fees once paid will not
-                    be refunded under any circumstances.
-                  </label>
-                </div>
-                <h6> </h6>
-              </div>
-              <div className="sub">
-                <Button
-                  variant="primary"
-                  type="submit"
-                  className="btn btn-default"
-                  // onClick={this.saveApplication}
-                  disabled={!this.state.agree}
-                >
-                  View Application
-                </Button>
-              </div>
-            </Form.Group>
-          </form>
+            </form>
+          </div>
         </div>
-      </div>
       </div>
     );
   }
