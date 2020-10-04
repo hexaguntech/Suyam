@@ -108,9 +108,9 @@ export default class Header extends React.Component {
           </nav>
           <div className="announcement">
             <marquee style={{ fontWeight: `400` }}>
-              Online Video Coaching Programme for Competitive Exams in
-              Puducherry Government as well as TNPSC, SSC, RRB and such other
-              exams commences on August 15,2020. Register Immediately!
+            Special Online Preparatory Course for Competitive Exams in Puducherry Government as well as TNPSC,
+            SSC, RRB and such other exams through “SUYAM I.A.S.” Mobile App commences on October 15,2020.
+            Register immediately.
             </marquee>
           </div>
         </div>

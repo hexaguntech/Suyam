@@ -1,4 +1,5 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap';
 import './Institute.css';
 
 export default class Institute extends React.Component {
@@ -109,15 +110,51 @@ export default class Institute extends React.Component {
               in serving the humanity. To quote a few —
             </p>
           </div>
-          <div className="content5">
-            <div className="abt2 container mt3">
-              <img src="assets/transplant.png" />
-              <b style={{marginLeft:`20px`}}>
-                Suyamites collectively contributed funds and supported their
-                Co-Suyamites who underwent surgeries like Kidney
-                transplantation, financially and mentally.
-              </b>
-            </div>
+          <div>
+            <Carousel className="container mt3 icarousel">
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="assets/the_institute-35.jpg"
+                  alt="First slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="assets/the_institute-36.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="assets/the_institute-37.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="assets/the_institute-38.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="assets/the_institute-39.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="assets/the_institute-40.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+            </Carousel>
           </div>
           <div className="content6 container mt3">
             <p>

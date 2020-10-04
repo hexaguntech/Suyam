@@ -408,13 +408,16 @@ export default class Home extends React.Component {
               <p>
                 Have A Glance Of This Video To Have A Glimpse Of Online Video
                 Classes In The Suyam App.
-                <br />
+                <br /><br/>
+                Picture Abhi Bakhi Hai… <br/>
+                The Picture Isn’t Over Yet.
+
               </p>
             </div>
             <div>
-              <video width="320" height="240" controls>
-                <source src="Suyam Logo Animation.mp4" type="video/mp4" />
-              </video>
+            <video autoplay width="320" height="240" controls>
+              <source src="assets/Suyam Logo Animation.mp4" type="video/mp4" muted/>
+            </video>
             </div>
           </div>
           <div className="applive">
@@ -510,7 +513,7 @@ export default class Home extends React.Component {
             </h2>
             <div className="v2"></div>
             <div>
-              <img className="hiring" src="assets/hiring.png" />
+              <img className="hiring" src="assets/hiring.jpg" />
             </div>
           </div>
         </div>
