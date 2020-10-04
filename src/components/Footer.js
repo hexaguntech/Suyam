@@ -18,7 +18,7 @@ export default class Footer extends React.Component {
             }}
           >
             <div className="logo">
-              <img src="assets/suyam_header_logo-02.png" />
+              <img src="assets/suyamheaderlogo.jpg" />
             </div>
             <div>
               <ul className="footer-list">
@@ -61,7 +61,7 @@ export default class Footer extends React.Component {
               </p>
               <h4 className="mail">suyamias@gmail.com</h4><br />
               <p style={{ fontWeight: `500` }}> Call us</p>
-              <h4 className="mail"><span style={{color:`#105998`}}>+91-9486204334</span></h4>
+              <h4 className="mail"><span style={{color:`#0a79df`}}>+91-9486204334</span></h4>
             </div>
           </div>
         </div>

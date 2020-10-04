@@ -5,6 +5,9 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div>
+         <div className="proverb">
+          <p style={{textAlign:`center`,padding:`20px`}}>எப்பொருள் யார்யார்வாய்க் கேட்பினும் அப்பொருள் <br/>மெய்ப்பொருள் காண்பது அறிவு.</p>
+        </div>
         <div className="contacth">
           <div className="container mt3">
             <div className="htex">
@@ -102,7 +105,7 @@ export default class Contact extends React.Component {
         <div className="crow2">
           <h1 style={{ fontWeight: `600` }}>LOCATION</h1>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.625763928039!2d79.81510021454555!3d11.931111640081122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53619d4164b797%3A0xc18de5fcd74d2d4e!2sSuyam%20I.A.S.!5e0!3m2!1sen!2sin!4v1601737312712!5m2!1sen!2sin" 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.6254565494983!2d79.80579931478216!3d11.931132991544413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDU1JzUyLjEiTiA3OcKwNDgnMjguOCJF!5e0!3m2!1sen!2sin!4v1601752744830!5m2!1sen!2sin"
         style={{border: `0`, width:`100%`, height:`450px`}} width="600px" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>
         <div className="crow3 container mt3">

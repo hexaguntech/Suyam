@@ -93,6 +93,7 @@
   height: 300px;
   padding: 20px;
   margin-top: 20px;
+  display: flex;
 }
 
 .applive{
