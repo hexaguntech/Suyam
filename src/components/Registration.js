@@ -120,9 +120,9 @@ export default class Registration extends Component {
       <div className="container mt3">
         <div className="header" style={{ marginTop: `30px` }}>
           <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
-          <hr color="black" className="col-sm-11" />
-          <form className="col-sm" onSubmit={this.saveApplication}>
-            <Form.Group controlId="exampleForm.ControlSelect1">
+          <hr color="black" className="" />
+          <form className="" onSubmit={this.saveApplication}>
+            <Form.Group>
               <Form.Label>
                 <b>
                   COURSES<span style={{ color: `red` }}>*</span>
