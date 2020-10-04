@@ -117,7 +117,11 @@ export default class Registration extends Component {
 
   render() {
     return (
-      <div className="container mt3">
+      <div>
+        <div className="proverb">
+          <p style={{textAlign:`center`,padding:`20px`}}>எண்ணித் துணிக கருமம் துணிந்தபின் <br/>எண்ணுவம் என்பது இழுக்கு. .</p>
+        </div>
+        <div className="container mt3">
         <div className="header" style={{ marginTop: `30px` }}>
           <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
           <hr color="black" className="" />
@@ -267,7 +271,7 @@ export default class Registration extends Component {
                 <div className="row col-sm-6">
                   <Form.Label>
                     <b>
-                      Blood Group<span style={{ color: `red` }}>*</span>
+                      Blood Group<span style={{ color: `red` }}></span>
                     </b>
                   </Form.Label>
                   <Form.Control
@@ -294,11 +298,9 @@ export default class Registration extends Component {
                   checked={this.state.bloodDonorVolunteer}
                   onChange={this.handleCheckClickBloodVol}
                   name="bloodDonorVol"
-                />
-                <h5>
+                /> {' '}
                   I am willing to be a Voluntary Blood Donor and I may be
                   approached for the need of blood any patient in emergency
-                </h5>
               </div>
 
               <Form.Group controlId="exampleForm.ControlTextarea1">
@@ -308,7 +310,7 @@ export default class Registration extends Component {
                   </b>
                 </Form.Label>
                 <Form.Control
-                  as="textarea"
+                  as="input"
                   rows="3"
                   required
                   name="studied"
@@ -449,6 +451,7 @@ export default class Registration extends Component {
             </Form.Group>
           </form>
         </div>
+      </div>
       </div>
     );
   }
