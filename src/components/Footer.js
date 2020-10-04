@@ -18,7 +18,7 @@ export default class Footer extends React.Component {
             }}
           >
             <div className="logo">
-              <img src="assets/suyam_header_logo-02.png" />
+              <img src="assets/suyamheaderlogo.jpg" />
             </div>
             <div>
               <ul className="footer-list">

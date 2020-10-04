@@ -5,6 +5,9 @@ export default class Glory extends React.Component {
   render() {
     return (
       <div>
+        <div className="proverb">
+          <p style={{textAlign:`center`,padding:`20px`}}>ஆக்கம் அதர்வினாய்ச் செல்லும் அசைவுஇலா <br/>ஊக்கம் உடையான் உழை.</p>
+        </div>
         <div class="row" style={{display:`flex`,justifyContent: `space-around`, alignItems:'center',paddingLeft:`150px`,marginBottom:`30px`}}>
           <div class="column">
             <div class="card">

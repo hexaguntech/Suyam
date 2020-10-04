@@ -4,6 +4,9 @@ import './Payment.css';
 export default class Payment extends React.Component {
   render() {
     return <div style={{marginBottom:`200px`}}>
+      <div className="proverb">
+          <p style={{textAlign:`center`,padding:`20px`}}>கேடுஇல் விழுச்செல்வம் கல்வி ஒருவற்கு <br/>மாடுஅல்ல மற்ற யவை. 	</p>
+        </div>
       <div className="paymenth">
           <div className="container mt3">
             <div className="htex">

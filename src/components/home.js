@@ -9,6 +9,10 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
+        <div className="proverb">
+          <p style={{textAlign:`center`,padding:`20px`}}>எண்ணென்ப ஏனை எழுத்தென்ப இவ்விரண்டும்;<br/>
+          கண்ணென்ப வாழும் உயிர்க்கு.</p>
+        </div>
         <div className="home">
           <div className="welcome">
             <div className="container mt3 welcome">
@@ -162,7 +166,7 @@ export default class Home extends React.Component {
                       width: `100px`,
                       objectFit: `contain`,
                     }}
-                    src="assets/redkepilogo.jpg"
+                    src="assets/redkepilogo.png"
                     alt="redkepi-logo"
                   />
                 </div>
@@ -399,6 +403,11 @@ export default class Home extends React.Component {
                 <br />
               </p>
             </div>
+            <div>
+            <video width="320" height="240" controls>
+              <source src="Suyam Logo Animation.mp4" type="video/mp4" />
+            </video>
+            </div>
           </div>
           <div className="applive">
             <div
@@ -412,52 +421,58 @@ export default class Home extends React.Component {
               <div>
                 <img src="assets/mobmockup.png" alt="mobmockup" />
               </div>
-              <div
-                style={{
-                  display: `flex`,
-                  flexDirection: `column`,
-                  alignItems: `center`,
-                  justifyContent: `space-between`,
-                  marginTop: `30px`,
-                  marginBottom: `30px`,
-                }}
-              >
-                <h1 style={{ fontWeight: `700`, color: `white` }}>
-                  OUR APP IS LIVE!
-                </h1>
-                <div style={{ display: `flex`, flexDirection: `column` }}>
-                  <img
-                    src="assets/appsuyamlogo.png"
-                    alt="appsuyamlogo"
-                    style={{ height: `100px`, width: `100px` }}
-                  />
-                  <p style={{ color: `white`, fontWeight: `700` }}>
-                    SUYAM I.A.S
-                  </p>
-                </div>
-                <a href="https://play.google.com/store/apps/details?id=in.testpress.suyamias">
-                  <img
-                    src="assets/playstore.png"
-                    alt="playstore-button"
-                    style={{ width: `200px`, marginTop: `20px` }}
-                  />
-                </a>
-              </div>
               <div>
-                <Link to="/AppLive">
-                  <Button
-                    className="btn btn-default"
-                    type="link"
-                    style={{
-                      fontWeight: `700`,
-                      color: `#0a79df`,
-                      backgroundColor: `white`,
-                      marginBottom: `-180px`,
-                    }}
+                <div
+                  style={{
+                    display: `flex`,
+                    flexDirection: `column`,
+                    alignItems: `center`,
+                    justifyContent: `space-between`,
+                    marginTop: `30px`,
+                    marginBottom: `30px`,
+                  }}
                   >
-                    MORE DETAILS
-                  </Button>
-                </Link>
+                  <h1 style={{ fontWeight: `700`, color: `white`, marginBottom:`60px` }}>
+                    OUR APP IS LIVE!
+                  </h1>
+                  <div style={{display:`flex`, alignItems: `center`, justifyContent:`space-between`}}>
+                    <div>
+                      <div style={{ display: `flex`, flexDirection: `column` }}>
+                        <img
+                          src="assets/appsuyamlogo.png"
+                          alt="appsuyamlogo"
+                          style={{ height: `100px`, width: `100px` }}
+                        />
+                        <p style={{ color: `white`, fontWeight: `700` }}>
+                          SUYAM I.A.S
+                        </p>
+                      </div>
+                      <a href="https://play.google.com/store/apps/details?id=in.testpress.suyamias">
+                        <img
+                          src="assets/playstore.png"
+                          alt="playstore-button"
+                          style={{ width: `200px`, marginTop: `20px` }}
+                        />
+                      </a>
+                    </div>
+                    <div>
+                      <Link to="/AppLive">
+                        <Button
+                          className="btn btn-default"
+                          type="link"
+                          style={{
+                            fontWeight: `700`,
+                            color: `#0a79df`,
+                            backgroundColor: `white`,
+                            marginTop: `-30px`
+                          }}
+                        >
+                          MORE DETAILS
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ export default class Header extends React.Component {
       <div className="jumbotron">
         <div>
           <div className="logo">
-            <img src="assets/suyam_header_logo-02.png" />
+            <img src="assets/suyamheaderlogo.jpg" />
           </div>
 
           <nav
@@ -113,7 +113,6 @@ export default class Header extends React.Component {
               exams commences on August 15,2020. Register Immediately!
             </marquee>
           </div>
-          <div className="proverb"></div>
         </div>
       </div>
     );
