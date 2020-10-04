@@ -10,8 +10,11 @@ export default class Home extends React.Component {
     return (
       <div>
         <div className="proverb">
-          <p style={{textAlign:`center`,padding:`20px`}}>எண்ணென்ப ஏனை எழுத்தென்ப இவ்விரண்டும்;<br/>
-          கண்ணென்ப வாழும் உயிர்க்கு.</p>
+          <p style={{ textAlign: `center`, padding: `20px` }}>
+            எண்ணென்ப ஏனை எழுத்தென்ப இவ்விரண்டும்;
+            <br />
+            கண்ணென்ப வாழும் உயிர்க்கு.
+          </p>
         </div>
         <div className="home">
           <div className="welcome">
@@ -59,7 +62,8 @@ export default class Home extends React.Component {
               <div className="mp">
                 <p style={{ fontWeight: `500`, color: `#8D8D8D` }}>
                   GENERAL PREPARATORY COURSE
-                </p><br/>
+                </p>
+                <br />
                 <h3 className="line">
                   <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
                     MISSION PERSEVERANCE 2020
@@ -132,7 +136,7 @@ export default class Home extends React.Component {
                     <Button
                       className="btn btn-default"
                       type="link"
-                      style={{ fontWeight: `700`}}
+                      style={{ fontWeight: `700` }}
                     >
                       MORE DETAILS
                     </Button>
@@ -215,13 +219,17 @@ export default class Home extends React.Component {
                   Both in தமிழ் and English
                 </h5>
                 <div
-                  style={{ display: `flex`, justifyContent: `space-between`,marginTop:`20px` }}
+                  style={{
+                    display: `flex`,
+                    justifyContent: `space-between`,
+                    marginTop: `20px`,
+                  }}
                 >
                   <Link to="/OperationRedKEPI2020">
                     <Button
                       className="btn btn-default"
                       type="link"
-                      style={{ fontWeight: `700`}}
+                      style={{ fontWeight: `700` }}
                     >
                       MORE DETAILS
                     </Button>
@@ -434,11 +442,23 @@ export default class Home extends React.Component {
                     marginTop: `30px`,
                     marginBottom: `30px`,
                   }}
+                >
+                  <h1
+                    style={{
+                      fontWeight: `700`,
+                      color: `white`,
+                      marginBottom: `60px`,
+                    }}
                   >
-                  <h1 style={{ fontWeight: `700`, color: `white`, marginBottom:`60px` }}>
                     OUR APP IS LIVE!
                   </h1>
-                  <div style={{display:`flex`, alignItems: `center`, justifyContent:`space-between`}}>
+                  <div
+                    style={{
+                      display: `flex`,
+                      alignItems: `center`,
+                      justifyContent: `space-between`,
+                    }}
+                  >
                     <div>
                       <div style={{ display: `flex`, flexDirection: `column` }}>
                         <img
@@ -467,7 +487,7 @@ export default class Home extends React.Component {
                             fontWeight: `700`,
                             color: `#0a79df`,
                             backgroundColor: `white`,
-                            marginTop: `-30px`
+                            marginTop: `-30px`,
                           }}
                         >
                           MORE DETAILS
@@ -534,13 +554,19 @@ export default class Home extends React.Component {
             </Carousel.Item>
           </Carousel>
         </div>
-        <div>
-            <h2 className="jteam" style={{ fontWeight: `700` }}>
-              ACHEIVEMENTS
-            </h2>
-            <div className="v2" style={{marginLeft:`559px`}}></div>
-          </div>
-        <div className="gservices" style={{marginTop: `30px`}}>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <h2 className="jteam" style={{ fontWeight: `700` }}>
+            ACHEIVEMENTS
+          </h2>
+          <div className="v2" style={{}}></div>
+        </div>
+        <div className="gservices" style={{ marginTop: `30px` }}>
           <div
             className="container mt3"
             style={{
