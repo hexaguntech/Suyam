@@ -1,10 +1,11 @@
-
 .footer {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   background-color: white;
   border-top: #707070 solid 0.1px;
+  border-bottom: solid 1px black;
+  margin-top: 50px;
 }
 
 .footer-list {
@@ -17,9 +18,8 @@
   padding-top: 20px;
 }
 
-
 .mail {
   padding-top: 15px;
   font-weight: 700;
-  color: #0A79DF;
+  color: #0a79df;
 }
