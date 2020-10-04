@@ -400,7 +400,10 @@ export default class Home extends React.Component {
               <p>
                 Have A Glance Of This Video To Have A Glimpse Of Online Video
                 Classes In The Suyam App.
-                <br />
+                <br /><br/>
+                Picture Abhi Bakhi Hai… <br/>
+                The Picture Isn’t Over Yet.
+
               </p>
             </div>
             <div>
