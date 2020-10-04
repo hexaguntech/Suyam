@@ -401,23 +401,35 @@ export default class Home extends React.Component {
             </div>
           </div>
           <div className="onvideo">
-            <div className="container mt3">
-              <h2 style={{ fontWeight: `600` }}>
-                ONLINE VIDEO CLASSES: A TRAILER
-              </h2>
-              <p>
-                Have A Glance Of This Video To Have A Glimpse Of Online Video
-                Classes In The Suyam App.
-                <br /><br/>
-                Picture Abhi Bakhi Hai… <br/>
-                The Picture Isn’t Over Yet.
+            <div
+              className="container mt3"
+              style={{
+                display: `flex`,
+                flexDirection: `row`,
+                justifyContent: `space-between`,
+              }}
+            >
+              <div>
+                <h2 style={{ fontWeight: `600` }}>
+                  ONLINE VIDEO CLASSES: A TRAILER
+                </h2>
+                <p>
+                  Have A Glance Of This Video To Have A Glimpse Of Online Video
+                  Classes In The Suyam App.
+                  <br />
+                  <br />
+                  Picture Abhi Bakhi Hai… <br />
+                  The Picture Isn’t Over Yet.
+                </p>
+              </div>
 
-              </p>
-            </div>
-            <div>
-            <video autoplay width="320" height="240" controls>
-              <source src="assets/Suyam Logo Animation.mp4" type="video/mp4" muted/>
-            </video>
+              <video autoplay width="320" height="240" controls>
+                <source
+                  src="assets/Suyam Logo Animation.mp4"
+                  type="video/mp4"
+                  muted
+                />
+              </video>
             </div>
           </div>
           <div className="applive">

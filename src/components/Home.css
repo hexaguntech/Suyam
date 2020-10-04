@@ -57,7 +57,7 @@
   margin-bottom: 60px;
 }
 
-.quizbanner{
+.quizbanner {
   margin-top: 40px;
   padding-bottom: 45px;
 }
@@ -96,8 +96,8 @@
   display: flex;
 }
 
-.applive{
-  background-color: #2C6FBE;
+.applive {
+  background-color: #2c6fbe;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -183,13 +183,13 @@
   background-color: #ebebeb;
 }
 
-.d-block{
+.d-block {
   object-fit: contain;
   height: 300px;
   width: 500px;
 }
 
-.hcarousel{
+.hcarousel {
   margin-top: 60px;
   margin-bottom: 130px;
 }
