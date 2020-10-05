@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import NavBar from './NavBar';
 
 export default class Header extends React.Component {
   render() {
@@ -10,6 +11,8 @@ export default class Header extends React.Component {
           <div className="logo">
             <img src="assets/suyamheaderlogo.jpg" />
           </div>
+
+          {/* <NavBar /> */}
 
           <nav
             className="navbar navbar-expand-sm navbar-inverse bg-inverse m-auto"
@@ -108,9 +111,10 @@ export default class Header extends React.Component {
           </nav>
           <div className="announcement">
             <marquee style={{ fontWeight: `400` }}>
-            Special Online Preparatory Course for Competitive Exams in Puducherry Government as well as TNPSC,
-            SSC, RRB and such other exams through “SUYAM I.A.S.” Mobile App commences on October 15,2020.
-            Register immediately.
+              Special Online Preparatory Course for Competitive Exams in
+              Puducherry Government as well as TNPSC, SSC, RRB and such other
+              exams through “SUYAM I.A.S.” Mobile App commences on October
+              15,2020. Register immediately.
             </marquee>
           </div>
         </div>

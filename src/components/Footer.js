@@ -66,13 +66,7 @@ export default class Footer extends React.Component {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            display: `flex`,
-            alignItems: `center`,
-            justifyContent: `space-around`,
-          }}
-        >
+        <div className="socialfot">
           <p>
             Web Design by{' '}
             <a href="https://instagram.com/havi.design?igshid=1rfkbcjw6jjkk">

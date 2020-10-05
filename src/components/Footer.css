@@ -15,7 +15,7 @@
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .scl {
     display: flex;
     /* align-content: space-around;
@@ -40,4 +40,19 @@
   padding-top: 15px;
   font-weight: 700;
   color: #0a79df;
+}
+
+.socialfot {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+  .socialfot {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
 }
