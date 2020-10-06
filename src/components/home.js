@@ -10,8 +10,8 @@ export default class Home extends React.Component {
     return (
       <div>
         <div className="proverb">
-          <p style={{ textAlign: `center`, padding: `20px` }}>
-            எண்ணென்ப ஏனை எழுத்தென்ப இவ்விரண்டும்;
+          <p style={{ textAlign: `center` }}>
+            எண்ணென்ப ஏனை எழுத்தென்ப இவ்விரண்டும்
             <br />
             கண்ணென்ப வாழும் உயிர்க்கு.
           </p>
@@ -51,7 +51,7 @@ export default class Home extends React.Component {
             </h2>
             <div className="v2"></div>
             <div className="courses">
-              <div className="mp">
+              <div className="rk">
                 <p style={{ fontWeight: `500`, color: `#8D8D8D` }}>
                   GENERAL PREPARATORY COURSE
                 </p>
@@ -413,13 +413,13 @@ export default class Home extends React.Component {
                   }}
                 />
               </div>
-              <div>
+              <div className="appcont">
                 <div
                   style={{
                     display: `flex`,
                     flexDirection: `column`,
                     alignItems: `center`,
-                    justifyContent: `space-between`,
+                    justifyContent: `center`,
                     marginTop: `30px`,
                     marginBottom: `30px`,
                   }}
@@ -547,24 +547,25 @@ export default class Home extends React.Component {
           </h2>
           <div className="v2" style={{}}></div>
         </div>
-        <div className="gservices" style={{ marginTop: `30px` }}>
+        <div className="gservices" style={{ marginTop: `20px` }}>
           <div
             className="container mt3"
             style={{
-              marginTop: `30px`,
               display: 'flex',
               flexDirection: 'row',
-              justifyContent: 'space-evenly',
+              alignItems: 'center',
+              justifyContent: 'space-around',
+              paddingTop: `10px`,
+              paddingBottom: `10px`,
             }}
           >
             <div
               className="left"
               style={{
-                marginTop: `30px`,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                marginLeft: `30px`,
+                justifyItems: 'center',
               }}
             >
               <h2 className="sixhundred">2</h2>
@@ -574,7 +575,6 @@ export default class Home extends React.Component {
             <div
               className="right"
               style={{
-                marginTop: `30px`,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',

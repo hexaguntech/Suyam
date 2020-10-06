@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './Registration.css';
 import ApplicantDataService from '../services/ApplicantDataService';
 import axios from 'axios';
-import FilesUploadComponent from './FileUploadComponent';
-
 import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 export default class Registration extends Component {
@@ -33,6 +31,7 @@ export default class Registration extends Component {
       bloodDonorVolunteer: false,
       studied: '',
       studying: '',
+      additionalQualification: '',
       working: '',
       verticalReservation: '',
       horizontalReservation: '',
@@ -45,7 +44,8 @@ export default class Registration extends Component {
     };
   }
 
-  saveApplication() {
+  saveApplication(e) {
+    e.preventDefault();
     // if (
     //   this.state.course == 'Select a option' ||
     //   this.state.gender == 'Select a option' ||
@@ -54,13 +54,13 @@ export default class Registration extends Component {
     // ) {
     //   alert('choose the dropdowns');
     // } else {
-    if (this.state.photoLink == '') {
-      alert('select a image and click upload');
-    } else {
+    if (this.state.photoLink != '') {
       this.props.history.push({
         pathname: '/SubmitApplication',
         state: this.state,
       });
+    } else {
+      alert('select a image and click upload');
     }
   }
 
@@ -78,7 +78,7 @@ export default class Registration extends Component {
         },
       };
       axios
-        .post('http://localhost:8080/api/applicant/upload', formData, {})
+        .post('http://192.168.1.6:8080/api/applicant/upload', formData, {})
         .then((response) => {
           alert('The file is successfully uploaded');
           this.setState({
@@ -87,10 +87,12 @@ export default class Registration extends Component {
           console.log(response);
           console.log(this.state.photoPath);
           this.setState({
-            photoLink: 'http://localhost:8080/' + this.state.photoPath,
+            photoLink: 'http://192.168.1.6:8080/' + this.state.photoPath,
           });
         })
-        .catch((error) => {});
+        .catch((error) => {
+          alert(error);
+        });
     } else {
       alert('upload a image');
     }
@@ -156,6 +158,7 @@ export default class Registration extends Component {
                     as="input"
                     placeholder="Enter your name"
                     required
+                    value={this.state.name}
                     type="text"
                     className="form-control"
                     value={this.state.name}
@@ -170,10 +173,12 @@ export default class Registration extends Component {
                         Date of Birth<span style={{ color: `red` }}>*</span>
                       </b>
                     </Form.Label>
+
                     <Form.Control
                       as="input"
                       required
                       name="dob"
+                      placeholder="dd-mm-yyyy"
                       onChange={(event) => this.handleChange(event)}
                     ></Form.Control>
                   </div>

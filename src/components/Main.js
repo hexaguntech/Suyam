@@ -18,7 +18,11 @@ import AppLive from './AppLive';
 export default class Main extends React.Component {
   render() {
     return (
-      <div>
+      <div
+        style={{
+          overflowX: 'hidden',
+        }}
+      >
         <Header />
         <div>
           <Switch>

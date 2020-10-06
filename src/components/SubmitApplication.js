@@ -65,6 +65,8 @@ export default class SubmitApplication extends React.Component {
       bloodDonorVolunteer: this.props.location.state.bloodDonorVolunteer,
       studied: this.props.location.state.studied,
       studying: this.props.location.state.studying,
+      additionalQualification: this.props.location.state
+        .additionalQualification,
       working: this.props.location.state.working,
       belongTo: this.props.location.state.belongTo,
       verticalReservation: this.props.location.state.verticalReservation,
@@ -90,6 +92,7 @@ export default class SubmitApplication extends React.Component {
         // });
         // this.printDocument();
         // this.pdfToHTML();
+        alert('Successfully registered');
 
         this.props.history.replace('/home');
       })
@@ -165,7 +168,11 @@ export default class SubmitApplication extends React.Component {
               </tr>
               <tr>
                 <td>Volunteering Blood Donor</td>
-                <td>{this.props.location.state.bloodDonorVolunteer}</td>
+                {this.props.location.state.bloodDonorVolunteer == true ? (
+                  <td>Yes</td>
+                ) : (
+                  <td>No</td>
+                )}
               </tr>
               <tr>
                 <td>I studied</td>

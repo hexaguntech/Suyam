@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import NavBar from './NavBar';
+import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
 
 export default class Header extends React.Component {
   render() {
@@ -12,9 +13,32 @@ export default class Header extends React.Component {
             <img src="assets/suyamheaderlogo.jpg" />
           </div>
 
+          <Navbar bg="#105998" expand="lg" collapseOnSelect="true">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#link">Link</Nav.Link>
+                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Another action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Something
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+
           {/* <NavBar /> */}
 
-          <nav
+          {/* <nav
             className="navbar navbar-expand-sm navbar-inverse bg-inverse m-auto"
             // style={{ display: 'flex', alignItems: 'center' }}
           >
@@ -108,7 +132,7 @@ export default class Header extends React.Component {
                 </Link>
               </li>
             </div>
-          </nav>
+          </nav> */}
           <div className="announcement">
             <marquee style={{ fontWeight: `400` }}>
               Special Online Preparatory Course for Competitive Exams in

@@ -15,21 +15,32 @@
   justify-content: space-between;
 }
 
+.footer-list {
+  list-style-type: none;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 750px) {
   .scl {
     display: flex;
     /* align-content: space-around;
     flex-flow: row; */
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
   }
-}
 
-.footer-list {
-  list-style-type: none;
-  font-weight: 700;
-  text-decoration: none;
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    padding: 0px;
+  }
 }
 
 .footer-list > li {
