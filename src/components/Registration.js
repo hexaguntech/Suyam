@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import './Registration.css';
 import ApplicantDataService from '../services/ApplicantDataService';
 import axios from 'axios';
+
 import FilesUploadComponent from './FileUploadComponent';
 
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 export default class Registration extends Component {
   constructor(props) {
@@ -172,6 +173,7 @@ export default class Registration extends Component {
                     </Form.Label>
                     <Form.Control
                       as="input"
+                      type="date"
                       required
                       name="dob"
                       onChange={(event) => this.handleChange(event)}
@@ -188,7 +190,7 @@ export default class Registration extends Component {
                       as="select"
                       required
                       name="gender"
-                      onChange={this.handleChange}
+                      onChange={this.handleChange}          
                     >
                       <option>Select</option>
                       <option>Male</option>
@@ -342,7 +344,8 @@ export default class Registration extends Component {
                 </Form.Group>
                 <Form.Group>
                   <Form.Label>
-                    <b>I am now working as</b>
+                 <span Glyphicon glyph="star"> </span>
+                    <b>I am now working as </b>
                   </Form.Label>
                   <Form.Control
                     as="input"
