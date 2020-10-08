@@ -19,11 +19,13 @@ exports.create = (req, res) => {
     bloodDonorVolunteer: req.body.bloodDonorVolunteer,
     studied: req.body.studied,
     studying: req.body.studying,
+    additionalQualification: req.body.additionalQualification,
     working: req.body.working,
     verticalReservation: req.body.verticalReservation,
     horizontalReservation: req.body.horizontalReservation,
     photo: req.body.photoPath,
     dateApplied: req.body.dateApplied,
+    paymentStatus: false,
   });
   applicant
     .save()

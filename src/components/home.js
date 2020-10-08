@@ -10,8 +10,8 @@ export default class Home extends React.Component {
     return (
       <div>
         <div className="proverb">
-          <p style={{ textAlign: `center`, padding: `20px` }}>
-            எண்ணென்ப ஏனை எழுத்தென்ப இவ்விரண்டும்;
+          <p style={{ textAlign: `center` }}>
+            எண்ணென்ப ஏனை எழுத்தென்ப இவ்விரண்டும்
             <br />
             கண்ணென்ப வாழும் உயிர்க்கு.
           </p>
@@ -40,17 +40,10 @@ export default class Home extends React.Component {
               </div>
             </div>
           </div>
-          <div
-            style={{
-              marginTop: `30px`,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}
-            className="container mt3"
-          >
+          <div className="courses-offered container ">
             <h2
               style={{
+                marginTop: `20px`,
                 textAlign: `center`,
                 fontWeight: `700`,
               }}
@@ -59,7 +52,7 @@ export default class Home extends React.Component {
             </h2>
             <div className="v2"></div>
             <div className="courses">
-              <div className="mp">
+              <div className="rk">
                 <p style={{ fontWeight: `500`, color: `#8D8D8D` }}>
                   GENERAL PREPARATORY COURSE
                 </p>
@@ -249,26 +242,11 @@ export default class Home extends React.Component {
             </div>
           </div>
 
-          <div
-            className="curaffairs"
-            style={{
-              marginTop: `40px`,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}
-          >
+          <div className=" courses-offered container">
             <h2 className="cahead">CURRENT AFFAIRS</h2>
             <div className="v2"></div>
-            <div
-              className="courses container mt3"
-              style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'center',
-              }}
-            >
-              <div className="mp">
+            <div className="courses">
+              <div className="rk">
                 <p style={{ color: `#8D8D8D` }}>
                   NEWS BITS OF NATIONAL AND INTERNATIONAL IMPORTANCE
                 </p>
@@ -277,57 +255,57 @@ export default class Home extends React.Component {
                     CURRENT AFFAIRS
                   </span>
                 </h3>
+
+                <div className="quizbanner">
+                  <img
+                    className="dog"
+                    src="assets/dog.png"
+                    alt="redkepi-logo"
+                  />
+                </div>
                 <div>
-                  <div className="row3">
-                    <img
-                      className="dog"
-                      src="assets/dog.png"
-                      alt="redkepi-logo"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="line" style={{ paddingBottom: `5px` }}>
-                      <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                        Weekly Update
-                      </span>
-                    </h4>
-                    <div style={{ display: `flex`, marginTop: `20px` }}>
-                      <div>
-                        <h5>
-                          <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                            28th Sep
-                          </span>
-                        </h5>
-                        <p>
-                          <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                            2020
-                          </span>
-                        </p>
-                      </div>
-                      <div
-                        style={{
-                          paddingLeft: '20px',
-                          paddingRight: '20px',
-                          fontWeight: `700`,
-                        }}
-                      >
-                        <p>to</p>
-                      </div>
-                      <div>
-                        <h5>
-                          <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                            4th Oct
-                          </span>
-                        </h5>
-                        <p>
-                          <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                            2020
-                          </span>
-                        </p>
-                      </div>
+                  <h4 className="line" style={{ paddingBottom: `5px` }}>
+                    <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                      Weekly Update
+                    </span>
+                  </h4>
+                  <div style={{ display: `flex`, marginTop: `20px` }}>
+                    <div>
+                      <h5>
+                        <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                          28th Sep
+                        </span>
+                      </h5>
+                      <p>
+                        <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                          2020
+                        </span>
+                      </p>
+                    </div>
+                    <div
+                      style={{
+                        paddingLeft: '20px',
+                        paddingRight: '20px',
+                        fontWeight: `700`,
+                      }}
+                    >
+                      <p>to</p>
+                    </div>
+                    <div>
+                      <h5>
+                        <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                          4th Oct
+                        </span>
+                      </h5>
+                      <p>
+                        <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
+                          2020
+                        </span>
+                      </p>
                     </div>
                   </div>
                 </div>
+
                 <Link to="/">
                   <Button className="btn btn-default" type="link">
                     DOWNLOAD PDF
@@ -345,7 +323,7 @@ export default class Home extends React.Component {
                 </h3>
                 <div className="quizbanner">
                   <img
-                    style={{ height: `250px`, width: `450px` }}
+                    className="dog"
                     src="assets/quiztime.png"
                     alt="quiztime-pic"
                   />
@@ -401,14 +379,7 @@ export default class Home extends React.Component {
             </div>
           </div>
           <div className="onvideo">
-            <div
-              className="container mt3"
-              style={{
-                display: `flex`,
-                flexDirection: `row`,
-                justifyContent: `space-between`,
-              }}
-            >
+            <div className="onvideo-in container ">
               <div>
                 <h2 style={{ fontWeight: `600` }}>
                   ONLINE VIDEO CLASSES: A TRAILER
@@ -423,7 +394,7 @@ export default class Home extends React.Component {
                 </p>
               </div>
 
-              <video autoplay width="320" height="240" controls>
+              <video autoplay controls>
                 <source
                   src="assets/Suyam Logo Animation.mp4"
                   type="video/mp4"
@@ -433,24 +404,23 @@ export default class Home extends React.Component {
             </div>
           </div>
           <div className="applive">
-            <div
-              className="container mt3"
-              style={{
-                display: `flex`,
-                justifyContent: `space-between`,
-                alignItems: `center`,
-              }}
-            >
-              <div>
-                <img src="assets/mobmockup.png" alt="mobmockup" />
+            <div className="applive-in">
+              <div className="appimage">
+                <img
+                  src="assets/mobmockup.png"
+                  alt="mobmockup"
+                  style={{
+                    width: `100%`,
+                  }}
+                />
               </div>
-              <div>
+              <div className="appcont">
                 <div
                   style={{
                     display: `flex`,
                     flexDirection: `column`,
                     alignItems: `center`,
-                    justifyContent: `space-between`,
+                    justifyContent: `center`,
                     marginTop: `30px`,
                     marginBottom: `30px`,
                   }}
@@ -578,24 +548,25 @@ export default class Home extends React.Component {
           </h2>
           <div className="v2" style={{}}></div>
         </div>
-        <div className="gservices" style={{ marginTop: `30px` }}>
+        <div className="gservices" style={{ marginTop: `20px` }}>
           <div
             className="container mt3"
             style={{
-              marginTop: `30px`,
               display: 'flex',
               flexDirection: 'row',
-              justifyContent: 'space-evenly',
+              alignItems: 'center',
+              justifyContent: 'space-around',
+              paddingTop: `10px`,
+              paddingBottom: `10px`,
             }}
           >
             <div
               className="left"
               style={{
-                marginTop: `30px`,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                marginLeft: `30px`,
+                justifyItems: 'center',
               }}
             >
               <h2 className="sixhundred">2</h2>
@@ -605,7 +576,6 @@ export default class Home extends React.Component {
             <div
               className="right"
               style={{
-                marginTop: `30px`,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',

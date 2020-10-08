@@ -6,11 +6,13 @@
 .tagline {
   height: 100%;
   width: 100%;
-  padding: 50px;
 }
 .welcome {
   display: flex;
-  background-color: #f5f5f5;
+  background-color: hsl(0, 0%, 96%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .htext {
   display: flex;
@@ -22,28 +24,54 @@
   padding-right: 40px;
 }
 .himage {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 800px) {
+  .welcome {
+    display: flex;
+    background-color: #f5f5f5;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .himage {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 70%;
+  }
+}
+
+.courses-offered {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .courses {
   display: flex;
   margin: 30px;
+  justify-content: space-around;
   background-color: white;
 }
 
 .mp {
   background-color: #f5f5f5;
-  width: 50%;
+  width: 45%;
   padding: 20px;
-  margin: 10px;
+  margin: 20px;
 }
 .rk {
   background-color: #f5f5f5;
-  width: 50%;
+  width: 45%;
   padding: 20px;
-  margin: 10px;
+  margin: 20px;
 }
 .line {
   padding-bottom: 1px;
@@ -51,6 +79,41 @@
   border-bottom-width: 3px;
   width: fit-content;
 }
+
+@media only screen and (max-width: 880px) {
+  .courses-offered {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .courses {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .mp {
+    background-color: #f5f5f5;
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .rk {
+    background-color: #f5f5f5;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+}
+
 .row1 {
   display: flex;
   margin-top: 60px;
@@ -72,8 +135,7 @@
   margin-top: 40px;
 }
 .dog {
-  height: 300px;
-  width: 450px;
+  width: 95%;
   padding-bottom: 30px;
 }
 .col1 {
@@ -90,18 +152,43 @@
 
 .onvideo {
   background-color: #f5f5f5;
-  height: 300px;
   padding: 20px;
   margin-top: 20px;
   display: flex;
 }
 
-.applive {
-  background-color: #2c6fbe;
+.onvideo-in {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 500px;
+}
+
+video {
+  width: 320px;
+  height: 240px;
+}
+
+@media only screen and (max-width: 770px) {
+  /* .onvideo {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  .onvideo-in {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  video {
+    width: 80%;
+  }
 }
 
 .team {
@@ -123,14 +210,9 @@
   font-weight: 700;
 }
 .left {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: 250px;
-  margin-right: 40px;
 }
 
 .right {
-  margin-left: 50px;
 }
 .sixhundred {
   color: white;
@@ -179,7 +261,12 @@
 }
 
 .proverb {
-  height: 85px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  justify-content: center;
   background-color: #ebebeb;
 }
 
@@ -192,4 +279,48 @@
 .hcarousel {
   margin-top: 60px;
   margin-bottom: 130px;
+}
+
+.applive {
+  background-color: #2c6fbe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.applive-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appimage {
+  width: 50%;
+}
+
+.appcont {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media only screen and (max-width: 850px) {
+  .applive-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .appcont {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .appimage {
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
 }

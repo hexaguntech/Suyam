@@ -1,0 +1,33 @@
+navbar-toggle-icon {
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #0a79df;
+}
+
+@media only screen and (max-width: 1000px) {
+  .custnav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0a79df;
+    justify-content: center;
+  }
+}
+
+.dropdown-menu {
+  background-color: #0a79df;
+}
+
+.dropdown-item {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #ffffff;
+}
