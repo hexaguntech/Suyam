@@ -78,7 +78,7 @@ export default class Registration extends Component {
         },
       };
       axios
-        .post('http://192.168.1.6:8080/api/applicant/upload', formData, {})
+        .post('http://suyamias.com/api/applicant/upload', formData, {})
         .then((response) => {
           alert('The file is successfully uploaded');
           this.setState({
@@ -87,7 +87,7 @@ export default class Registration extends Component {
           console.log(response);
           console.log(this.state.photoPath);
           this.setState({
-            photoLink: 'http://192.168.1.6:8080/' + this.state.photoPath,
+            photoLink: 'http://suyamias.com/' + this.state.photoPath,
           });
         })
         .catch((error) => {
