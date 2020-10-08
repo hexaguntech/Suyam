@@ -341,7 +341,6 @@ export default class Registration extends Component {
                   </Form.Label>
                   <Form.Control
                     as="input"
-                    required
                     name="studying"
                     onChange={(event) => this.handleChange(event)}
                   />

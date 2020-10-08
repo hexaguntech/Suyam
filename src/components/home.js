@@ -43,6 +43,7 @@ export default class Home extends React.Component {
           <div className="courses-offered container ">
             <h2
               style={{
+                marginTop: `20px`,
                 textAlign: `center`,
                 fontWeight: `700`,
               }}

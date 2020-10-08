@@ -1,66 +1,84 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Nav, Navbar, NavItem } from 'react-bootstrap';
-import './NavBar.css';
+import React, { Component } from 'react';
+import {
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBNavbarToggler,
+  MDBCollapse,
+  MDBFormInline,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem,
+} from 'mdbreact';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-export default class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.classToggle = this.classToggle.bind(this);
-  }
+class NavbarPage extends Component {
+  state = {
+    isOpen: false,
+  };
 
-  classToggle() {
-    const navs = document.querySelectorAll('.Navbar__Items');
-
-    navs.forEach((nav) => nav.classList.toggle('Navbar__ToggleShow'));
-  }
+  toggleCollapse = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+  };
 
   render() {
     return (
-      <div>
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
-        />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div role="navigation">
-            <div class="container">
-              <div class="navbar-header">
-                <button
-                  class="navbar-toggle"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                >
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a href="#" class="navbar-brand">
-                  GeeksforGeeks
-                </a>
-              </div>
-              <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active">
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    {' '}
-                    <a href="#">About</a>{' '}
-                  </li>
-                  <li>
-                    <a href="#">Contact</a>{' '}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
+      <Router>
+        <MDBNavbar color="indigo" dark expand="md">
+          <MDBNavbarBrand>
+            <strong className="white-text">Navbar</strong>
+          </MDBNavbarBrand>
+          <MDBNavbarToggler onClick={this.toggleCollapse} />
+          <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+            <MDBNavbarNav left>
+              <MDBNavItem active>
+                <MDBNavLink to="#!">Home</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="/institute">Institute</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="glory">Glory</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="/register">Register</MDBNavLink>
+              </MDBNavItem>
+
+              <MDBNavItem>
+                <MDBDropdown>
+                  <MDBDropdownToggle nav caret>
+                    <span className="mr-2">Courses</span>
+                  </MDBDropdownToggle>
+                  <MDBDropdownMenu>
+                    <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+                    <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
+                    <MDBDropdownItem href="#!">
+                      Something else here
+                    </MDBDropdownItem>
+                    <MDBDropdownItem href="#!">
+                      Something else here
+                    </MDBDropdownItem>
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="glory">Glory</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="/payment">Payment</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="contactus">Contact us</MDBNavLink>
+              </MDBNavItem>
+            </MDBNavbarNav>
+          </MDBCollapse>
+        </MDBNavbar>
+      </Router>
     );
   }
 }
+
+export default NavbarPage;
