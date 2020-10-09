@@ -140,10 +140,22 @@
 }
 .col1 {
   padding: 20px;
-  border-right: 2px solid #c0c0c0;
+  /*border-right: 2px solid #c0c0c0;*/
 }
 .col2 {
   padding: 20px;
+}
+
+.__home_linee{
+  width: 5px;
+  height: 210px;
+  background-color: #c0c0c0;
+}
+
+.__home_linee2{
+  width: 5px;
+  height: 250px;
+  background-color: #c0c0c0;
 }
 
 .btn-default {

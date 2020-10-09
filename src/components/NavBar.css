@@ -50,6 +50,8 @@
   }
 } */
 
-.navbar-nav {
-  background-color: tomato;
+._bar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
