@@ -14,34 +14,34 @@ export default class Header extends React.Component {
             <img src="assets/suyamheaderlogo.jpg" />
           </div>
 
-          <Navbar expand="lg" collapseOnSelect="true">
+          <Navbar expand="lg" collapseOnSelect="true" >
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav
-                className="mr-auto custnav"
+                className="mr-auto custnav mx-auto"
                 style={{
                   display: 'flex',
-                  justifyContent: 'space-evenly',
+                  justifyContent: 'space-between',
                   alignItems: 'center',
                 }}
               >
                 <Nav.Link href="/Home">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
+                  <span className="text-light" style={{ fontWeight: `700`,marginRight:`50px` }}>
                     Home
                   </span>
                 </Nav.Link>
                 <Nav.Link href="/Institute">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
+                  <span className="text-light" style={{ fontWeight: `700`,paddingLeft:`50px`,paddingRight:`50px`}}>
                     The Institute
                   </span>
                 </Nav.Link>
                 <Nav.Link href="/Glory">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
+                  <span className="text-light" style={{ fontWeight: `700`,paddingLeft:`50px`,paddingRight:`50px` }}>
                     Glory
                   </span>
                 </Nav.Link>
 
-                <NavDropdown title="Courses" id="basic-nav-dropdown">
+                <NavDropdown title="Courses" id="basic-nav-dropdown" style={{paddingLeft:`50px`,paddingRight:`50px`}}>
                   <NavDropdown.Item href="/Missionperseverance2020">
                     Mission Perseverance 2020
                   </NavDropdown.Item>
@@ -50,14 +50,19 @@ export default class Header extends React.Component {
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/Register">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
+                  <span className="text-light" style={{ fontWeight: `700` ,paddingLeft:`50px`,paddingRight:`50px`}}>
                     Register
                   </span>
                 </Nav.Link>
 
                 <Nav.Link href="/Payment">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
+                  <span className="text-light" style={{ fontWeight: `700` ,paddingLeft:`50px`,paddingRight:`50px`}}>
                     Payment
+                  </span>
+                </Nav.Link>
+                <Nav.Link href="/Contactus">
+                  <span className="text-light" style={{ fontWeight: `700` ,paddingLeft:`50px`,paddingRight:`50px`}}>
+                    Contact Us
                   </span>
                 </Nav.Link>
               </Nav>
