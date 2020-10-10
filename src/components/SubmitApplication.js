@@ -9,7 +9,7 @@ export default class SubmitApplication extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      photoLink: 'http://localhost:8080/' + this.props.location.state.photoPath,
+      photoLink: 'http://suyamias.com/' + this.props.location.state.photoPath,
     };
 
     this.saveApplication = this.saveApplication.bind(this);
