@@ -56,8 +56,8 @@ export default class Institute extends React.Component {
             <img />
           </div>
           <div className="content2 container mt3">
-            <div style={{paddingRight:`60px`}}>
-              <p>
+            <div>
+              <p className="balanpara">
                 To be frank, the Institute had achieved only a small proportion of
                 its dream on the Civil Services front in this tiny town, grooming
                 only one aspirant as a{' '}
@@ -69,10 +69,10 @@ export default class Institute extends React.Component {
                 Pass-outs and a very few Interview candidates.
               </p>
             </div>
-            <div>
+            <div style={{ display: `flex`,flexDirection:`column`,alignItems:`center`}}>
               <img style={{height:`300px`,width: `300px`}} src="assets/ips.png" />
               <b>P. Suthandira Balan, IRS.</b>
-              <p style={{color: `#0a79df`}}>Assistant Commissioner of Income Tax, Bengaluru</p>
+              <p style={{color: `#0a79df`,textAlign:`center`}}>Assistant Commissioner of Income Tax, Bengaluru</p>
             </div>
           </div>
           <div className="content3">

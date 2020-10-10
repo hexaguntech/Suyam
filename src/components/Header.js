@@ -60,6 +60,11 @@ export default class Header extends React.Component {
                     Payment
                   </span>
                 </Nav.Link>
+                <Nav.Link href="/Contactus">
+                  <span className="text-light" style={{ fontWeight: `700` ,paddingLeft:`50px`,paddingRight:`50px`}}>
+                    Contact Us
+                  </span>
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
