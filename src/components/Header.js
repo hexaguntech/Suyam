@@ -15,6 +15,7 @@ export default class Header extends React.Component {
           </div>
 
           <Navbar expand="lg" collapseOnSelect="true">
+         
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav
@@ -160,7 +161,7 @@ export default class Header extends React.Component {
                 </Link>
               </li>
             </div>
-          </nav> */}
+            </nav>*/ }
           <div className="announcement">
             <marquee style={{ fontWeight: `400` }}>
               Special Online Preparatory Course for Competitive Exams in

@@ -175,6 +175,7 @@ export default class Registration extends Component {
                     </Form.Label>
 
                     <Form.Control
+                     type="date"
                       as="input"
                       required
                       name="dob"
@@ -467,6 +468,7 @@ export default class Registration extends Component {
                     type="submit"
                     className="btn btn-default"
                     // onClick={this.saveApplication}
+                    
                     disabled={!this.state.agree}
                   >
                     View Application

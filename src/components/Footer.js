@@ -53,11 +53,11 @@ export default class Footer extends React.Component {
                 flexDirection: `column`,
               }}
             >
-              <h2 style={{ fontWeight: `700` }}>Contact Us</h2>
+              <h3 style={{  fontWeight: `700`    }}>Contact Us</h3>
               <p style={{ fontWeight: `500` }}>
-                if you have a question or just want to contact us write to
+                if you have a question or just want to contact us,<br/> write to
               </p>
-              <h4 className="mail">suyamias@gmail.com</h4>
+              <h4 className="mail">support@suyamias.com /suyamias@gmail.com</h4>
               <br />
               <p style={{ fontWeight: `500` }}> Call us</p>
               <h4 className="mail">
