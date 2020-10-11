@@ -176,6 +176,7 @@ export default class Registration extends Component {
 
                     <Form.Control
                       as="input"
+                      type="date"
                       required
                       name="dob"
                       placeholder="dd-mm-yyyy"
@@ -347,7 +348,10 @@ export default class Registration extends Component {
                 </Form.Group>
                 <Form.Group>
                   <Form.Label>
-                    <b>I am now working as</b>
+                    <span Glyphicon glyph="star">
+                      {' '}
+                    </span>
+                    <b>I am now working as </b>
                   </Form.Label>
                   <Form.Control
                     as="input"
