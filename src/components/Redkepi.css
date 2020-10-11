@@ -38,3 +38,25 @@
   flex: auto;
   min-width: 300px;
 }
+
+@media only screen and (max-width: 800px) {
+  .rk__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rk__reg {
+    flex: auto;
+    min-width: 0px;
+  }
+  .rk__vector {
+    height: 400px;
+    width: 500px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    flex: 0.6 1;
+    object-fit: contain;
+    align-items: flex-end;
+  }
+}

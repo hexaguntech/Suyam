@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './NavBar.css'
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -33,7 +34,7 @@ class NavbarPage extends Component {
           </MDBNavbarBrand>
           <MDBNavbarToggler onClick={this.toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-            <MDBNavbarNav left>
+            <MDBNavbarNav left >
               <MDBNavItem active>
                 <MDBNavLink to="#!">Home</MDBNavLink>
               </MDBNavItem>

@@ -18,11 +18,9 @@ export default class Header extends React.Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav
-                className="mr-auto custnav"
+                className="mr-auto custnav mx-auto"
                 style={{
-                  display: 'flex',
                   justifyContent: 'space-evenly',
-                  alignItems: 'center',
                 }}
               >
                 <Nav.Link href="/Home">
@@ -31,17 +29,31 @@ export default class Header extends React.Component {
                   </span>
                 </Nav.Link>
                 <Nav.Link href="/Institute">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
+                  <span
+                    className="text-light"
+                    style={{
+                      fontWeight: `700`,
+                    }}
+                  >
                     The Institute
                   </span>
                 </Nav.Link>
                 <Nav.Link href="/Glory">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
+                  <span
+                    className="text-light"
+                    style={{
+                      fontWeight: `700`,
+                    }}
+                  >
                     Glory
                   </span>
                 </Nav.Link>
 
-                <NavDropdown title="Courses" id="basic-nav-dropdown">
+                <NavDropdown
+                  title="Courses"
+                  id="basic-nav-dropdown"
+                  style={{ paddingLeft: `0px` }}
+                >
                   <NavDropdown.Item href="/Missionperseverance2020">
                     Mission Perseverance 2020
                   </NavDropdown.Item>
@@ -50,117 +62,39 @@ export default class Header extends React.Component {
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/Register">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
+                  <span
+                    className="text-light"
+                    style={{
+                      fontWeight: `700`,
+                    }}
+                  >
                     Register
                   </span>
                 </Nav.Link>
 
                 <Nav.Link href="/Payment">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
+                  <span
+                    className="text-light"
+                    style={{
+                      fontWeight: `700`,
+                    }}
+                  >
                     Payment
+                  </span>
+                </Nav.Link>
+                <Nav.Link href="/Contactus">
+                  <span
+                    className="text-light"
+                    style={{
+                      fontWeight: `700`,
+                    }}
+                  >
+                    Contact Us
                   </span>
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-
-          {/* <NavBar /> */}
-
-          {/* <nav
-            className="navbar navbar-expand-sm navbar-inverse bg-inverse m-auto"
-            // style={{ display: 'flex', alignItems: 'center' }}
-          >
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#Navbar"
-            >
-              <span class="navbar-toggler-icon text-light">|=|</span>
-            </button>
-            <div
-              className="navbar-nav mr-auto navbar-center collapse navbar-collapse m-auto"
-              id="Navbar"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                flexDirection: 'row',
-                justifyContent: 'center',
-              }}
-            >
-              <li className="nav-item">
-                <Link to={'/Home'} className="nav-link">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
-                    Home
-                  </span>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to={'/Institute'} className="nav-link">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
-                    The Institute
-                  </span>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to={'/Glory'} className="nav-link">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
-                    The Glory
-                  </span>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <div className="dropdown">
-                  <button className="dropbtn">Courses</button>
-                  <div className="dropdown-content">
-                    <Link
-                      to={'/Missionperseverance2020'}
-                      className="nav-link drophover"
-                    >
-                      <span
-                        className="text-light"
-                        style={{ fontWeight: `400` }}
-                      >
-                        Mission Perseverance 2020
-                      </span>
-                    </Link>
-                    <Link
-                      to={'/OperationRedKEPI2020'}
-                      className="nav-link drophover"
-                    >
-                      <span
-                        className="text-light"
-                        style={{ fontWeight: `400` }}
-                      >
-                        Operation Red Kepi 2020
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-              </li>
-              <li className="nav-item">
-                <Link to={'/Register'} className="nav-link">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
-                    Registration
-                  </span>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to={'/Payment'} className="nav-link">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
-                    Payment
-                  </span>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to={'/Contactus'} className="nav-link">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
-                    Contact us
-                  </span>
-                </Link>
-              </li>
-            </div>
-          </nav> */}
           <div className="announcement">
             <marquee style={{ fontWeight: `400` }}>
               Special Online Preparatory Course for Competitive Exams in

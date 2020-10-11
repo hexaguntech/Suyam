@@ -79,6 +79,7 @@ export default class Home extends React.Component {
                       <span style={{ color: `#0A79DF` }}>SUYAM I.A.S</span> App
                     </h6>
                   </div>
+                  <div className="__home_linee"></div>
                   <div className="col1">
                     <h6>Class commences on</h6>
                     <h2>
@@ -93,6 +94,7 @@ export default class Home extends React.Component {
                     </h6>
                     <vr color="black"></vr>
                   </div>
+                  <div className="__home_linee"></div>
                   <div className="col2">
                     <h6>Course Fee</h6>
                     <h2>
@@ -183,6 +185,7 @@ export default class Home extends React.Component {
                       <span style={{ color: `#0A79DF` }}>SUYAM I.A.S</span> App
                     </h6>
                   </div>
+                  <div className="__home_linee2"></div>
                   <div className="col1">
                     <h6>Class commences shortly</h6>
                     <h2>
@@ -197,6 +200,7 @@ export default class Home extends React.Component {
                     </h6>
                     <vr color="black"></vr>
                   </div>
+                  <div className="__home_linee2"></div>
                   <div className="col2">
                     <h6>Course Fee</h6>
                     <h2>

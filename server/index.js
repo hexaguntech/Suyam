@@ -11,7 +11,7 @@ require('dotenv/config');
 const app = express();
 
 var corsOptions = {
-  origin: 'http://192.168.1.6:3000',
+  origin: 'http://localhost:3000',
 };
 
 app.use(cors(corsOptions));
@@ -19,11 +19,13 @@ app.use(cors(corsOptions));
 // app.use('/public', express.static(__dirname + '/public'));
 
 const path = require('path');
-app.use(express.static(path.join(__dirname, './public/')));
+app.use(
+  express.static(path.join(__dirname, '../public_html/public/applicantphotos'))
+);
 
 app.use(bodyParser.json());
 
-app.use('/public', express.static('public'));
+app.use('/public', express.static('../public_html/public'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
