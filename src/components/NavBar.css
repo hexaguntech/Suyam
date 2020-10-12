@@ -1,4 +1,4 @@
-/* .Navbar {
+ .Navbar {
   background-color: #46acc2;
   display: flex;
   padding: 16px;
@@ -48,7 +48,7 @@
     cursor: pointer;
     visibility: visible;
   }
-} */
+} 
 
 ._bar{
   display: flex;

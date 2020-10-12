@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import './Registration.css';
 import ApplicantDataService from '../services/ApplicantDataService';
 import axios from 'axios';
-import { Form, Button, Modal, Table } from 'react-bootstrap';
+import { Form, Button, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
 export default class Registration extends Component {
   constructor(props) {
     super(props);
@@ -20,12 +19,6 @@ export default class Registration extends Component {
     this.handleClose = this.handleClose.bind(this);
 
     this.modalClick = this.modalClick.bind(this);
-    this.appClick = this.appClick.bind(this);
-
-    this.homePageClick = this.homePageClick.bind(this);
-    this.paymentPageClick = this.paymentPageClick.bind(this);
-
-    this.applicationPreview = this.applicationPreview.bind(this);
 
     this.state = {
       course: '',
@@ -48,19 +41,18 @@ export default class Registration extends Component {
       horizontalReservation: '',
       photoFile: '',
       photoPath: 'path',
+      submitted: false,
       agree: false,
+      counter: 0,
       photoLink: '',
 
       modalShow: false,
-      appmodal: false,
-      submitted: false,
     };
   }
 
   handleClose() {
     this.setState({
       modalShow: false,
-      appmodal: false,
     });
   }
 
@@ -70,132 +62,17 @@ export default class Registration extends Component {
     });
   }
 
-  appClick() {
-    this.setState({
-      appmodal: true,
-    });
-  }
-
-  homePageClick() {
-    this.props.history.push({
-      pathname: '/home',
-    });
-  }
-
-  paymentPageClick() {
-    this.props.history.push({
-      pathname: '/Payment',
-    });
-  }
-
-  applicationPreview(e) {
+  saveApplication(e) {
     e.preventDefault();
 
     if (this.state.photoLink != '') {
-      this.appClick();
+      this.props.history.push({
+        pathname: '/SubmitApplication',
+        state: this.state,
+      });
     } else {
       alert('select a image and click upload');
     }
-  }
-
-  // const [show, setShow] = useState(false);
-
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
-
-  // saveApplication(e) {
-  //   e.preventDefault();
-  //   // if (
-  //   //   this.state.course == 'Select a option' ||
-  //   //   this.state.gender == 'Select a option' ||
-  //   //   this.state.horizontalReservation == 'Select a option' ||
-  //   //   this.state.verticalReservation == 'Select a option'
-  //   // ) {
-  //   //   alert('choose the dropdowns');
-  //   // } else {
-  //   if (this.state.photoLink != '') {
-  //     this.props.history.push({
-  //       pathname: '/SubmitApplication',
-  //       state: this.state,
-  //     });
-  //   } else {
-  //     alert('select a image and click upload');
-  //   }
-  // }
-
-  saveApplication() {
-    var data = {
-      course: this.state.course,
-      name: this.state.name,
-      dob: this.state.dob,
-      gender: this.state.gender,
-      email: this.state.email,
-      phone: this.state.phone,
-      addressLine1: this.state.addressLine1,
-      addressLine2: this.state.addressLine2,
-      state: this.state.state,
-      pincode: this.state.pincode,
-      bloodGroup: this.state.bloodGroup,
-      bloodDonorVolunteer: this.state.bloodDonorVolunteer,
-      studied: this.state.studied,
-      studying: this.state.studying,
-      additionalQualification: this.state.additionalQualification,
-      working: this.state.working,
-      belongTo: this.state.belongTo,
-      verticalReservation: this.state.verticalReservation,
-      horizontalReservation: this.state.horizontalReservation,
-      photoPath: this.state.photoPath,
-    };
-
-    console.log(data);
-
-    ApplicantDataService.registerApplicant(data)
-      .then((data) => {
-        this.setState({
-          submitted: false,
-          course: '',
-          name: '',
-          dob: '',
-          gender: '',
-          email: '',
-          phone: '',
-          addressLine1: '',
-          addressLine2: '',
-          state: '',
-          pincode: '',
-          bloodGroup: '',
-          bloodDonorVolunteer: false,
-          studied: '',
-          studying: '',
-          additionalQualification: '',
-          working: '',
-          verticalReservation: '',
-          horizontalReservation: '',
-          photoFile: '',
-          photoPath: 'path',
-          agree: false,
-          photoLink: '',
-        });
-
-        this.modalClick();
-
-        // const page = document.getElementById('applicationForm');
-        // html2PDF(page, {
-        //   jsPDF: {
-        //     format: 'a4',
-        //   },
-        //   imageType: 'image/jpeg',
-        //   output: './pdf/generate.pdf',
-        // });
-        // this.printDocument();
-        // this.pdfToHTML();
-        // alert('Successfully registered');
-        // this.props.history.replace('/home');
-      })
-      .catch((e) => {
-        console.log(e);
-        alert('some error occured, try again');
-      });
   }
 
   onImageUpload(e) {
@@ -212,7 +89,7 @@ export default class Registration extends Component {
         },
       };
       axios
-        .post('http://localhost:8080/api/applicant/upload', formData, {})
+        .post('http://suyamias.com/api/applicant/upload', formData, {})
         .then((response) => {
           alert('The file is successfully uploaded');
           this.setState({
@@ -221,7 +98,7 @@ export default class Registration extends Component {
           console.log(response);
           console.log(this.state.photoPath);
           this.setState({
-            photoLink: 'http://localhost:8080/' + this.state.photoPath,
+            photoLink: 'http://suyamias.com/' + this.state.photoPath,
           });
         })
         .catch((error) => {
@@ -264,7 +141,7 @@ export default class Registration extends Component {
           <div className="header" style={{ marginTop: `30px` }}>
             <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
             <hr color="black" className="" />
-            <form className="" onSubmit={this.applicationPreview}>
+            <form className="" onSubmit={this.saveApplication}>
               <Form.Group>
                 <Form.Label>
                   <b>
@@ -329,7 +206,7 @@ export default class Registration extends Component {
                       as="select"
                       required
                       name="gender"
-                      onChange={this.handleChange}          
+                      onChange={this.handleChange}
                     >
                       <option>Select</option>
                       <option>Male</option>
@@ -483,7 +360,9 @@ export default class Registration extends Component {
                 </Form.Group>
                 <Form.Group>
                   <Form.Label>
-                 <span Glyphicon glyph="star"> </span>
+                    <span Glyphicon glyph="star">
+                      {' '}
+                    </span>
                     <b>I am now working as </b>
                   </Form.Label>
                   <Form.Control
@@ -614,10 +493,10 @@ export default class Registration extends Component {
             </form>
           </div>
         </div>
-        {/* 
-        <Button variant="primary" onClick={this.appClick}>
+
+        <Button variant="primary" onClick={this.modalClick}>
           Launch demo modal
-        </Button> */}
+        </Button>
 
         <Modal show={this.state.modalShow} onHide={this.handleClose}>
           <Modal.Header closeButton>
@@ -647,123 +526,16 @@ export default class Registration extends Component {
             <Button
               variant="secondary"
               style={{ margin: `0px` }}
-              onClick={this.homePageClick}
+              onClick={this.handleClose}
             >
               Home
             </Button>
             <Button
               variant="primary"
               style={{ margin: `0px` }}
-              onClick={this.paymentPageClick}
-            >
-              Payment
-            </Button>
-          </Modal.Footer>
-        </Modal>
-
-        <Modal size="lg" show={this.state.appmodal} onHide={this.handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Application Form</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <img
-              src={this.state.photoLink}
-              alt="Applicant photo"
-              width="130"
-              height="170"
-              style={{
-                margin: '20px',
-              }}
-            ></img>
-            <Table bordered size="sm">
-              <tbody>
-                <tr>
-                  <th>Selected Course</th>
-                  <td>{this.state.course}</td>
-                </tr>
-                <tr>
-                  <th>My Name is</th>
-                  <td>{this.state.name}</td>
-                </tr>
-                <tr>
-                  <th>Date of Birth</th>
-                  <td>{this.state.dob}</td>
-                </tr>
-                <tr>
-                  <th>Email</th>
-                  <td>{this.state.email}</td>
-                </tr>
-                <tr>
-                  <th>Phone</th>
-                  <td>{this.state.phone}</td>
-                </tr>
-                <tr>
-                  <th>Address</th>
-                  <td>
-                    {this.state.addressLine1}, {this.state.addressLine2},{' '}
-                    {this.state.city}
-                  </td>
-                </tr>
-                <tr>
-                  <th>Blood Group</th>
-                  <td>{this.state.bloodGroup}</td>
-                </tr>
-                <tr>
-                  <th>Volunteering Blood Donor</th>
-                  {this.state.bloodDonorVolunteer == true ? (
-                    <td>Yes</td>
-                  ) : (
-                    <td>No</td>
-                  )}
-                </tr>
-                <tr>
-                  <th>I studied</th>
-                  <td>{this.state.studied}</td>
-                </tr>
-                <tr>
-                  <th>I am now Studying</th>
-                  <td>{this.state.studying}</td>
-                </tr>
-                <tr>
-                  <th>I am working as</th>
-                  <td>{this.state.working}</td>
-                </tr>
-                <tr>
-                  <th>I belong to (Vertical Reservation)</th>
-                  <td>{this.state.verticalReservation}</td>
-                </tr>
-                <tr>
-                  <th>I am an (Horizontal Reservation)</th>
-                  <td>{this.state.horizontalReservation}</td>
-                </tr>
-              </tbody>
-            </Table>
-            {/* <Button
-                className="btn btn-default"
-                type="submit"
-                onClick={this.saveApplication}
-              >
-                SUBMIT
-              </Button> */}
-          </Modal.Body>
-          <Modal.Footer
-            style={{
-              justifyContent: 'space-evenly',
-            }}
-          >
-            <Button
-              variant="primary"
-              style={{ margin: `0px` }}
-              onClick={this.saveApplication}
-            >
-              Submit
-            </Button>
-            <Button
-              variant="secondary"
-              style={{ margin: `0px` }}
               onClick={this.handleClose}
             >
-              Edit
+              Payment
             </Button>
           </Modal.Footer>
         </Modal>
