@@ -24,11 +24,11 @@ let Applicant = mongoose.Schema(
     },
     addressLine1: {
       type: String,
-      required: true,
+      required: false,
     },
     addressLine2: {
       type: String,
-      required: true,
+      required: false,
     },
     state: {
       type: String,
@@ -40,7 +40,7 @@ let Applicant = mongoose.Schema(
     },
     bloodGroup: {
       type: String,
-      required: true,
+      required: false,
     },
     bloodDonorVolunteer: {
       type: Boolean,
@@ -48,30 +48,38 @@ let Applicant = mongoose.Schema(
     },
     studied: {
       type: String,
-      required: true,
+      required: false,
     },
     studying: {
       type: String,
-      required: true,
+      required: false,
+    },
+    additionalQualification: {
+      type: String,
+      required: false,
     },
     working: {
       type: String,
-      required: true,
+      required: false,
     },
 
     verticalReservation: {
       type: String,
-      required: true,
+      required: false,
     },
     horizontalReservation: {
       type: String,
-      required: true,
+      required: false,
     },
     dateApplied: {
       type: Date,
       default: Date.now,
     },
     photo: {
+      type: String,
+      required: false,
+    },
+    paymentStatus: {
       type: String,
       required: false,
     },

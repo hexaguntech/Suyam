@@ -4,11 +4,6 @@
   background-color: white;
   font-weight: 700;
 }
-
-.navbar {
-  background-color: #0a79df;
-  height: 50px;
-}
 .logo {
   text-align: center;
 }
@@ -21,68 +16,11 @@
   color: red;
   font-weight: 300;
 }
-.navbar-nav.navbar-center {
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
-.nav-item {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.nav-item:hover {
-  background-color: #105998;
-}
-.dropbtn {
-  background-color: #0a79df;
-  color: white;
-  font-weight: 700;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-
-  background-color: #0a79df;
-  min-width: 190px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  margin-top: 12px;
-  color: beige;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: white;
-  color: black;
-}
-
-.dropdown-content .drophover:hover {
-  background-color: #105998;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #105998;
-}
-
 .proverb {
   height: 85px;
   background-color: #ebebeb;
+}
+
+.basicc {
+  justify-items: center;
 }

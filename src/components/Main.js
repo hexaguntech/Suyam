@@ -15,11 +15,19 @@ import Payment from './Payment';
 import SubmitApplication from './SubmitApplication';
 import AppLive from './AppLive';
 
+import NavBar from './NavBar';
+
 export default class Main extends React.Component {
   render() {
     return (
-      <div>
+      <div
+        style={{
+          overflowX: 'hidden',
+        }}
+      >
         <Header />
+        {/* <NavBar /> */}
+
         <div>
           <Switch>
             <Route exact path={['/', '/Home']} component={Home} />

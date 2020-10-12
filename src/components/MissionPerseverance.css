@@ -44,3 +44,20 @@
   flex: auto;
   /* min-width: 300px; */
 }
+
+@media only screen and (max-width: 800px) {
+  .mp__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mp__vector {
+    height: 300px;
+    width: 500px;
+    padding-bottom: 20px;
+    margin-top: -50px;
+    align-items: flex-end;
+    flex: 0.6 1;
+    object-fit: contain;
+  }
+}

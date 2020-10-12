@@ -17,15 +17,18 @@ router.get('/get', applicant.getAllApplicants);
 
 router.get('/get/name/:name', applicant.getApplicantsByName);
 
-router.post('/upload/image', applicant.uploadImge);
+// router.post('/upload/image', applicant.uploadImge);
 
 // router.get('/sendmail', transport.sendMail);
 
+var finlenaa = '';
+
 const storage = multer.diskStorage({
-  destination: './public/applicantphotos/',
+  destination: '../public_html/public/applicantphotos/',
   filename: (req, file, cb) => {
     const fileName = file.originalname.toLowerCase().split(' ').join('-');
-    cb(null, 'IMAGE-' + Date.now() + file.originalname);
+    filenaa = 'IMAGE-' + Date.now() + file.originalname;
+    cb(null, filenaa);
     console.log(fileName);
   },
 });
@@ -58,7 +61,7 @@ const obj = (req, res) => {
         res.status(201).json({
           message: 'Image uploaded successfully!',
           userCreated: {
-            imagepath: result.profileImg,
+            imagepath: 'public/applicantphotos/' + filenaa,
           },
         });
         console.log(result.profileImg);

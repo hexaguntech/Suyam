@@ -54,7 +54,7 @@ export default class Footer extends React.Component {
               }}
             >
               <h2 style={{ fontWeight: `700` }}>Contact Us</h2>
-              <p style={{ fontWeight: `500` }}>
+              <p style={{ fontWeight: `500`,textAlign: `center` }}>
                 if you have a question or just want to contact us write to
               </p>
               <h4 className="mail">suyamias@gmail.com</h4>
@@ -66,13 +66,7 @@ export default class Footer extends React.Component {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            display: `flex`,
-            alignItems: `center`,
-            justifyContent: `space-around`,
-          }}
-        >
+        <div className="socialfot">
           <p>
             Web Design by{' '}
             <a href="https://instagram.com/havi.design?igshid=1rfkbcjw6jjkk">
