@@ -10,10 +10,12 @@ export default class Home extends React.Component {
     return (
       <div>
         <div className="proverb">
-          <p style={{ textAlign: `center` }}>
+          <p style={{ textAlign: `center`, fontStyle: 'italic' }}>
             எண்ணென்ப ஏனை எழுத்தென்ப இவ்விரண்டும்
             <br />
             கண்ணென்ப வாழும் உயிர்க்கு.
+            <br />
+            <p style={{ float: `right` }}> ... குறள்</p>
           </p>
         </div>
         <div className="home">
@@ -54,14 +56,14 @@ export default class Home extends React.Component {
             <div className="courses">
               <div className="rk">
                 <p style={{ fontWeight: `500`, color: `#8D8D8D` }}>
-                  GENERAL PREPARATORY COURSE
+                  GENERAL PREPARATORY COURSE WITH SPECIAL PREPARATORY COURSE
                 </p>
                 <br />
-                <h3 className="line">
+                <h4 className="line">
                   <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
                     MISSION PERSEVERANCE 2020
                   </span>
-                </h3>
+                </h4>
 
                 <div className="row1">
                   <div className="col1">
@@ -76,7 +78,7 @@ export default class Home extends React.Component {
                       alt="suyam app logo"
                     />
                     <h6 style={{ paddingTop: `20px`, fontWeight: `700` }}>
-                      <span style={{ color: `#0A79DF` }}>SUYAM I.A.S</span> App
+                      <span style={{ color: `#0A79DF` }}>Suyam IAS</span> App
                     </h6>
                   </div>
                   <div className="__home_linee"></div>
@@ -130,8 +132,9 @@ export default class Home extends React.Component {
                   <Link to="/MissionPerseverance2020">
                     <Button
                       className="btn btn-default"
+                      height="50"
                       type="link"
-                      style={{ fontWeight: `700` }}
+                      style={{ fontWeight: `500`, marginTop: `124px` }}
                     >
                       MORE DETAILS
                     </Button>
@@ -140,7 +143,7 @@ export default class Home extends React.Component {
                     src="assets/mpvector.png"
                     alt="rk-illustration"
                     style={{
-                      height: `300px`,
+                      height: `340px`,
                       width: `300px`,
                       marginTop: `-120px`,
                       objectFit: `contain`,
@@ -153,11 +156,12 @@ export default class Home extends React.Component {
                 <p style={{ fontWeight: `500`, color: `#8D8D8D` }}>
                   SPECIAL COACHING FOR POLICE CONSTABLE EXAM IN PUDUCHERRY
                 </p>
-                <h3 className="line">
+                &nbsp;
+                <h4 className="line">
                   <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                    OPERATION RED Kepi 2020
+                    OPERATION RED KEPI 2020
                   </span>
-                </h3>
+                </h4>
                 <div className="row1">
                   <img
                     style={{
@@ -182,7 +186,7 @@ export default class Home extends React.Component {
                       alt="suyam app logo"
                     />
                     <h6 style={{ paddingTop: `20px`, fontWeight: `700` }}>
-                      <span style={{ color: `#0A79DF` }}>SUYAM I.A.S</span> App
+                      <span style={{ color: `#0A79DF` }}>Suyam IAS</span> App
                     </h6>
                   </div>
                   <div className="__home_linee2"></div>
@@ -210,7 +214,6 @@ export default class Home extends React.Component {
                     </h2>
                   </div>
                 </div>
-
                 <h5>
                   Bilingual - <br />
                   Both in தமிழ் and English
@@ -226,7 +229,7 @@ export default class Home extends React.Component {
                     <Button
                       className="btn btn-default"
                       type="link"
-                      style={{ fontWeight: `700` }}
+                      style={{ fontWeight: `500` }}
                     >
                       MORE DETAILS
                     </Button>
@@ -453,7 +456,7 @@ export default class Home extends React.Component {
                           style={{ height: `100px`, width: `100px` }}
                         />
                         <p style={{ color: `white`, fontWeight: `700` }}>
-                          SUYAM I.A.S
+                          Suyam IAS
                         </p>
                       </div>
                       <a href="https://play.google.com/store/apps/details?id=in.testpress.suyamias">
@@ -548,7 +551,7 @@ export default class Home extends React.Component {
           }}
         >
           <h2 className="jteam" style={{ fontWeight: `700` }}>
-            ACHEIVEMENTS
+            ACHIEVEMENTS
           </h2>
           <div className="v2" style={{}}></div>
         </div>
@@ -575,7 +578,7 @@ export default class Home extends React.Component {
             >
               <h2 className="sixhundred">2</h2>
               <span className="text-light"> CIVIL SERVICES</span>
-              <p className="text-light"> I.R.A.S/I.R.S </p>
+              <p className="text-light"> I.R.A.S / I.R.S </p>
             </div>
             <div
               className="right"
