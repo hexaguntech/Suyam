@@ -323,6 +323,15 @@ video {
   padding-right: 50px;
 }
 
+.jteam1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 850px) {
   .applive-in {
     display: flex;
@@ -340,5 +349,14 @@ video {
     width: 90%;
     margin-top: 50px;
     margin-bottom: 60px;
+  }
+
+  .jteam1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }

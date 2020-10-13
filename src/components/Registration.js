@@ -257,7 +257,8 @@ export default class Registration extends Component {
         <div className="proverb">
           <p style={{ textAlign: `center`, padding: `20px` }}>
             எண்ணித் துணிக கருமம் துணிந்தபின் <br />
-            எண்ணுவம் என்பது இழுக்கு. .
+            எண்ணுவம் என்பது இழுக்கு. .<br />
+            <p style={{ float: `right` }}> ... குறள்</p>
           </p>
         </div>
         <div className="container mt3">
@@ -589,7 +590,7 @@ export default class Registration extends Component {
                       I assure that I will put in utmost perseverance,
                       preparation and performance while looking forward to
                       intellectual, academic, material and moral support from
-                      the organizers/ faculty of the Coaching Programme I
+                      the organizers/ faculty of the Coaching Programme. I
                       clearly understand that only upon payment of course fee,
                       my admission will be confirmed. I clearly understand that
                       fees once paid will not be refunded under any
