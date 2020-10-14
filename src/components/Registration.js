@@ -4,6 +4,8 @@ import ApplicantDataService from '../services/ApplicantDataService';
 import axios from 'axios';
 import { Form, Button, Modal, Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import { Application } from './Application';
 
 export default class Registration extends Component {
   constructor(props) {
@@ -151,31 +153,31 @@ export default class Registration extends Component {
 
     ApplicantDataService.registerApplicant(data)
       .then((data) => {
-        this.setState({
-          submitted: false,
-          course: '',
-          name: '',
-          dob: '',
-          gender: '',
-          email: '',
-          phone: '',
-          addressLine1: '',
-          addressLine2: '',
-          state: '',
-          pincode: '',
-          bloodGroup: '',
-          bloodDonorVolunteer: false,
-          studied: '',
-          studying: '',
-          additionalQualification: '',
-          working: '',
-          verticalReservation: '',
-          horizontalReservation: '',
-          photoFile: '',
-          photoPath: 'path',
-          agree: false,
-          photoLink: '',
-        });
+        // this.setState({
+        //   submitted: false,
+        //   course: '',
+        //   name: '',
+        //   dob: '',
+        //   gender: '',
+        //   email: '',
+        //   phone: '',
+        //   addressLine1: '',
+        //   addressLine2: '',
+        //   state: '',
+        //   pincode: '',
+        //   bloodGroup: '',
+        //   bloodDonorVolunteer: false,
+        //   studied: '',
+        //   studying: '',
+        //   additionalQualification: '',
+        //   working: '',
+        //   verticalReservation: '',
+        //   horizontalReservation: '',
+        //   photoFile: '',
+        //   photoPath: 'path',
+        //   agree: false,
+        //   photoLink: '',
+        // });
 
         this.modalClick();
 
@@ -250,6 +252,35 @@ export default class Registration extends Component {
   handleCheckClickAgreement = () => {
     this.setState({ agree: !this.state.agree });
   };
+
+  // printApplication = () => {
+  //   <PDFDownloadLink
+  //       document={
+  //         <Application 
+  //           course={this.state.course} 
+  //           name={this.state.name}
+  //           dob={this.state.dob}
+  //           gender={this.state.gender}
+  //           email={this.state.email}
+  //           phone={this.state.phone}
+  //           addressLine1={this.state.addressLine1}
+  //           addressLine2={this.state.addressLine2}
+  //           state={this.state.state}
+  //           pincode={this.state.pincode}
+  //           bloodGroup={this.state.bloodGroup}
+  //           bloodDonorVolunteer={this.state.bloodDonorVolunteer}
+  //           studied={this.state.studied}
+  //           studying={this.state.studying}
+  //           additionalQualification={this.state.additionalQualification}
+  //           working={this.state.working}
+  //           horizontalReservation={this.state.horizontalReservation}
+  //           verticalReservation={this.state.verticalReservation}
+  //         />
+  //       }
+  //       fileName="Application.pdf"
+  //     >
+  //     </PDFDownloadLink>
+  // }
 
   render() {
     return (
@@ -650,13 +681,44 @@ export default class Registration extends Component {
               justifyContent: 'space-evenly',
             }}
           >
-            <Button
-              variant="primary"
-              style={{ margin: `0px` }}
-              onClick={this.handleClose}
-            >
-              PRINT APPLICATION
-            </Button>
+            {
+              <PDFDownloadLink
+                document={
+                  <Application 
+                    course={this.state.course} 
+                    name={this.state.name}
+                    dob={this.state.dob}
+                    gender={this.state.gender}
+                    email={this.state.email}
+                    phone={this.state.phone}
+                    addressLine1={this.state.addressLine1}
+                    addressLine2={this.state.addressLine2}
+                    state={this.state.state}
+                    pincode={this.state.pincode}
+                    bloodGroup={this.state.bloodGroup}
+                    bloodDonorVolunteer={this.state.bloodDonorVolunteer}
+                    studied={this.state.studied}
+                    studying={this.state.studying}
+                    additionalQualification={this.state.additionalQualification}
+                    working={this.state.working}
+                    horizontalReservation={this.state.horizontalReservation}
+                    verticalReservation={this.state.verticalReservation}
+                    photoLink={this.state.photoLink}
+                  />
+                }
+                fileName="Application.pdf"
+                style={{
+                  textDecoration: "none",
+                  padding: "6px",
+                  color: "white",
+                  backgroundColor: "#0a79df",
+                  border: "1px solid #0a79df",
+                  borderRadius: `5px`
+                }}
+              > Print Application
+            </PDFDownloadLink>
+            }
+
             <Button
               variant="secondary"
               style={{ margin: `0px` }}

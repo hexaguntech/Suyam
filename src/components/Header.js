@@ -11,7 +11,7 @@ export default class Header extends React.Component {
       <div className="jumbotron">
         <div>
           <div className="logo">
-            <img src="assets/suyamheaderlogo.jpg" />
+            <img style={{width: `400px`,height:`150px`}} src="assets/suyamheaderlogo.jpg" />
           </div>
 
           <Navbar expand="lg" collapseOnSelect="true">
