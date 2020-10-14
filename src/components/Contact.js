@@ -6,7 +6,8 @@ export default class Contact extends React.Component {
     return (
       <div>
          <div className="proverb">
-          <p style={{textAlign:`center`,padding:`20px`}}>எப்பொருள் யார்யார்வாய்க் கேட்பினும் அப்பொருள் <br/>மெய்ப்பொருள் காண்பது அறிவு.</p>
+          <p style={{textAlign:`center`,padding:`20px`}}>எப்பொருள் யார்யார்வாய்க் கேட்பினும் அப்பொருள் <br/>மெய்ப்பொருள் காண்பது அறிவு.<br />
+            <p style={{ float: `right` }}> ... குறள்</p></p>
         </div>
         <div className="contacth">
           <div className="container mt3">

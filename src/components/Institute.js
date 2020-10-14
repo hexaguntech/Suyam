@@ -7,7 +7,8 @@ export default class Institute extends React.Component {
     return (
       <div className="institute">
         <div className="proverb">
-          <p style={{textAlign:`center`,padding:`20px`}}>கற்க கசடறக் கற்பவை கற்றபின் <br/> நிற்க அதற்குத் தக.</p>
+          <p style={{textAlign:`center`,padding:`20px`}}>கற்க கசடறக் கற்பவை கற்றபின் <br/> நிற்க அதற்குத் தக.<br />
+            <p style={{ float: `right` }}> ... குறள்</p></p>
         </div>
         <div className="about ">
           <div className="abt2  container mt3">

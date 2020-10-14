@@ -68,7 +68,7 @@ export default class Header extends React.Component {
                       fontWeight: `700`,
                     }}
                   >
-                    Register
+                    Registration
                   </span>
                 </Nav.Link>
 
