@@ -537,8 +537,15 @@ export default class Home extends React.Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="assets/cor3 (2).jpg"
+                src="assets/cor3.jpg"
                 alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="assets/cor4.jpg"
+                alt="Fourth slide"
               />
             </Carousel.Item>
           </Carousel>
@@ -557,15 +564,7 @@ export default class Home extends React.Component {
         </div>
         <div className="gservices" style={{ marginTop: `20px` }}>
           <div
-            className="container mt3"
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'center',
-              justifyContent: 'space-around',
-              paddingTop: `10px`,
-              paddingBottom: `10px`,
-            }}
+            className="container mt3 jteam1"
           >
             <div
               className="left"
