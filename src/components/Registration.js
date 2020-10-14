@@ -697,21 +697,15 @@ export default class Registration extends Component {
                 fileName="Application.pdf"
                 style={{
                   textDecoration: "none",
-                  padding: "10px",
-                  color: "#4a4a4a",
-                  backgroundColor: "#f2f2f2",
-                  border: "1px solid #4a4a4a"
+                  padding: "6px",
+                  color: "white",
+                  backgroundColor: "#0a79df",
+                  border: "1px solid #0a79df",
+                  borderRadius: `5px`
                 }}
               > Print Application
             </PDFDownloadLink>
             }
-            <Button
-              variant="primary"
-              style={{ margin: `0px` }}
-              onClick={this.printApplication}
-            >
-              Print pdf
-            </Button>
             <Button
               variant="secondary"
               style={{ margin: `0px` }}
