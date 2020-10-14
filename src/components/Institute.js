@@ -7,15 +7,27 @@ export default class Institute extends React.Component {
     return (
       <div className="institute">
         <div className="proverb">
-          <p style={{textAlign:`center`,padding:`20px`}}><i>கற்க கசடறக் கற்பவை கற்றபின் <br/> நிற்க அதற்குத் தக.</i></p>
-          <p style={{ float: `right`, marginTop: `60px` }}><i> ... குறள்</i></p>
+          <p style={{ marginBottom: `0px` }}>
+            கற்க கசடறக் கற்பவை கற்றபின் <br /> நிற்க அதற்குத் தக.
+            <br />
+            <p
+              style={{
+                float: `right`,
+                marginBottom: `0px`,
+                fontStyle: 'italic',
+              }}
+            >
+              {' '}
+              ... குறள்
+            </p>
+          </p>
 
         </div>
         <div className="about ">
           <div className="abt2  container mt3">
             <div className="ip__left">
               <h1 style={{ fontWeight: `700` }}>ABOUT SUYAM</h1>
-              <div className="foundername">                                   
+              <div className="foundername">
                 <p className="f">நிறுவுநர்</p>
                 <p className="t">தமிழ்மாமணி, கலைமாமணி</p>
                 <h5 className="k">கல்லாடன்</h5>
@@ -60,9 +72,9 @@ export default class Institute extends React.Component {
           <div className="content2 container mt3">
             <div>
               <p className="balanpara">
-                To be frank, the Institute had achieved only a small proportion of
-                its dream on the Civil Services front in this tiny town, grooming
-                only one aspirant as a{' '}
+                To be frank, the Institute had achieved only a small proportion
+                of its dream on the Civil Services front in this tiny town,
+                grooming only one aspirant as a{' '}
                 <b>
                   Civil Servant who himself selected as I.R.A.S. once and as
                   I.R.S.
@@ -71,10 +83,21 @@ export default class Institute extends React.Component {
                 Pass-outs and a very few Interview candidates.
               </p>
             </div>
-            <div style={{ display: `flex`,flexDirection:`column`,alignItems:`center`}}>
-              <img style={{height:`300px`,width: `300px`}} src="assets/ips.png" />
+            <div
+              style={{
+                display: `flex`,
+                flexDirection: `column`,
+                alignItems: `center`,
+              }}
+            >
+              <img
+                style={{ height: `300px`, width: `300px` }}
+                src="assets/ips.png"
+              />
               <b>P. Suthandira Balan, IRS.</b>
-              <p style={{color: `#0a79df`,textAlign:`center`}}>Assistant Commissioner of Income Tax, Bengaluru</p>
+              <p style={{ color: `#0a79df`, textAlign: `center` }}>
+                Assistant Commissioner of Income Tax, Bengaluru
+              </p>
             </div>
           </div>
           <div className="content3">
@@ -101,12 +124,24 @@ export default class Institute extends React.Component {
                 in every Selection List will be Suyamites is not uncommon since
                 2009.
               </p>
+              <p
+                style={{
+                  color: '#0a79df',
+                  fontWeight: `800`,
+                  marginBottom: `0px`,
+                }}
+              >
+                Name a Department in Puducherry; you can find tens of Suyamites
+                there.{' '}
+              </p>
             </div>
           </div>
           <div className="content4 container mt3">
             <p>
+
              <h4  style={{color: `#0a79df`, fontWeight:`700`}} >Name a Department in Puducherry; you can find tens of Suyamites
               there.</h4><hr /> <br/>Suyam Institute is not only preparing Suyamites to be
+
               breadwinners, but also as socially responsible and humanitarian
               Samaritans. Suyamites have shown, ever and anon, their compassion
               in serving the humanity. To quote a few —
