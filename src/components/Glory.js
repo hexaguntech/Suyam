@@ -467,16 +467,6 @@ export default class Glory extends React.Component {
                       <tr>
                         <th scope="row">
                           <span style={{ fontWeight: `500` }}>
-                            Section Officer (VCRC, Puducherry)
-                          </span>{' '}
-                        </th>
-                        <td>
-                          <span style={{ color: `#0A79DF` }}>1</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">
-                          <span style={{ fontWeight: `500` }}>
                             Civil Services Examination (IAS, IPS etc.) – Thiru
                             P. SUDHANDIRA BALAN Selected as I.R.S.(AIR 854){' '}
                           </span>
