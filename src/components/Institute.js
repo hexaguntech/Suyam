@@ -7,16 +7,19 @@ export default class Institute extends React.Component {
     return (
       <div className="institute">
         <div className="proverb">
-          <p style={{textAlign:`center`,padding:`20px`}}>கற்க கசடறக் கற்பவை கற்றபின் <br/> நிற்க அதற்குத் தக.<br />
-            <p style={{ float: `right` }}> ... குறள்</p></p>
+          <p style={{ textAlign: `center`, padding: `20px` }}>
+            கற்க கசடறக் கற்பவை கற்றபின் <br /> நிற்க அதற்குத் தக.
+            <br />
+            <p style={{ float: `right` }}> ... குறள்</p>
+          </p>
         </div>
         <div className="about ">
           <div className="abt2  container mt3">
             <div className="ip__left">
               <h1 style={{ fontWeight: `700` }}>ABOUT SUYAM</h1>
-              <div className="foundername">                                   
+              <div className="foundername">
                 <p className="f">நிறுவுநர்</p>
-                <p className="t">தமிழ்மாமணிரூபவ் கலைமாமணி</p>
+                <p className="t">தமிழ்மாமணி, கலைமாமணி</p>
                 <h5 className="k">கல்லாடன்</h5>
               </div>
               <div className="foundername">
@@ -59,9 +62,9 @@ export default class Institute extends React.Component {
           <div className="content2 container mt3">
             <div>
               <p className="balanpara">
-                To be frank, the Institute had achieved only a small proportion of
-                its dream on the Civil Services front in this tiny town, grooming
-                only one aspirant as a{' '}
+                To be frank, the Institute had achieved only a small proportion
+                of its dream on the Civil Services front in this tiny town,
+                grooming only one aspirant as a{' '}
                 <b>
                   Civil Servant who himself selected as I.R.A.S. once and as
                   I.R.S.
@@ -70,10 +73,21 @@ export default class Institute extends React.Component {
                 Pass-outs and a very few Interview candidates.
               </p>
             </div>
-            <div style={{ display: `flex`,flexDirection:`column`,alignItems:`center`}}>
-              <img style={{height:`300px`,width: `300px`}} src="assets/ips.png" />
+            <div
+              style={{
+                display: `flex`,
+                flexDirection: `column`,
+                alignItems: `center`,
+              }}
+            >
+              <img
+                style={{ height: `300px`, width: `300px` }}
+                src="assets/ips.png"
+              />
               <b>P. Suthandira Balan, IRS.</b>
-              <p style={{color: `#0a79df`,textAlign:`center`}}>Assistant Commissioner of Income Tax, Bengaluru</p>
+              <p style={{ color: `#0a79df`, textAlign: `center` }}>
+                Assistant Commissioner of Income Tax, Bengaluru
+              </p>
             </div>
           </div>
           <div className="content3">
@@ -163,23 +177,32 @@ export default class Institute extends React.Component {
               <br />
               Suyam I.A.S. coaching institute adds another feather to its cap
               now with this website,
-              <br /> <b>www.suyamias.com</b> and a mobile application, <b>SUYAM I.A.S. App</b> <br />
+              <br /> <b>www.suyamias.com</b> and a mobile application,{' '}
+              <b>SUYAM I.A.S. App</b> <br />
               <br />
-              Necessitated by the Corona pandemic situation and concerned very much about the Suyamites who
-              enrolled in the Mission Perseverance 2020 batch, the then General Preparatory Course which was
-              started just a month before the COVID-19 lockdowns, the Institute, despite its ardent belief in the
-              efficiency of traditional classroom method of teaching, founded the mobile application, “SUYAM I.A.S.”
-              to train them and keep them abreast to crack the anticipated Competitive Examinations for recruitment
-              for various posts in Puducherry as well as for TNPSC and Central Government posts. The Institute is
-              endeavouring to come up with many courses and test batches, tailored to match the needs of various
-              competitive examinations, in the near sooner, through this Mobile Application. <b>All the aspirants are
-              welcome.</b> In the future, this digital tool will supplement the popular regular classes of Suyam Institute.
+              Necessitated by the Corona pandemic situation and concerned very
+              much about the Suyamites who enrolled in the Mission Perseverance
+              2020 batch, the then General Preparatory Course which was started
+              just a month before the COVID-19 lockdowns, the Institute, despite
+              its ardent belief in the efficiency of traditional classroom
+              method of teaching, founded the mobile application, “SUYAM I.A.S.”
+              to train them and keep them abreast to crack the anticipated
+              Competitive Examinations for recruitment for various posts in
+              Puducherry as well as for TNPSC and Central Government posts. The
+              Institute is endeavouring to come up with many courses and test
+              batches, tailored to match the needs of various competitive
+              examinations, in the near sooner, through this Mobile Application.{' '}
+              <b>All the aspirants are welcome.</b> In the future, this digital
+              tool will supplement the popular regular classes of Suyam
+              Institute.
               <br />
               <br />
-              “SUYAM I.A.S.” Mobile App will be a great boon to those aspirants who have compelling reasons that
-              limit them from having a tryst with the most effective conventional chalkboard classroom of Suyam
-              Institute. Working people, pregnant women, college-going students, physically challenged persons and
-              the like can make use of this digital facility. <br />
+              “SUYAM I.A.S.” Mobile App will be a great boon to those aspirants
+              who have compelling reasons that limit them from having a tryst
+              with the most effective conventional chalkboard classroom of Suyam
+              Institute. Working people, pregnant women, college-going students,
+              physically challenged persons and the like can make use of this
+              digital facility. <br />
               <br />
               The institute has committed to pave an easy track for the
               aspirants by giving them an effective coaching. <br />

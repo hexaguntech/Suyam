@@ -4,6 +4,15 @@ import './SubmitApplication.css';
 import ApplicantDataService from '../services/ApplicantDataService';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
+import {
+  Page,
+  Text,
+  View,
+  Document,
+  StyleSheet,
+  Image,
+  PDFViewer,
+} from '@react-pdf/renderer';
 
 export default class SubmitApplication extends React.Component {
   constructor(props) {

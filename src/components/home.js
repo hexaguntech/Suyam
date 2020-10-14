@@ -10,7 +10,7 @@ export default class Home extends React.Component {
     return (
       <div>
         <div className="proverb">
-          <p style={{ textAlign: `center`, fontStyle: 'italic' }}>
+          <p style={{ fontStyle: 'italic' }}>
             எண்ணென்ப ஏனை எழுத்தென்ப இவ்விரண்டும்
             <br />
             கண்ணென்ப வாழும் உயிர்க்கு.
@@ -56,7 +56,7 @@ export default class Home extends React.Component {
             <div className="courses">
               <div className="rk">
                 <p style={{ fontWeight: `500`, color: `#8D8D8D` }}>
-                  GENERAL PREPARATORY COURSE WITH SPECIAL PREPARATORY COURSE
+                  SPECIAL PREPARATORY COURSE
                 </p>
                 <br />
                 <h4 className="line">
@@ -563,9 +563,7 @@ export default class Home extends React.Component {
           <div className="v2" style={{}}></div>
         </div>
         <div className="gservices" style={{ marginTop: `20px` }}>
-          <div
-            className="container mt3 jteam1"
-          >
+          <div className="container mt3 jteam1">
             <div
               className="left"
               style={{

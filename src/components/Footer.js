@@ -58,7 +58,9 @@ export default class Footer extends React.Component {
                 if you have a question or just want to contact us,
                 <br /> write to
               </p>
-              <h4 className="mail">support@suyamias.com /suyamias@gmail.com</h4>
+              <h4 className="mail">
+                support@suyamias.com / suyamias@gmail.com
+              </h4>
               <br />
               <p style={{ fontWeight: `500` }}> Call us</p>
               <h4 className="mail">

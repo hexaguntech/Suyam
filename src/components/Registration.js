@@ -4,6 +4,15 @@ import ApplicantDataService from '../services/ApplicantDataService';
 import axios from 'axios';
 import { Form, Button, Modal, Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import {
+  Page,
+  Text,
+  View,
+  Document,
+  StyleSheet,
+  Image,
+  PDFViewer,
+} from '@react-pdf/renderer';
 
 export default class Registration extends Component {
   constructor(props) {
@@ -24,6 +33,7 @@ export default class Registration extends Component {
 
     this.homePageClick = this.homePageClick.bind(this);
     this.paymentPageClick = this.paymentPageClick.bind(this);
+    this.printPdfDoc = this.printPdfDoc.bind(this);
 
     this.applicationPreview = this.applicationPreview.bind(this);
 
@@ -79,6 +89,13 @@ export default class Registration extends Component {
   homePageClick() {
     this.props.history.push({
       pathname: '/home',
+    });
+  }
+
+  printPdfDoc() {
+    this.props.history.push({
+      pathname: './downloadpdf',
+      state: this.state,
     });
   }
 
@@ -151,31 +168,31 @@ export default class Registration extends Component {
 
     ApplicantDataService.registerApplicant(data)
       .then((data) => {
-        this.setState({
-          submitted: false,
-          course: '',
-          name: '',
-          dob: '',
-          gender: '',
-          email: '',
-          phone: '',
-          addressLine1: '',
-          addressLine2: '',
-          state: '',
-          pincode: '',
-          bloodGroup: '',
-          bloodDonorVolunteer: false,
-          studied: '',
-          studying: '',
-          additionalQualification: '',
-          working: '',
-          verticalReservation: '',
-          horizontalReservation: '',
-          photoFile: '',
-          photoPath: 'path',
-          agree: false,
-          photoLink: '',
-        });
+        // this.setState({
+        //   submitted: false,
+        //   course: '',
+        //   name: '',
+        //   dob: '',
+        //   gender: '',
+        //   email: '',
+        //   phone: '',
+        //   addressLine1: '',
+        //   addressLine2: '',
+        //   state: '',
+        //   pincode: '',
+        //   bloodGroup: '',
+        //   bloodDonorVolunteer: false,
+        //   studied: '',
+        //   studying: '',
+        //   additionalQualification: '',
+        //   working: '',
+        //   verticalReservation: '',
+        //   horizontalReservation: '',
+        //   photoFile: '',
+        //   photoPath: 'path',
+        //   agree: false,
+        //   photoLink: '',
+        // });
 
         this.modalClick();
 
@@ -330,7 +347,7 @@ export default class Registration extends Component {
                       as="select"
                       required
                       name="gender"
-                      onChange={this.handleChange}          
+                      onChange={this.handleChange}
                     >
                       <option>Select</option>
                       <option>Male</option>
@@ -484,7 +501,9 @@ export default class Registration extends Component {
                 </Form.Group>
                 <Form.Group>
                   <Form.Label>
-                 <span Glyphicon glyph="star"> </span>
+                    <span Glyphicon glyph="star">
+                      {' '}
+                    </span>
                     <b>I am now working as </b>
                   </Form.Label>
                   <Form.Control
@@ -641,7 +660,7 @@ export default class Registration extends Component {
             <Button
               variant="primary"
               style={{ margin: `0px` }}
-              onClick={this.handleClose}
+              onClick={this.printPdfDoc}
             >
               Print pdf
             </Button>
@@ -677,104 +696,51 @@ export default class Registration extends Component {
               }}
             ></img>
             <div>
-              <p>I opted for the course {this.state.course}</p><br />
-              <p>My name is {this.state.name}</p><br />
-              <p>Gender: {this.state.gender}</p><br/>
-              <p>My Address is {this.state.addressLine1}, {this.state.addressLine2},{' '}
-                    {this.state.city}{this.state.state}, {this.state.pincode}.
-              </p><br/>
-              <p>My Mobile No. is {this.state.phone}</p><br/>
-              <p>My E-mail ID is {this.state.email}</p><br/>
-              <p>My Blood Group {this.state.bloodGroup}</p><br/>
-              <p>I studied {this.state.studied}</p><br/>
-              <p>My Additional qualifications are {this.state.additionalQualification}</p><br/>
-              <p>I am now Studying {this.state.studying}</p><br/>
-              <p>I am now working {this.state.working}</p><br/>
-              <p>I belong to (category for Vertical Reservation)  {this.state.verticalReservation}</p><br/>
-              <p>I am a / an (category for Horizontal Reservation) {this.state.horizontalReservation}</p><br/>
+              <p>I opted for the course {this.state.course}</p>
+              <p>My name is {this.state.name}</p>
+              <p>Gender: {this.state.gender}</p>
               <p>
-                      I assure that I will put in utmost perseverance,
-                      preparation and performance while looking forward to
-                      intellectual, academic, material and moral support from
-                      the organizers/ faculty of the Coaching Programme. I
-                      clearly understand that only upon payment of course fee,
-                      my admission will be confirmed. I clearly understand that
-                      fees once paid will not be refunded under any
-                      circumstances.
-              </p><br/>
-              <p>I clearly understand that only upon payment of course fee, my admission will be confirmed.</p><br/>
-              <p>I clearly understand that fees once paid will not be refunded under any circumstances.</p><br/>
+                My Address is {this.state.addressLine1},{' '}
+                {this.state.addressLine2}, {this.state.city}
+                {this.state.state}, {this.state.pincode}.
+              </p>
+              <p>My Mobile No. is {this.state.phone}</p>
+              <p>My E-mail ID is {this.state.email}</p>
+              <p>My Blood Group {this.state.bloodGroup}</p>
+              <p>I studied {this.state.studied}</p>
+              <p>
+                My Additional qualifications are{' '}
+                {this.state.additionalQualification}
+              </p>
+              <p>I am now Studying {this.state.studying}</p>
+              <p>I am now working {this.state.working}</p>
+              <p>
+                I belong to (category for Vertical Reservation){' '}
+                {this.state.verticalReservation}
+              </p>
+              <p>
+                I am a / an (category for Horizontal Reservation){' '}
+                {this.state.horizontalReservation}
+              </p>
+              <p>
+                I assure that I will put in utmost perseverance, preparation and
+                performance while looking forward to intellectual, academic,
+                material and moral support from the organizers/ faculty of the
+                Coaching Programme. I clearly understand that only upon payment
+                of course fee, my admission will be confirmed. I clearly
+                understand that fees once paid will not be refunded under any
+                circumstances.
+              </p>
+              <p>
+                I clearly understand that only upon payment of course fee, my
+                admission will be confirmed.
+              </p>
+              <p>
+                I clearly understand that fees once paid will not be refunded
+                under any circumstances.
+              </p>
+              <br />
             </div>
-            {/*<Table bordered size="sm">
-              <tbody>
-                <tr>
-                  <th>Selected Course</th>
-                  <td>{this.state.course}</td>
-                </tr>
-                <tr>
-                  <th>My Name is</th>
-                  <td>{this.state.name}</td>
-                </tr>
-                <tr>
-                  <th>Date of Birth</th>
-                  <td>{this.state.dob}</td>
-                </tr>
-                <tr>
-                  <th>Email</th>
-                  <td>{this.state.email}</td>
-                </tr>
-                <tr>
-                  <th>Phone</th>
-                  <td>{this.state.phone}</td>
-                </tr>
-                <tr>
-                  <th>Address</th>
-                  <td>
-                    {this.state.addressLine1}, {this.state.addressLine2},{' '}
-                    {this.state.city}, {this.state.state}, {this.state.pincode}.
-                  </td>
-                </tr>
-                <tr>
-                  <th>Blood Group</th>
-                  <td>{this.state.bloodGroup}</td>
-                </tr>
-                <tr>
-                  <th>Volunteering Blood Donor</th>
-                  {this.state.bloodDonorVolunteer == true ? (
-                    <td>Yes</td>
-                  ) : (
-                    <td>No</td>
-                  )}
-                </tr>
-                <tr>
-                  <th>I studied</th>
-                  <td>{this.state.studied}</td>
-                </tr>
-                <tr>
-                  <th>I am now Studying</th>
-                  <td>{this.state.studying}</td>
-                </tr>
-                <tr>
-                  <th>I am working as</th>
-                  <td>{this.state.working}</td>
-                </tr>
-                <tr>
-                  <th>I belong to (Vertical Reservation)</th>
-                  <td>{this.state.verticalReservation}</td>
-                </tr>
-                <tr>
-                  <th>I am an (Horizontal Reservation)</th>
-                  <td>{this.state.horizontalReservation}</td>
-                </tr>
-              </tbody>
-            </Table> */}
-            {/* <Button
-                className="btn btn-default"
-                type="submit"
-                onClick={this.saveApplication}
-              >
-                SUBMIT
-              </Button> */}
           </Modal.Body>
           <Modal.Footer
             style={{
@@ -797,7 +763,93 @@ export default class Registration extends Component {
             </Button>
           </Modal.Footer>
         </Modal>
+        {/* <PDFViewer>
+          <MyDocument />
+        </PDFViewer> */}
       </div>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  page: {
+    flexDirection: 'row',
+    backgroundColor: '#E4E4E4',
+  },
+  section: {
+    margin: 10,
+    padding: 10,
+    flexGrow: 1,
+  },
+});
+
+const MyDocument = () => (
+  <Document>
+    <Page size="A4" style={styles.page}>
+      <View style={styles.section}>
+        <Text>Section #1</Text>
+      </View>
+      <View style={styles.section}>
+        <Text>
+          {' '}
+          <div>
+            <p>I opted for the course {this.state.course}</p>
+            <p>My name is {this.state.name}</p>
+            <p>Gender: {this.state.gender}</p>
+            <p>
+              My Address is {this.state.addressLine1}, {this.state.addressLine2}
+              , {this.state.city}
+              {this.state.state}, {this.state.pincode}.
+            </p>
+            <p>My Mobile No. is {this.state.phone}</p>
+            <br />
+            <p>My E-mail ID is {this.state.email}</p>
+            <br />
+            <p>My Blood Group {this.state.bloodGroup}</p>
+            <br />
+            <p>I studied {this.state.studied}</p>
+            <br />
+            <p>
+              My Additional qualifications are{' '}
+              {this.state.additionalQualification}
+            </p>
+            <br />
+            <p>I am now Studying {this.state.studying}</p>
+            <br />
+            <p>I am now working {this.state.working}</p>
+            <br />
+            <p>
+              I belong to (category for Vertical Reservation){' '}
+              {this.state.verticalReservation}
+            </p>
+            <br />
+            <p>
+              I am a / an (category for Horizontal Reservation){' '}
+              {this.state.horizontalReservation}
+            </p>
+            <br />
+            <p>
+              I assure that I will put in utmost perseverance, preparation and
+              performance while looking forward to intellectual, academic,
+              material and moral support from the organizers/ faculty of the
+              Coaching Programme. I clearly understand that only upon payment of
+              course fee, my admission will be confirmed. I clearly understand
+              that fees once paid will not be refunded under any circumstances.
+            </p>
+            <br />
+            <p>
+              I clearly understand that only upon payment of course fee, my
+              admission will be confirmed.
+            </p>
+            <br />
+            <p>
+              I clearly understand that fees once paid will not be refunded
+              under any circumstances.
+            </p>
+            <br />
+          </div>
+        </Text>
+      </View>
+    </Page>
+  </Document>
+);
