@@ -627,11 +627,11 @@ export default class Registration extends Component {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            Your application is submitted successfully. Upon payment of your
-            admission we will send you a confirmed confirmation mail.
-            <br /> Please remember that only on payment of Course Fees, your
-            admission will be confirmed.
-            <br />
+            Welcome {this.state.name}
+            Your application for the course, {this.state.course} has been  successfully submitted.<br/> 
+            Please remember that only on payment of course fees, your admission will be confirmed<br/>
+            (SUYAM ADMINISTRATION)
+           <br />
           </Modal.Body>
           <Modal.Footer
             style={{
@@ -643,21 +643,21 @@ export default class Registration extends Component {
               style={{ margin: `0px` }}
               onClick={this.handleClose}
             >
-              Print pdf
+              PRINT APPLICATION
             </Button>
             <Button
               variant="secondary"
               style={{ margin: `0px` }}
               onClick={this.homePageClick}
             >
-              Home
+              HOME
             </Button>
             <Button
               variant="primary"
               style={{ margin: `0px` }}
               onClick={this.paymentPageClick}
             >
-              Payment
+              PAYMENT
             </Button>
           </Modal.Footer>
         </Modal>
