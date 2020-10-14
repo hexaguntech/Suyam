@@ -12,6 +12,7 @@ export default class Contact extends React.Component {
             <br />
             <p style={{ float: `right`, fontStyle: 'italic' }}> ... குறள்</p>
           </p>
+
         </div>
         <div className="contacth">
           <div className="container mt3">

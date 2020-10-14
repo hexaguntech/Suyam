@@ -4,6 +4,7 @@
   flex-direction: column;
 }
 .rk__table1 > table {
+  float: centre;
   border-collapse: collapse;
   margin-top: 50px;
   margin-bottom: 20px;
