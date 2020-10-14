@@ -7,8 +7,9 @@ export default class Institute extends React.Component {
     return (
       <div className="institute">
         <div className="proverb">
-          <p style={{textAlign:`center`,padding:`20px`}}>கற்க கசடறக் கற்பவை கற்றபின் <br/> நிற்க அதற்குத் தக.<br />
-            <p style={{ float: `right` }}> ... குறள்</p></p>
+          <p style={{textAlign:`center`,padding:`20px`}}><i>கற்க கசடறக் கற்பவை கற்றபின் <br/> நிற்க அதற்குத் தக.</i></p>
+          <p style={{ float: `right`, marginTop: `60px` }}><i> ... குறள்</i></p>
+
         </div>
         <div className="about ">
           <div className="abt2  container mt3">
@@ -16,7 +17,7 @@ export default class Institute extends React.Component {
               <h1 style={{ fontWeight: `700` }}>ABOUT SUYAM</h1>
               <div className="foundername">                                   
                 <p className="f">நிறுவுநர்</p>
-                <p className="t">தமிழ்மாமணிரூபவ் கலைமாமணி</p>
+                <p className="t">தமிழ்மாமணி, கலைமாமணி</p>
                 <h5 className="k">கல்லாடன்</h5>
               </div>
               <div className="foundername">
@@ -104,14 +105,17 @@ export default class Institute extends React.Component {
           </div>
           <div className="content4 container mt3">
             <p>
-              Name a Department in Puducherry; you can find tens of Suyamites
-              there. Suyam Institute is not only preparing Suyamites to be
+             <h4  style={{color: `#0a79df`, fontWeight:`700`}} >Name a Department in Puducherry; you can find tens of Suyamites
+              there.</h4><hr /> <br/>Suyam Institute is not only preparing Suyamites to be
               breadwinners, but also as socially responsible and humanitarian
               Samaritans. Suyamites have shown, ever and anon, their compassion
               in serving the humanity. To quote a few —
             </p>
+            
           </div>
+          <hr />
           <div>
+          
             <Carousel className="container mt3 icarousel">
               <Carousel.Item>
                 <img
@@ -144,14 +148,14 @@ export default class Institute extends React.Component {
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="assets/the_institute-39.jpg"
+                  src="assets/the_institute-40.jpg"
                   alt="Third slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="assets/the_institute-40.jpg"
+                  src="assets/the_institute-39.jpg"
                   alt="Third slide"
                 />
               </Carousel.Item>
@@ -159,16 +163,16 @@ export default class Institute extends React.Component {
           </div>
           <div className="content6 container mt3">
             <p>
-              Suyam is not a mere institute, it is a <b>“movement”</b>.<br />
+            <b style={{color: `red`}}>Suyam</b> <b style={{color: `#0a79df`}}> is not a mere institute, it is a </b><b style={{color: `red`}}>“movement”</b>.<br />
               <br />
-              Suyam I.A.S. coaching institute adds another feather to its cap
+              Suyam I.A.S. Coaching Institute adds another feather to its cap
               now with this website,
-              <br /> <b>www.suyamias.com</b> and a mobile application, <b>SUYAM I.A.S. App</b> <br />
+              <br /> <b>www.suyamias.com</b> and a mobile application, "<b style={{color: `#0a79df`}}>Suyam IAS</b>". <br />
               <br />
               Necessitated by the Corona pandemic situation and concerned very much about the Suyamites who
               enrolled in the Mission Perseverance 2020 batch, the then General Preparatory Course which was
               started just a month before the COVID-19 lockdowns, the Institute, despite its ardent belief in the
-              efficiency of traditional classroom method of teaching, founded the mobile application, “SUYAM I.A.S.”
+              efficiency of traditional classroom method of teaching, founded the mobile application, “Suyam IAS”
               to train them and keep them abreast to crack the anticipated Competitive Examinations for recruitment
               for various posts in Puducherry as well as for TNPSC and Central Government posts. The Institute is
               endeavouring to come up with many courses and test batches, tailored to match the needs of various
@@ -176,7 +180,7 @@ export default class Institute extends React.Component {
               welcome.</b> In the future, this digital tool will supplement the popular regular classes of Suyam Institute.
               <br />
               <br />
-              “SUYAM I.A.S.” Mobile App will be a great boon to those aspirants who have compelling reasons that
+              “Suyam IAS” Mobile App will be a great boon to those aspirants who have compelling reasons that
               limit them from having a tryst with the most effective conventional chalkboard classroom of Suyam
               Institute. Working people, pregnant women, college-going students, physically challenged persons and
               the like can make use of this digital facility. <br />
@@ -184,12 +188,12 @@ export default class Institute extends React.Component {
               The institute has committed to pave an easy track for the
               aspirants by giving them an effective coaching. <br />
               <br />
-              and, the time is not too far off when suyam i.a.s. coaching
+              And, the time is not too far off when suyam I.A.S Coaching
               institute shall realise its dream of fostering civil servants in
               large numbers. <br />
               <br />
               <span>
-                <b>
+                <b style={{color: `#0a79df`}} >
                   If you have the will to achieve,
                   <br />
                   We are here to show you the way.
