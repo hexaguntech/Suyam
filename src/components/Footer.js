@@ -54,13 +54,19 @@ export default class Footer extends React.Component {
               }}
             >
               <h3 style={{ fontWeight: `700` }}>Contact Us</h3>
-              <p style={{ fontWeight: `500` }}>
+              <p
+                style={{
+                  fontWeight: `500`,
+                  textAlign: 'center',
+                  marginBottom: `0px`,
+                }}
+              >
                 if you have a question or just want to contact us,
                 <br /> write to
               </p>
-              <h4 className="mail">support@suyamias.com /suyamias@gmail.com</h4>
-              <br />
-              <p style={{ fontWeight: `500` }}> Call us</p>
+              <h4 className="mail">support@suyamias.com</h4>
+              <h4 className="mail">suyamias@gmail.com</h4>
+              <p style={{ fontWeight: `500`, marginBottom: `0px` }}> Call us</p>
               <h4 className="mail">
                 <span style={{ color: `#0a79df` }}>+91-9486204334</span>
               </h4>
