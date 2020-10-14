@@ -299,20 +299,9 @@ export default class Glory extends React.Component {
                         </tr>
                       </thead>
                       <tr>
-                        <th scope="row"><span style={{fontWeight:`500`}}>Civil Services Examination 2017</span> </th>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><span style={{fontWeight:`500`}}>(IAS, IPS etc)</span></th>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><span style={{fontWeight:`500`}}>Thiru P.SUTHANDIRA BALAN</span> </th>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><span style={{fontWeight:`500`}}>Selected as I.R.S.(AIR 854)</span> </th>
-                        <td></td>
+                        <th scope="row"><span style={{fontWeight:`500`}}>Civil Services Examination (IAS, IPS etc.) – Thiru P.
+                          SUDHANDIRA BALAN Selected as I.R.S.(AIR 1014){' '}</span> </th>
+                        <td><span style={{color:`#0A79DF`}}>1</span></td>
                       </tr>
                     </table>
                   </div>
