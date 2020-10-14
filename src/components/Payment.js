@@ -31,11 +31,11 @@ export default class Payment extends React.Component {
         <div className="container mt3" style={{fontWeight:`500`,marginBottom:`30px`,marginTop:`30px`}} >
           <p>Kindly pay the fees for the course concerned into the following Bank Account.</p><br/><br />
           <i>Bank Account Details :</i><br/><br/>
-          <p style={{color: `#0A79DF`}} >Name of the Account Holder : KOPPEROUNDEVI<br/>
-          Account Number : 76720100001634<br/>
-          Bank Name : Bank of Baroda<br/>
-          IFSC Code : BARB0VJPOND<br/>
-          MICR Code : 605012008<br/>
+          <p  >Name of the Account Holder : <span style={{color: `#0A79DF`}}>KOPPEROUNDEVI</span><br/>
+          Account Number : <span style={{color: `#0A79DF`}}>76720100001634</span><br/>
+          Bank Name : <span style={{color: `#0A79DF`}}>Bank of Baroda</span><br/>
+          IFSC Code : <span style={{color: `#0A79DF`}}>BARB0VJPOND</span><br/>
+          MICR Code : <span style={{color: `#0A79DF`}}>605012008</span><br/>
           </p><br/><br />
           <p>
             Please send payment details / screenshot of payment transaction along with your name,<br/> mobile number and the 
@@ -67,7 +67,7 @@ export default class Payment extends React.Component {
             <br/><br/> 
           </p>
           <b style={{color:`#0A79DF`}}>
-            ADDRESS:<br/><br/> 
+            <span style={{color:`black`}}>ADDRESS:</span><br/><br/> 
             14, First Cross,<br/>
             Natesan Nagar – East,<br/>
             Puducherry – 605 005.<br/>

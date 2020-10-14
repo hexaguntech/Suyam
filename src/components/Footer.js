@@ -8,7 +8,7 @@ export default class Footer extends React.Component {
       <div>
         <div className="footer scl">
           <div className="container mt3 scl">
-            <div className="logo">
+            <div className="logo" style={{display:`flex`,alignItems:`center`}}>
               <img src="assets/suyamheaderlogo.jpg" />
             </div>
             <div>
@@ -58,7 +58,7 @@ export default class Footer extends React.Component {
                 if you have a question or just want to contact us,
                 <br /> write to
               </p>
-              <h4 className="mail">support@suyamias.com /suyamias@gmail.com</h4>
+              <h4 className="mail">support@suyamias.com <br/>suyamias@gmail.com</h4>
               <br />
               <p style={{ fontWeight: `500` }}> Call us</p>
               <h4 className="mail">
