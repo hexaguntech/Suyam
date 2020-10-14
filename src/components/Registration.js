@@ -256,8 +256,9 @@ export default class Registration extends Component {
       <div>
         <div className="proverb">
           <p style={{ textAlign: `center`, padding: `20px` }}>
-            எண்ணித் துணிக கருமம் துணிந்தபின் <br />
+            <i>எண்ணித் துணிக கருமம் துணிந்தபின் <br />
             எண்ணுவம் என்பது இழுக்கு. .
+            <p style={{ float: `right` }}> ... குறள்</p></i>
           </p>
         </div>
         <div className="container mt3">
