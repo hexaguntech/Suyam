@@ -286,10 +286,20 @@ export default class Registration extends Component {
     return (
       <div>
         <div className="proverb">
-          <p style={{ textAlign: `center`, padding: `20px` }}>
+          <p style={{ marginBottom: `0px` }}>
             எண்ணித் துணிக கருமம் துணிந்தபின் <br />
             எண்ணுவம் என்பது இழுக்கு. .<br />
-            <p style={{ float: `right` }}> ... குறள்</p>
+            <p
+              style={{
+                float: `right`,
+                marginBottom: `0px`,
+                fontStyle: 'italic',
+              }}
+            >
+              {' '}
+              ... குறள்
+            </p>
+
           </p>
         </div>
         <div className="container mt3">
@@ -361,7 +371,7 @@ export default class Registration extends Component {
                       as="select"
                       required
                       name="gender"
-                      onChange={this.handleChange}          
+                      onChange={this.handleChange}
                     >
                       <option>Select</option>
                       <option>Male</option>
@@ -515,7 +525,9 @@ export default class Registration extends Component {
                 </Form.Group>
                 <Form.Group>
                   <Form.Label>
-                 <span Glyphicon glyph="star"> </span>
+                    <span Glyphicon glyph="star">
+                      {' '}
+                    </span>
                     <b>I am now working as </b>
                   </Form.Label>
                   <Form.Control
@@ -658,11 +670,11 @@ export default class Registration extends Component {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            Your application is submitted successfully. Upon payment of your
-            admission we will send you a confirmed confirmation mail.
-            <br /> Please remember that only on payment of Course Fees, your
-            admission will be confirmed.
-            <br />
+            Welcome {this.state.name}
+            Your application for the course, {this.state.course} has been  successfully submitted.<br/> 
+            Please remember that only on payment of course fees, your admission will be confirmed<br/>
+            (SUYAM ADMINISTRATION)
+           <br />
           </Modal.Body>
           <Modal.Footer
             style={{
@@ -706,19 +718,20 @@ export default class Registration extends Component {
               > Print Application
             </PDFDownloadLink>
             }
+
             <Button
               variant="secondary"
               style={{ margin: `0px` }}
               onClick={this.homePageClick}
             >
-              Home
+              HOME
             </Button>
             <Button
               variant="primary"
               style={{ margin: `0px` }}
               onClick={this.paymentPageClick}
             >
-              Payment
+              PAYMENT
             </Button>
           </Modal.Footer>
         </Modal>
@@ -738,33 +751,65 @@ export default class Registration extends Component {
               }}
             ></img>
             <div>
-              <p>I opted for the course {this.state.course}</p><br />
-              <p>My name is {this.state.name}</p><br />
-              <p>Gender: {this.state.gender}</p><br/>
-              <p>My Address is {this.state.addressLine1}, {this.state.addressLine2},{' '}
-                    {this.state.city}{this.state.state}, {this.state.pincode}.
-              </p><br/>
-              <p>My Mobile No. is {this.state.phone}</p><br/>
-              <p>My E-mail ID is {this.state.email}</p><br/>
-              <p>My Blood Group {this.state.bloodGroup}</p><br/>
-              <p>I studied {this.state.studied}</p><br/>
-              <p>My Additional qualifications are {this.state.additionalQualification}</p><br/>
-              <p>I am now Studying {this.state.studying}</p><br/>
-              <p>I am now working {this.state.working}</p><br/>
-              <p>I belong to (category for Vertical Reservation)  {this.state.verticalReservation}</p><br/>
-              <p>I am a / an (category for Horizontal Reservation) {this.state.horizontalReservation}</p><br/>
+              <p>I opted for the course {this.state.course}</p>
+              <br />
+              <p>My name is {this.state.name}</p>
+              <br />
+              <p>Gender: {this.state.gender}</p>
+              <br />
               <p>
-                      I assure that I will put in utmost perseverance,
-                      preparation and performance while looking forward to
-                      intellectual, academic, material and moral support from
-                      the organizers/ faculty of the Coaching Programme. I
-                      clearly understand that only upon payment of course fee,
-                      my admission will be confirmed. I clearly understand that
-                      fees once paid will not be refunded under any
-                      circumstances.
-              </p><br/>
-              <p>I clearly understand that only upon payment of course fee, my admission will be confirmed.</p><br/>
-              <p>I clearly understand that fees once paid will not be refunded under any circumstances.</p><br/>
+                My Address is {this.state.addressLine1},{' '}
+                {this.state.addressLine2}, {this.state.city}
+                {this.state.state}, {this.state.pincode}.
+              </p>
+              <br />
+              <p>My Mobile No. is {this.state.phone}</p>
+              <br />
+              <p>My E-mail ID is {this.state.email}</p>
+              <br />
+              <p>My Blood Group {this.state.bloodGroup}</p>
+              <br />
+              <p>I studied {this.state.studied}</p>
+              <br />
+              <p>
+                My Additional qualifications are{' '}
+                {this.state.additionalQualification}
+              </p>
+              <br />
+              <p>I am now Studying {this.state.studying}</p>
+              <br />
+              <p>I am now working {this.state.working}</p>
+              <br />
+              <p>
+                I belong to (category for Vertical Reservation){' '}
+                {this.state.verticalReservation}
+              </p>
+              <br />
+              <p>
+                I am a / an (category for Horizontal Reservation){' '}
+                {this.state.horizontalReservation}
+              </p>
+              <br />
+              <p>
+                I assure that I will put in utmost perseverance, preparation and
+                performance while looking forward to intellectual, academic,
+                material and moral support from the organizers/ faculty of the
+                Coaching Programme. I clearly understand that only upon payment
+                of course fee, my admission will be confirmed. I clearly
+                understand that fees once paid will not be refunded under any
+                circumstances.
+              </p>
+              <br />
+              <p>
+                I clearly understand that only upon payment of course fee, my
+                admission will be confirmed.
+              </p>
+              <br />
+              <p>
+                I clearly understand that fees once paid will not be refunded
+                under any circumstances.
+              </p>
+              <br />
             </div>
             {/*<Table bordered size="sm">
               <tbody>

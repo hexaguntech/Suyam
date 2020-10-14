@@ -10,12 +10,21 @@ export default class Home extends React.Component {
     return (
       <div>
         <div className="proverb">
-          <p style={{ textAlign: `center`, fontStyle: 'italic' }}>
+          <p style={{ marginBottom: `0px` }}>
             எண்ணென்ப ஏனை எழுத்தென்ப இவ்விரண்டும்
             <br />
             கண்ணென்ப வாழும் உயிர்க்கு.
             <br />
-            <p style={{ float: `right` }}> ... குறள்</p>
+            <p
+              style={{
+                float: `right`,
+                marginBottom: `0px`,
+                fontStyle: 'italic',
+              }}
+            >
+              {' '}
+              ... குறள்
+            </p>
           </p>
         </div>
         <div className="home">
@@ -55,8 +64,14 @@ export default class Home extends React.Component {
             <div className="v2"></div>
             <div className="courses">
               <div className="rk">
-                <p style={{ fontWeight: `500`, color: `#8D8D8D` }}>
-                  GENERAL PREPARATORY COURSE WITH SPECIAL PREPARATORY COURSE
+                <p
+                  style={{
+                    fontWeight: `500`,
+                    color: `#8D8D8D`,
+                    marginBottom: `0px`,
+                  }}
+                >
+                  SPECIAL PREPARATORY COURSE
                 </p>
                 <br />
                 <h4 className="line">
@@ -153,7 +168,13 @@ export default class Home extends React.Component {
                 </div>
               </div>
               <div className="rk">
-                <p style={{ fontWeight: `500`, color: `#8D8D8D` }}>
+                <p
+                  style={{
+                    fontWeight: `500`,
+                    color: `#8D8D8D`,
+                    marginBottom: `0px`,
+                  }}
+                >
                   SPECIAL COACHING FOR POLICE CONSTABLE EXAM IN PUDUCHERRY
                 </p>
                 &nbsp;
@@ -314,7 +335,11 @@ export default class Home extends React.Component {
                 </div>
 
                 <Link to="/">
-                  <Button className="btn btn-default" type="link">
+                  <Button
+                    className="btn btn-default"
+                    type="link"
+                    style={{ margin: `0px` }}
+                  >
                     DOWNLOAD PDF
                   </Button>
                 </Link>
@@ -378,7 +403,11 @@ export default class Home extends React.Component {
                   </div>
                 </div>
                 <Link to="/">
-                  <Button className="btn btn-default" type="link">
+                  <Button
+                    className="btn btn-default"
+                    type="link"
+                    style={{ margin: `0px` }}
+                  >
                     DOWNLOAD PDF
                   </Button>
                 </Link>
@@ -563,9 +592,7 @@ export default class Home extends React.Component {
           <div className="v2" style={{}}></div>
         </div>
         <div className="gservices" style={{ marginTop: `20px` }}>
-          <div
-            className="container mt3 jteam1"
-          >
+          <div className="container mt3 jteam1">
             <div
               className="left"
               style={{

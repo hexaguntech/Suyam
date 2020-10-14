@@ -15,7 +15,7 @@ export default class MissionPerseverance extends React.Component {
         }}
         className="container mt3"
       >
-        <h1 style={{ color: `#0a79df`, fontWeight: `700` }}>
+        <h1 style={{ color: `#0a79df`, fontWeight: `500` }}>
           MISSION PERSEVERANCE 2020
         </h1>
         <br />
@@ -26,11 +26,11 @@ export default class MissionPerseverance extends React.Component {
           alt="suyamapplogo"
         />
         <p>
-          <b style={{ color: `#0a79df` }}>SUYAM IAS APP</b> App
+          <p>Mobile App</p>
         </p>
-        <strong>New Batch commences on October 2, 2020</strong>
+        <p>New Batch commences on <b>October 20, 2020</b></p>
         <br />
-        <br />
+      
 
         <p style={{ textAlign: `justify` }}>
           {' '}
@@ -40,13 +40,11 @@ export default class MissionPerseverance extends React.Component {
           TNPSC, SSC, RRB and such other exams that are anticipated in the near
           or foreseeable future.
         </p>
-        <strong>
+        <p>
           The following subjects will be taught by way of a range of
           pre-recorded video classes, learning materials and online tests
-          through “SUYAM I.A.S.” App :
-        </strong>
-        <br />
-        <br />
+          through <b>“SUYAM IAS.” </b>Mobile App :
+        </p>
         <div className="mp__list">
           <ul>
             <li>
@@ -64,8 +62,7 @@ export default class MissionPerseverance extends React.Component {
             <li>
               <span>Geography of the World and India</span>
             </li>
-          </ul>
-          <ul>
+         
             <li>
               <span>Quantitative Aptitude</span>
             </li>
@@ -83,51 +80,51 @@ export default class MissionPerseverance extends React.Component {
             </li>
           </ul>
         </div>
-        <br />
+      
         <div className="mp__list2">
           <p>
             Teaching will be imparted in Tamil while the board works/texts will
             be in English for the ease of Puducherry and Tamil Nadu aspirants.
             <br />
             <br />
-            You can find in “SUYAM I.A.S.” Mobile App, the following learning
+            You can find in <b>“SUYAM IAS”</b> Mobile App, the following learning
             tools —{' '}
           </p>
           <ul>
             <li>
               <span>
-                Well delivered VIDEO CLASSES – Dedicated faculty of the
-                institute give importance to Conceptual clarity and innovative
-                delivery of subjects.
+              <b  style={{ color: `#0a79df` }}>Well delivered VIDEO CLASSES</b> – Dedicated faculty of the
+            institute give importance to Conceptual clarity and innovative
+            delivery of subjects.
               </span>
             </li>
-            <br />
+            
             <li>
               <span>
-                Meticulously crafted E-NOTES – Current affairs will be updated
-                on weekly basis and General Knowledge and other materials
-                considered to be helpful will be provided.
+              <b  style={{ color: `#0a79df` }}>Meticulously crafted E-NOTES</b> – Current affairs will be
+            updated on weekly basis and General Knowledge and other materials
+            considered to be helpful will be provided.
               </span>
             </li>
-            <br />
+            
             <li>
               <span>
-                Carefully prepared DAILY TESTS and WEEKLY TESTS – This most
-                powerful online assessment tool gives you an exceptional and
-                seamless online exam experience through Daily Tests and Weekly
-                Tests based on the subjects covered, regularly.
+              <b  style={{ color: `#0a79df` }}>Carefully prepared DAILY TESTS and WEEKLY TESTS</b> – This most
+            powerful online assessment tool gives you an exceptional and
+            seamless online exam experience through Daily Tests and Weekly Tests
+            based on the subjects covered, regularly.
               </span>
             </li>
-            <br />
+            
           </ul>
         </div>
         <p>
-          Register here to avail the benefits of Mission Perseverance 2020,
-          Special Preparatory Course through “SUYAM I.A.S.” Mobile App.
+          Register here to avail the benefits of <b>Mission Perseverance 2020,</b>
+          Special Preparatory Course through <b>“SUYAM IAS”</b> Mobile App.
         </p>
         <br />
         <h4>
-          <b>Course Fee : Rs.7500</b>
+          Course Fee : <b style={{ color: `#0a79df` , fontWeight: `500`  }}>Rs.7500</b>
         </h4>
         <div className="mp__footer">
           <div className="mp__reg">
