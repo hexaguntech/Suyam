@@ -153,31 +153,31 @@ export default class Registration extends Component {
 
     ApplicantDataService.registerApplicant(data)
       .then((data) => {
-        this.setState({
-          submitted: false,
-          course: '',
-          name: '',
-          dob: '',
-          gender: '',
-          email: '',
-          phone: '',
-          addressLine1: '',
-          addressLine2: '',
-          state: '',
-          pincode: '',
-          bloodGroup: '',
-          bloodDonorVolunteer: false,
-          studied: '',
-          studying: '',
-          additionalQualification: '',
-          working: '',
-          verticalReservation: '',
-          horizontalReservation: '',
-          photoFile: '',
-          photoPath: 'path',
-          agree: false,
-          photoLink: '',
-        });
+        // this.setState({
+        //   submitted: false,
+        //   course: '',
+        //   name: '',
+        //   dob: '',
+        //   gender: '',
+        //   email: '',
+        //   phone: '',
+        //   addressLine1: '',
+        //   addressLine2: '',
+        //   state: '',
+        //   pincode: '',
+        //   bloodGroup: '',
+        //   bloodDonorVolunteer: false,
+        //   studied: '',
+        //   studying: '',
+        //   additionalQualification: '',
+        //   working: '',
+        //   verticalReservation: '',
+        //   horizontalReservation: '',
+        //   photoFile: '',
+        //   photoPath: 'path',
+        //   agree: false,
+        //   photoLink: '',
+        // });
 
         this.modalClick();
 
@@ -691,6 +691,7 @@ export default class Registration extends Component {
                     working={this.state.working}
                     horizontalReservation={this.state.horizontalReservation}
                     verticalReservation={this.state.verticalReservation}
+                    photoLink={this.state.photoLink}
                   />
                 }
                 fileName="Application.pdf"
