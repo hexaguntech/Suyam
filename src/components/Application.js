@@ -42,21 +42,21 @@ export function Application({ course,name,dob,gender,email,phone,addressLine1,ad
                         source={photoLink}
                         style={{ width:`100px`, height:`120px`,marginTop:`15px`,marginBottom:`20px`}}
                     />
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}} > I opted for the course {course}</Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> My name is {name} </Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> I was born on {dob} </Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> Gender: {gender} </Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> My Address is {addressLine1}, {addressLine2},{' '}
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}} > I opted for the course <Text style={{color:`#2C6FBE`}}>{course}</Text></Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> My name is <Text style={{color:`#2C6FBE`}}>{name}</Text> </Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> I was born on <Text style={{color:`#2C6FBE`}}>{dob}</Text> </Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> Gender: <Text style={{color:`#2C6FBE`}}>{gender}</Text> </Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> My Address is <Text style={{color:`#2C6FBE`}}>{addressLine1}, {addressLine2},{' '}</Text>
                     {state}, {pincode}. </Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> My Mobile No. is {phone} </Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> My E-mail ID is {email} </Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> My Blood Group {bloodGroup} </Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> I studied {studied} </Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> My Additional qualifications are {additionalQualification} </Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> I am now Studying {studying} </Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> I am now working {working} </Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> I belong to (category for Vertical Reservation)  {verticalReservation} </Text>
-                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> I am a / an (category for Horizontal Reservation) {horizontalReservation} </Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> My Mobile No. is <Text style={{color:`#2C6FBE`}}>{phone}</Text> </Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> My E-mail ID is <Text style={{color:`#2C6FBE`}}>{email}</Text> </Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> My Blood Group <Text style={{color:`#2C6FBE`}}>{bloodGroup}</Text> </Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> I studied <Text style={{color:`#2C6FBE`}}>{studied} </Text></Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> My Additional qualifications are <Text style={{color:`#2C6FBE`}}>{additionalQualification}</Text> </Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> I am now Studying <Text style={{color:`#2C6FBE`}}>{studying}</Text> </Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> I am now working <Text style={{color:`#2C6FBE`}}>{working}</Text> </Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> I belong to (category for Vertical Reservation)  <Text style={{color:`#2C6FBE`}}>{verticalReservation}</Text> </Text>
+                    <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}> I am a / an (category for Horizontal Reservation) <Text style={{color:`#2C6FBE`}}>{horizontalReservation}</Text> </Text>
                     <Text style={{margin: 4,fontSize: 13,textAlign: 'justify',fontFamily: 'Times-Roman'}}>  I assure that I will put in utmost perseverance,
                       preparation and performance while looking forward to
                       intellectual, academic, material and moral support from
