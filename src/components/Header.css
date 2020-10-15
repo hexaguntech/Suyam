@@ -19,3 +19,6 @@
 .basicc {
   justify-items: center;
 }
+.jumbotron > custnav > text-light >p:hover{
+  background-color: aqua;
+}
