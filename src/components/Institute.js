@@ -94,7 +94,7 @@ export default class Institute extends React.Component {
                 style={{ height: `300px`, width: `300px` }}
                 src="assets/ips.png"
               />
-              <b>P. Suthandira Balan, IRS.</b>
+              <p><b>P. Suthandira Balan,</b> IRS,</p>
               <p style={{ color: `#0a79df`, textAlign: `center` }}>
                 Assistant Commissioner of Income Tax, Bengaluru
               </p>
@@ -198,11 +198,11 @@ export default class Institute extends React.Component {
           </div>
           <div className="content6 container mt3">
             <p>
-            <b style={{color: `red`}}>Suyam</b> <b style={{color: `#0a79df`}}> is not a mere institute, it is a </b><b style={{color: `red`}}>“movement”</b>.<br />
+            <b style={{color: `red`}}>Suyam</b> <b style={{color: `#0a79df`}}> is not a mere institute, it is a </b><b style={{color: `red`}}>“movement”</b><b style={{color: `#0a79df`}}>.</b><br />
               <br />
-              Suyam I.A.S. Coaching Institute adds another feather to its cap
+              Suyam I.A.S. Coaching Institute adds two more feathers to its cap
               now with this website,
-              <br /> <b>www.suyamias.com</b> and a mobile application, "<b style={{color: `#0a79df`}}>Suyam IAS</b>". <br />
+             <b style={{color: `#0a79df`}}> www.suyamias.com</b> and a mobile application, "<b style={{color: `#0a79df`}}>Suyam IAS</b>". <br />
               <br />
               Necessitated by the Corona pandemic situation and concerned very much about the Suyamites who
               enrolled in the Mission Perseverance 2020 batch, the then General Preparatory Course which was

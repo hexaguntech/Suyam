@@ -426,8 +426,8 @@ export default class Glory extends React.Component {
                       <tr>
                         <th scope="row">
                           <span style={{ fontWeight: `500` }}>
-                            Civil Services Examination (IAS, IPS etc.) – Thiru
-                            P. SUDHANDIRA BALAN Selected as I.R.A.S.{' '}
+                            Civil Services Examination 2015 (IAS, IPS etc.) – Thiru
+                            P. SUTHANDIRA BALAN Selected as I.R.A.S.{' '}
                           </span>
                         </th>
                         <td>
@@ -455,8 +455,8 @@ export default class Glory extends React.Component {
                         </tr>
                       </thead>
                       <tr>
-                        <th scope="row"><span style={{fontWeight:`500`}}>Civil Services Examination (IAS, IPS etc.) – Thiru P.
-                          SUDHANDIRA BALAN Selected as I.R.S.(AIR 1014){' '}</span> </th>
+                        <th scope="row"><span style={{fontWeight:`500`}}>Civil Services Examination 2016(IAS, IPS etc.) – Thiru P.
+                          SUTHANDIRA BALAN Selected as I.R.S.(AIR 1014){' '}</span> </th>
                         <td><span style={{color:`#0A79DF`}}>1</span></td>
                       </tr>
                     </table>
@@ -501,6 +501,30 @@ export default class Glory extends React.Component {
                           </td>
                         </tr>
                       </thead>
+                    </table>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <div className="box">
+                      {' '}
+                      <h3>2020</h3>
+                    </div>
+
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            Name of <br />
+                            the <br /> post
+                          </th>
+                          <th scope="col">No. of the Candidates selected</th>
+                        </tr>
+                      </thead>
+                      <tr>
+                        <th scope="row"><span style={{fontWeight:`500`}}>Ward Attendant – Contractual (at Indira Gandhi Medical College & Research Institute, Puducherry{' '}</span> </th>
+                        <td><span style={{color:`#0A79DF`}}>47</span></td>
+                      </tr>
                     </table>
                   </div>
                 </li>

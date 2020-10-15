@@ -319,7 +319,6 @@ export default class Registration extends Component {
                   name="course"
                   onChange={this.handleChange}
                 >
-                  <option>Select</option>
                   <option>Mission Perseverance 2020</option>
                   <option>Operation Red Kepi 2020</option>
                 </Form.Control>
@@ -552,8 +551,7 @@ export default class Registration extends Component {
                         onChange={(event) => this.handleChange(event)}
                         name="verticalReservation"
                       >
-                        <option>Select</option>
-
+                        <option></option>
                         <option>General</option>
                         <option>OBC</option>
                         <option>MBC</option>
@@ -573,7 +571,7 @@ export default class Registration extends Component {
                         onChange={(event) => this.handleChange(event)}
                         name="horizontalReservation"
                       >
-                        <option>Select</option>
+                        <option></option>
                         <option>XSM</option>
                         <option>PH</option>
                         <option>MSP</option>

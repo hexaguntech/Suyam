@@ -101,7 +101,7 @@ export default class Home extends React.Component {
                     <h6>Class commences on</h6>
                     <h2>
                       <span style={{ color: `#0A79DF`, fontWeight: `700` }}>
-                        15th Oct
+                        25th Oct
                       </span>
                     </h2>
                     <h6>

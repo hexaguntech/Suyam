@@ -19,16 +19,16 @@ export default class MissionPerseverance extends React.Component {
           MISSION PERSEVERANCE 2020
         </h1>
         <br />
-        <p>Special preparatory course through</p>
+        <p><b>Special preparatory course</b> through</p>
         <img
           style={{ height: `100px`, width: `100px`, padding: `20px` }}
           src="assets/suyamapplogo.png"
           alt="suyamapplogo"
         />
         <p>
-          <p>Mobile App</p>
+          <p><b  style={{ color: `#0a79df` }}>Suyam IAS</b> Mobile App</p>
         </p>
-        <p>New Batch commences on <b>October 20, 2020</b></p>
+        <p>New Batch commences on <b>October 25, 2020</b></p>
         <br />
       
 
@@ -43,7 +43,7 @@ export default class MissionPerseverance extends React.Component {
         <p>
           The following subjects will be taught by way of a range of
           pre-recorded video classes, learning materials and online tests
-          through <b>“SUYAM IAS.” </b>Mobile App :
+          through <b>“Suyam IAS” </b>Mobile App :
         </p>
         <div className="mp__list">
           <ul>
@@ -87,7 +87,7 @@ export default class MissionPerseverance extends React.Component {
             be in English for the ease of Puducherry and Tamil Nadu aspirants.
             <br />
             <br />
-            You can find in <b>“SUYAM IAS”</b> Mobile App, the following learning
+            You can find in <b>“Suyam IAS”</b> Mobile App, the following learning
             tools —{' '}
           </p>
           <ul>
@@ -119,8 +119,8 @@ export default class MissionPerseverance extends React.Component {
           </ul>
         </div>
         <p>
-          Register here to avail the benefits of <b>Mission Perseverance 2020,</b>
-          Special Preparatory Course through <b>“SUYAM IAS”</b> Mobile App.
+          Register here to avail the benefits of <b>Mission Perseverance 2020, </b>
+          Special Preparatory Course through <b>“Suyam IAS”</b> Mobile App.
         </p>
         <br />
         <h4>
