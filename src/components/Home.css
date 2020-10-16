@@ -44,6 +44,10 @@
     display: flex;
     width: 70%;
   }
+
+  .htext h2 {
+    font-size: 25px;
+  }
 }
 
 .courses-offered {
@@ -87,6 +91,11 @@
   width: fit-content;
 }
 
+.btn {
+  font-weight: 700;
+  margin: 0px;
+}
+
 @media only screen and (max-width: 880px) {
   .courses-offered {
     margin: 0px;
@@ -94,6 +103,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+  }
+
+  .courses-offered h2 {
+    font-size: 20px;
   }
 
   .courses {
@@ -118,6 +131,23 @@
     padding-top: 20px;
     margin-top: 10px;
     margin-bottom: 2px;
+  }
+
+  .rk h3 {
+    font-size: 21px;
+  }
+
+  .rk p {
+    font-size: 15px;
+  }
+
+  .rk div h4 {
+    font-size: 18px;
+  }
+
+  .butre {
+    font-weight: 200;
+    font-size: 13px;
   }
 }
 
@@ -184,7 +214,12 @@
 
 video {
   width: 320px;
-  height: 240px;
+  height: auto;
+}
+
+.v2 {
+  border-bottom: 4px solid #0a79df;
+  width: 7%;
 }
 
 @media only screen and (max-width: 770px) {
@@ -206,6 +241,19 @@ video {
 
   video {
     width: 80%;
+  }
+
+  .onvideo-in > div > h2 {
+    font-size: 22px;
+  }
+
+  .onvideo-in > div > p {
+    font-size: 17px;
+  }
+
+  .v2 {
+    border-bottom: 4px solid #0a79df;
+    width: 10%;
   }
 }
 
@@ -235,7 +283,7 @@ video {
 .sixhundred {
   color: white;
   text-align: center;
-  height: 100px;
+  height: auto;
   font-weight: 700;
   font-size: 65px;
 }
@@ -264,16 +312,6 @@ video {
   padding: 20px;
 }
 
-.btn {
-  font-weight: 700;
-  margin: 0px;
-}
-
-.v2 {
-  border-bottom: 4px solid #0a79df;
-  width: 7%;
-}
-
 .text-light {
   font-weight: 200;
   font-size: 15px;
@@ -296,7 +334,7 @@ video {
 }
 
 .hcarousel {
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 130px;
 }
 
@@ -306,7 +344,6 @@ video {
   justify-content: center;
   align-items: center;
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .applive-in {
@@ -324,6 +361,52 @@ video {
   padding-right: 50px;
 }
 
+.applive-log div img {
+  height: 100px;
+  width: 100px;
+}
+
+.applive-log a img {
+  width: 200px;
+  margin-top: 20px;
+}
+
+.applive-log a {
+  margin-left: 30px;
+}
+
+.applive-log {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+  .hcarousel {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .appcont div h1 {
+    font-size: 28px;
+  }
+
+  .applive-log div img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .applive-log a img {
+    width: 120px;
+    margin-top: 20px;
+  }
+
+  .moredetbtn {
+    font-size: 15px;
+  }
+}
+
 .jteam1 {
   display: flex;
   flex-direction: row;
@@ -334,6 +417,10 @@ video {
 }
 
 @media only screen and (max-width: 850px) {
+  .jteam {
+    font-size: 22px;
+  }
+
   .applive-in {
     display: flex;
     justify-content: space-between;
@@ -361,7 +448,7 @@ video {
     padding-bottom: 10px;
   }
 
-  .proverb{
+  .proverb {
     display: flex;
     width: 100%;
     height: auto;
@@ -371,5 +458,13 @@ video {
     background-color: #ebebeb;
     font-size: small;
   }
-}
 
+  .sixhundred {
+    font-size: 45px;
+    height: auto;
+  }
+
+  .left {
+    margin-bottom: 15px;
+  }
+}

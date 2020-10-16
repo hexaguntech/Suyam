@@ -8,39 +8,40 @@ export default class Footer extends React.Component {
       <div>
         <div className="footer scl">
           <div className="container mt3 scl">
-            <div className="logo" style={{display:`flex`,alignItems:`center`}}>
+            <div className="logo">
               <img src="assets/suyamheaderlogo.jpg" />
             </div>
             <div>
               <ul className="footer-list">
                 <li>
-                  <Link class="text-dark" to="/Home">
+                  <Link class="text-dark1" to="/Home">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link class="text-dark" to="/Institute">
+                  <Link class="text-dark1" to="/Institute">
                     The Institute
                   </Link>
                 </li>
                 <li>
-                  <Link class="text-dark" to="/Glory">
+                  <Link class="text-dark1" to="/Glory">
                     The Glory
                   </Link>
                 </li>
                 <li>
-                  <Link class="text-dark" to="/Register">
+                  <Link class="text-dark1" to="/Register">
                     Registration
                   </Link>
                 </li>
                 <li>
-                  <Link class="text-dark" to="/Payment">
+                  <Link class="text-dark1" to="/Payment">
                     Payment
                   </Link>
                 </li>
               </ul>
             </div>
             <div
+              className="footdata"
               style={{
                 display: `flex`,
                 justifyContent: `center`,

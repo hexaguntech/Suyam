@@ -68,6 +68,10 @@
   height: 100px;
 }
 
+.htex h1 span {
+  font-size: 55px;
+}
+
 @media only screen and (max-width: 770px) {
   .contacth {
     display: flex;
@@ -89,5 +93,13 @@
     border-left: none;
     border-bottom: 2px solid gray;
     height: 100px;
+  }
+
+  .htex h1 span {
+    font-size: 32px;
+  }
+
+  .htex h1 span b {
+    font-size: 18px;
   }
 }

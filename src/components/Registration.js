@@ -240,35 +240,6 @@ export default class Registration extends Component {
     this.setState({ agree: !this.state.agree });
   };
 
-  // printApplication = () => {
-  //   <PDFDownloadLink
-  //       document={
-  //         <Application
-  //           course={this.state.course}
-  //           name={this.state.name}
-  //           dob={this.state.dob}
-  //           gender={this.state.gender}
-  //           email={this.state.email}
-  //           phone={this.state.phone}
-  //           addressLine1={this.state.addressLine1}
-  //           addressLine2={this.state.addressLine2}
-  //           state={this.state.state}
-  //           pincode={this.state.pincode}
-  //           bloodGroup={this.state.bloodGroup}
-  //           bloodDonorVolunteer={this.state.bloodDonorVolunteer}
-  //           studied={this.state.studied}
-  //           studying={this.state.studying}
-  //           additionalQualification={this.state.additionalQualification}
-  //           working={this.state.working}
-  //           horizontalReservation={this.state.horizontalReservation}
-  //           verticalReservation={this.state.verticalReservation}
-  //         />
-  //       }
-  //       fileName="Application.pdf"
-  //     >
-  //     </PDFDownloadLink>
-  // }
-
   render() {
     return (
       <div>
@@ -291,7 +262,7 @@ export default class Registration extends Component {
         <div className="container mt3">
           <div className="header" style={{ marginTop: `30px` }}>
             <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
-            <hr color="black" className="" />
+            <hr color="black" className="bline" />
             <form className="" onSubmit={this.applicationPreview}>
               <Form.Group>
                 <Form.Label>
@@ -305,6 +276,9 @@ export default class Registration extends Component {
                   name="course"
                   onChange={this.handleChange}
                 >
+                  <option value="1" disabled selected>
+                    Select
+                  </option>
                   <option>Mission Perseverance 2020</option>
                   <option>Operation Red Kepi 2020</option>
                 </Form.Control>
@@ -338,10 +312,8 @@ export default class Registration extends Component {
                     <Form.Control
                       type="date"
                       as="input"
-                      type="date"
                       required
                       name="dob"
-                      placeholder="dd-mm-yyyy"
                       onChange={(event) => this.handleChange(event)}
                     ></Form.Control>
                   </div>
@@ -359,7 +331,9 @@ export default class Registration extends Component {
                       name="gender"
                       onChange={this.handleChange}
                     >
-                      <option value='1'  disabled selected>Select</option>
+                      <option value="1" disabled selected>
+                        Select
+                      </option>
                       <option>Male</option>
                       <option>Female</option>
                       <option>Prefer not say</option>
@@ -456,7 +430,9 @@ export default class Registration extends Component {
                       onChange={(event) => this.handleChange(event)}
                       name="bloodGroup"
                     >
-                    <option value='1'  disabled selected>Select</option>
+                      <option value="1" disabled selected>
+                        Select
+                      </option>
                       <option>A+</option>
                       <option>A-</option>
                       <option>B+</option>
@@ -535,11 +511,12 @@ export default class Registration extends Component {
                       <Form.Control
                         as="select"
                         required
-                        
                         onChange={(event) => this.handleChange(event)}
                         name="verticalReservation"
                       >
-                       <option value='1'  disabled selected>Select</option>
+                        <option value="1" disabled selected>
+                          Select
+                        </option>
                         <option>General</option>
                         <option>OBC</option>
                         <option>MBC</option>
@@ -559,7 +536,9 @@ export default class Registration extends Component {
                         onChange={(event) => this.handleChange(event)}
                         name="horizontalReservation"
                       >
-                       <option value='1'  disabled selected>Select</option>
+                        <option value="1" disabled selected>
+                          Select
+                        </option>
                         <option>XSM</option>
                         <option>PH</option>
                         <option>MSP</option>

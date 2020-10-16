@@ -1,5 +1,4 @@
 .hexa > row {
-  
   width: 100%;
   display: flex;
   align-items: center;
@@ -19,7 +18,7 @@
 }
 .timeline ul li {
   padding: 20px;
- 
+
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -39,7 +38,7 @@
   font-weight: 300;
 }
 .timeline-content .date {
-color: blue;
+  color: blue;
   margin-top: 24px;
   font-size: 12px;
   font-weight: 300;
@@ -48,7 +47,7 @@ color: blue;
 }
 @media only screen and (min-width: 768px) {
   .timeline:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 50%;
@@ -75,7 +74,7 @@ color: blue;
     border-radius: 0px 20px 20px 20px;
   }
   .timeline ul li::before {
-    content: "";
+    content: '';
     position: absolute;
     height: 20px;
     width: 20px;
@@ -99,32 +98,25 @@ color: blue;
     background-color: #0a79df;
   }
 }
-.box{
-    background-color: #0a79df;
-  width: 330px;
+.box {
+  background-color: #0a79df;
+  width: 100%;
   height: 20px;
   padding: 20px;
-  margin-left: 10px;
-
-  
-  
 }
-.box > h3{
-    text-align: center;
-    margin-top:-19px;
+.box > h3 {
+  text-align: center;
+  margin-top: -19px;
 }
-.boxc{
-    background-color:#0a79df;
-    width: 290px;
-    height: 20px;
-    padding: 20px;
-    margin-left: 10px;
-  
+.boxc {
+  background-color: #0a79df;
+  width: 100%;
+  height: 20px;
+  padding: 20px;
 }
-.boxc > h3{
-    text-align: center;
-    margin-top:-19px;
-
+.boxc > h3 {
+  text-align: center;
+  margin-top: -19px;
 }
 
 body {
@@ -140,11 +132,13 @@ body {
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+}
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -154,15 +148,20 @@ body {
   /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: #0a79df;
+  background-color: hsl(209, 91%, 46%);
   color: aliceblue;
   height: 190px;
+  justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
+  }
+
+  .timeline ul {
+    padding-left: 0px;
   }
 }

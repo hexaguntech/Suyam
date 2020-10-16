@@ -21,7 +21,6 @@ export default class Contact extends React.Component {
                   style={{
                     color: `#0A79DF`,
                     fontWeight: `700`,
-                    fontSize: `55px`,
                   }}
                 >
                   CONTACT US

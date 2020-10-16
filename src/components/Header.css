@@ -5,13 +5,23 @@
   font-weight: 700;
 }
 .logo {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .logo > img {
-  height: 100px;
-  width: 250px;
+  height: auto;
+  width: 400px;
   padding: 20px;
 }
+
+@media (max-width: 700px) {
+  .logo > img {
+    width: 70%;
+    height: auto;
+    padding: 20px;
+  }
+}
+
 .announcement {
   color: red;
   font-weight: 300;
@@ -19,6 +29,6 @@
 .basicc {
   justify-items: center;
 }
-.jumbotron > custnav > text-light >p:hover{
+.jumbotron > custnav > text-light > p:hover {
   background-color: aqua;
 }

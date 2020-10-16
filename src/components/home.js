@@ -336,7 +336,7 @@ export default class Home extends React.Component {
 
                 <Link to="/">
                   <Button
-                    className="btn btn-default"
+                    className="btn btn-default butre"
                     type="link"
                     style={{ margin: `0px` }}
                   >
@@ -404,7 +404,7 @@ export default class Home extends React.Component {
                 </div>
                 <Link to="/">
                   <Button
-                    className="btn btn-default"
+                    className="btn btn-default butre"
                     type="link"
                     style={{ margin: `0px` }}
                   >
@@ -474,16 +474,20 @@ export default class Home extends React.Component {
                     style={{
                       display: `flex`,
                       alignItems: `center`,
+                      flexDirection: 'column',
                       justifyContent: `space-between`,
                     }}
                   >
-                    <div>
-                      <div style={{ display: `flex`, flexDirection: `column` }}>
-                        <img
-                          src="assets/appsuyamlogo.png"
-                          alt="appsuyamlogo"
-                          style={{ height: `100px`, width: `100px` }}
-                        />
+                    <div className="applive-log">
+                      <div
+                        style={{
+                          display: `flex`,
+                          flexDirection: `column`,
+                          alignItems: 'center',
+                          justifyContent: 'space-evenly',
+                        }}
+                      >
+                        <img src="assets/appsuyamlogo.png" alt="appsuyamlogo" />
                         <p style={{ color: `white`, fontWeight: `700` }}>
                           Suyam IAS
                         </p>
@@ -492,14 +496,13 @@ export default class Home extends React.Component {
                         <img
                           src="assets/playstore.png"
                           alt="playstore-button"
-                          style={{ width: `200px`, marginTop: `20px` }}
                         />
                       </a>
                     </div>
                     <div>
                       <Link to="/AppLive">
                         <Button
-                          className="btn btn-default"
+                          className="btn btn-default moredetbtn"
                           type="link"
                           style={{
                             fontWeight: `700`,

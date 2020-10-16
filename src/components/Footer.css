@@ -19,9 +19,37 @@
   list-style-type: none;
   font-weight: 700;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.text-dark1 {
+  color: black;
+}
+
+.footdata h3 {
+  font-size: 22px;
+}
+
+.footdata p {
+  font-size: 15px;
+}
+
+.footdata h4 {
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 750px) {
+  .logo {
+    display: inline;
+  }
+
   .scl {
     display: flex;
     /* align-content: space-around;
@@ -35,6 +63,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px;
     justify-content: center;
   }
 
@@ -63,7 +92,11 @@
   .socialfot {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
+  }
+
+  .socialfot p {
+    font-size: 14px;
   }
 }

@@ -4,7 +4,7 @@ import './Payment.css';
 export default class Payment extends React.Component {
   render() {
     return (
-      <div style={{ marginBottom: `200px` }}>
+      <div style={{ marginBottom: `50px` }}>
         <div className="proverb">
           <p style={{ marginBottom: `0px` }}>
             கேடுஇல் விழுச்செல்வம் கல்வி ஒருவற்கு <br />
@@ -29,7 +29,6 @@ export default class Payment extends React.Component {
                   style={{
                     color: `#0A79DF`,
                     fontWeight: `700`,
-                    fontSize: `55px`,
                   }}
                 >
                   PAYMENT DETAILS
