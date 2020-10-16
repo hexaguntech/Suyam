@@ -279,6 +279,7 @@ export default class Registration extends Component {
           <div className="header" style={{ marginTop: `30px` }}>
             <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
             <hr color="black" className="bline" />
+            <p style={{color:`red`}}>* Fields are mandatory</p>
             <form className="" onSubmit={this.applicationPreview}>
               <Form.Group>
                 <Form.Label>
