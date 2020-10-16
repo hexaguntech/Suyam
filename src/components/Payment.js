@@ -44,38 +44,32 @@ export default class Payment extends React.Component {
             </div>
           </div>
         </div>
-        <div className="container mt3" style={{fontWeight:`500`,marginBottom:`30px`,marginTop:`30px`}} >
-          <p>Kindly pay the fees for the course concerned into the following Bank Account.</p><br/><br />
-          <i>Bank Account Details :</i><br/><br/>
-          <p  >Name of the Account Holder : <span style={{color: `#0A79DF`}}>KOPPEROUNDEVI</span><br/>
-          Account Number : <span style={{color: `#0A79DF`}}>76720100001634</span><br/>
-          Bank Name : <span style={{color: `#0A79DF`}}>Bank of Baroda</span><br/>
-          IFSC Code : <span style={{color: `#0A79DF`}}>BARB0VJPOND</span><br/>
-          MICR Code : <span style={{color: `#0A79DF`}}>605012008</span><br/>
-          </p><br/><br />
-
+        <div
+          className="container mt3"
+          style={{ fontWeight: `500`, marginBottom: `30px`, marginTop: `30px` }}
+        >
           <p>
             Kindly pay the fees for the course concerned into the following Bank
             Account.
           </p>
           <br />
-          <br />
           <i>Bank Account Details :</i>
           <br />
           <br />
-          <p style={{ color: `#0A79DF` }}>
-            Name of the Account Holder : KOPPEROUNDEVI
+          <p>
+            Name of the Account Holder :{' '}
+            <span style={{ color: `#0A79DF` }}>KOPPEROUNDEVI</span>
             <br />
-            Account Number : 76720100001634
+            Account Number :{' '}
+            <span style={{ color: `#0A79DF` }}>76720100001634</span>
             <br />
-            Bank Name : Bank of Baroda
+            Bank Name : <span style={{ color: `#0A79DF` }}>Bank of Baroda</span>
             <br />
-            IFSC Code : BARB0VJPOND
+            IFSC Code : <span style={{ color: `#0A79DF` }}>BARB0VJPOND</span>
             <br />
-            MICR Code : 605012008
+            MICR Code : <span style={{ color: `#0A79DF` }}>605012008</span>
             <br />
           </p>
-          <br />
           <br />
           <p>
             Please send payment details / screenshot of payment transaction
@@ -115,22 +109,39 @@ export default class Payment extends React.Component {
             <br />
             <br />
           </p>
-          <b style={{color:`#0A79DF`}}>
-            <span style={{color:`black`}}>ADDRESS:</span><br/><br/> 
-            14, First Cross,<br/>
-            Natesan Nagar – East,<br/>
-            Puducherry – 605 005.<br/>
-            Timing : 11 a.m. to 4 p.m. (Monday to Saturday)<br/>
-          </b><br/><br/>
-          <p><b>NOTE:</b>
-          <div className="p__list">
-            <ul>
-              <li><span>Login ID and Password for “SUYAM I.A.S.” Mobile App, through which the course is conducted,
-              will be sent through <br />SMS / e-mail only after Registration and payment of Fees.</span></li>
-              <li><span>Fees once paid is non-refundable and non-transferable.</span></li>
-            </ul>
-          </div>
-
+          <b style={{ color: `#0A79DF` }}>
+            <span style={{ color: `black` }}>ADDRESS:</span>
+            <br />
+            <br />
+            14, First Cross,
+            <br />
+            Natesan Nagar – East,
+            <br />
+            Puducherry – 605 005.
+            <br />
+            Timing : 11 a.m. to 4 p.m. (Monday to Saturday)
+            <br />
+          </b>
+          <br />
+          <br />
+          <p>
+            <b>NOTE:</b>
+            <div className="p__list">
+              <ul>
+                <li>
+                  <span>
+                    Login ID and Password for “SUYAM I.A.S.” Mobile App, through
+                    which the course is conducted, will be sent through <br />
+                    SMS / e-mail only after Registration and payment of Fees.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    Fees once paid is non-refundable and non-transferable.
+                  </span>
+                </li>
+              </ul>
+            </div>
           </p>
         </div>
       </div>

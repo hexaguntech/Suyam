@@ -17,7 +17,7 @@ export default class RedKepi extends React.Component {
           OPERATION RED KEPI 2020
         </h1>
         <p>
-          Special Coaching for Police Constable Exam in Puducherry through
+          <b>Special Coaching for Police Constable Exam in Puducherry</b> through
         </p>
         
         <img
@@ -26,14 +26,14 @@ export default class RedKepi extends React.Component {
           alt="suyamapplogo"
         />
         <p>
-         Mobile App
+        <b  style={{ color: `#0a79df` }}>Suyam IAS</b> Mobile App
         </p>
         <strong>New Batch commences shortly... Date will be announced soon.</strong>
         <br />
         <br />
         <p>
         This Special Coaching Programme aims at grooming aspirants for the the much awaited competitive
-        examination for the recruitment of <b>Police Constables</b> in the <b>Government Puducherry.</b> The objective of
+        examination for the recruitment of <b>Police Constables</b> in the <b>Government of Puducherry.</b> The objective of
         this Coaching programme is to support the Police aspirants to turn their Khakhi dreams into reality.
         </p>
         <p>As per the recruitment procedure for the posts of Police Constable, all candidates (male or female) who
@@ -111,7 +111,7 @@ export default class RedKepi extends React.Component {
           <hr />
           <p>
             The above subjects will be taught by way of a range of pre-recorded
-            video classes, learning materials and online tests through <b>“SUYAM
+            video classes, learning materials and online tests through <b>“Suyam
             IAS”</b> App.
           </p>
           <p>
@@ -120,7 +120,7 @@ export default class RedKepi extends React.Component {
             aspirants.
           </p>
           <p>
-            You can find in “SUYAM I.A.S.” Mobile App —
+            You can find in <b>“Suyam IAS”</b> Mobile App —
             <br />
             <ul>
             <li>
@@ -157,8 +157,8 @@ export default class RedKepi extends React.Component {
           
         </div>
         <p>
-          Register here to avail the benefits of <b>Operation Red kepi 2020,</b>
-          Special Preparatory Course through <b>“SUYAM IAS”</b> Mobile App.
+          Register here to avail the benefits of <b>Operation Red Kepi 2020, </b>
+          Special Coaching for Police Constable Exam in Puducherry through <b>“Suyam IAS”</b> Mobile App.
         </p>
         <br />
         <h4>

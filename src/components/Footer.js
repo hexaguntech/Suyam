@@ -29,12 +29,7 @@ export default class Footer extends React.Component {
                   </Link>
                 </li>
                 <li>
-                  <Link class="text-dark" to="/Courses">
-                    Courses
-                  </Link>
-                </li>
-                <li>
-                  <Link class="text-dark" to="/Registration">
+                  <Link class="text-dark" to="/Register">
                     Registration
                   </Link>
                 </li>
