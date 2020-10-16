@@ -355,10 +355,11 @@ export default class Registration extends Component {
                     <Form.Control
                       as="select"
                       required
+                      placeholder="select"
                       name="gender"
                       onChange={this.handleChange}
                     >
-                      <option>Select</option>
+                      <option value='1'  disabled selected>Select</option>
                       <option>Male</option>
                       <option>Female</option>
                       <option>Prefer not say</option>
@@ -455,7 +456,7 @@ export default class Registration extends Component {
                       onChange={(event) => this.handleChange(event)}
                       name="bloodGroup"
                     >
-                      <option>Select</option>
+                    <option value='1'  disabled selected>Select</option>
                       <option>A+</option>
                       <option>A-</option>
                       <option>B+</option>
@@ -534,10 +535,11 @@ export default class Registration extends Component {
                       <Form.Control
                         as="select"
                         required
+                        
                         onChange={(event) => this.handleChange(event)}
                         name="verticalReservation"
                       >
-                        <option></option>
+                       <option value='1'  disabled selected>Select</option>
                         <option>General</option>
                         <option>OBC</option>
                         <option>MBC</option>
@@ -557,7 +559,7 @@ export default class Registration extends Component {
                         onChange={(event) => this.handleChange(event)}
                         name="horizontalReservation"
                       >
-                        <option></option>
+                       <option value='1'  disabled selected>Select</option>
                         <option>XSM</option>
                         <option>PH</option>
                         <option>MSP</option>
@@ -863,13 +865,6 @@ export default class Registration extends Component {
                 </tr>
               </tbody>
             </Table>
-            {/* <Button
-                className="btn btn-default"
-                type="submit"
-                onClick={this.saveApplication}
-              >
-                SUBMIT
-              </Button> */}
           </Modal.Body>
           <Modal.Footer
             style={{

@@ -15,17 +15,18 @@ export default class Header extends React.Component {
           </div>
 
           <Navbar expand="lg" collapseOnSelect="true">
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav
                 className="mr-auto custnav mx-auto"
                 style={{
+              
                   justifyContent: 'space-evenly',
                 }}
               >
                 <Nav.Link href="/Home">
-                  <span className="text-light" style={{ fontWeight: `700` }}>
-                    Home
+                  <span className="text-light" style={{ fontWeight: `700`  }}>
+                   Home 
                   </span>
                 </Nav.Link>
                 <Nav.Link href="/Institute">
