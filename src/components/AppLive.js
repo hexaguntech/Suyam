@@ -6,7 +6,46 @@ export default class Payment extends React.Component {
     return (
       <div className="__applive">
         <div className="applive__header">
-          <div className="container mt3">
+          <div className="container mt3 __applive_container">
+            <div style={{flex:`0.4`}}>
+              <img
+                src="assets/applive.png"
+                alt="applive-pic"
+                style={{
+                  height: `400px`,
+                  width: `350px`,
+                  marginBottom: `-100px`,
+                  marginTop: `60px`,
+                }}
+              />
+            </div>
+            <div style={{flex: `0.6`}}>
+                <h1 classname="__applive_appislive" style={{color:`white`,fontWeight:`700`}}>
+                  OUR APP IS LIVE!
+                </h1>
+                <div classname="__applive_left">
+                  <div classname="__applive_app_logo">
+                    <div style={{display:`flex`,flexDirection:`column`}}>
+                      <img
+                        src="assets/appsuyamlogo.png"
+                        style={{ height: `100px`, width: `100px`,padding:`10px` }}
+                      />
+                      <b style={{color:`white`,textAlign:`justify`}}>Suyam IAS</b>
+                    </div>
+                  </div>
+                  <div classname="__applive_play_logo"> 
+                    <a href="https://play.google.com/store/apps/details?id=in.testpress.suyamias">
+                      <img
+                        src="assets/playstore.png"
+                        alt="playstore-button"
+                        style={{ width: `200px`, marginTop: `20px` }}
+                      />
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          {/* <div className="container mt3">
             <img
               src="assets/applive.png"
               alt="applive-pic"
@@ -41,7 +80,7 @@ export default class Payment extends React.Component {
                 />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
         <div
           className="container mt3"

@@ -304,6 +304,7 @@ export function Application({
                 fontSize: 14,
                 textAlign: `justify`,
                 fontFamily: 'Times-Roman',
+                color: `#2c6ec2`
               }}
             >
               {' '}
@@ -325,6 +326,7 @@ export function Application({
                   textAlign: 'justify',
                   fontFamily: 'Times-Roman',
                   textAlign: `justify`,
+                  
                 }}
               >
                 Dear {name},{' '}
