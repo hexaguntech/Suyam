@@ -4,7 +4,7 @@ import ApplicantDataService from '../services/ApplicantDataService';
 import axios from 'axios';
 import { Form, Button, Modal, Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { PDFDownloadLink } from "@react-pdf/renderer";
+import { PDFDownloadLink } from '@react-pdf/renderer';
 import { Application } from './Application';
 
 export default class Registration extends Component {
@@ -180,19 +180,6 @@ export default class Registration extends Component {
         // });
 
         this.modalClick();
-
-        // const page = document.getElementById('applicationForm');
-        // html2PDF(page, {
-        //   jsPDF: {
-        //     format: 'a4',
-        //   },
-        //   imageType: 'image/jpeg',
-        //   output: './pdf/generate.pdf',
-        // });
-        // this.printDocument();
-        // this.pdfToHTML();
-        // alert('Successfully registered');
-        // this.props.history.replace('/home');
       })
       .catch((e) => {
         console.log(e);
@@ -214,7 +201,7 @@ export default class Registration extends Component {
         },
       };
       axios
-        .post('http://localhost:8080/api/applicant/upload', formData, {})
+        .post('http://suyamias.com/api/applicant/upload', formData, {})
         .then((response) => {
           alert('The file is successfully uploaded');
           this.setState({
@@ -223,7 +210,7 @@ export default class Registration extends Component {
           console.log(response);
           console.log(this.state.photoPath);
           this.setState({
-            photoLink: 'http://localhost:8080/' + this.state.photoPath,
+            photoLink: 'http://suyamias.com/' + this.state.photoPath,
           });
         })
         .catch((error) => {
@@ -256,8 +243,8 @@ export default class Registration extends Component {
   // printApplication = () => {
   //   <PDFDownloadLink
   //       document={
-  //         <Application 
-  //           course={this.state.course} 
+  //         <Application
+  //           course={this.state.course}
   //           name={this.state.name}
   //           dob={this.state.dob}
   //           gender={this.state.gender}
@@ -299,7 +286,6 @@ export default class Registration extends Component {
               {' '}
               ... குறள்
             </p>
-
           </p>
         </div>
         <div className="container mt3">
@@ -664,15 +650,18 @@ export default class Registration extends Component {
         <Modal show={this.state.modalShow} onHide={this.handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>
-              Your Application Has Been Successfully Submitted!
+              Welcome <b>{this.state.name},</b>{' '}
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            Welcome {this.state.name}
-            Your application for the course, {this.state.course} has been  successfully submitted.<br/> 
-            Please remember that only on payment of course fees, your admission will be confirmed<br/>
+            Your application for the course, <b>{this.state.course}</b> has been
+            successfully submitted.
+            <br />
+            Please remember that only on payment of course fees, your admission
+            will be confirmed
+            <br />
             (SUYAM ADMINISTRATION)
-           <br />
+            <br />
           </Modal.Body>
           <Modal.Footer
             style={{
@@ -682,8 +671,8 @@ export default class Registration extends Component {
             {
               <PDFDownloadLink
                 document={
-                  <Application 
-                    course={this.state.course} 
+                  <Application
+                    course={this.state.course}
                     name={this.state.name}
                     dob={this.state.dob}
                     gender={this.state.gender}
@@ -706,15 +695,17 @@ export default class Registration extends Component {
                 }
                 fileName="Application.pdf"
                 style={{
-                  textDecoration: "none",
-                  padding: "6px",
-                  color: "white",
-                  backgroundColor: "#0a79df",
-                  border: "1px solid #0a79df",
-                  borderRadius: `5px`
+                  textDecoration: 'none',
+                  padding: '6px',
+                  color: 'white',
+                  backgroundColor: '#0a79df',
+                  border: '1px solid #0a79df',
+                  borderRadius: `5px`,
                 }}
-              > Print Application
-            </PDFDownloadLink>
+              >
+                {' '}
+                Print Application
+              </PDFDownloadLink>
             }
 
             <Button
@@ -748,7 +739,7 @@ export default class Registration extends Component {
                 margin: '20px',
               }}
             ></img>
-            <div>
+            {/* <div>
               <p>I opted for the course {this.state.course}</p>
               <br />
               <p>My name is {this.state.name}</p>
@@ -808,8 +799,8 @@ export default class Registration extends Component {
                 under any circumstances.
               </p>
               <br />
-            </div>
-            {/*<Table bordered size="sm">
+            </div> */}
+            <Table bordered size="sm">
               <tbody>
                 <tr>
                   <th>Selected Course</th>
@@ -871,7 +862,7 @@ export default class Registration extends Component {
                   <td>{this.state.horizontalReservation}</td>
                 </tr>
               </tbody>
-            </Table> */}
+            </Table>
             {/* <Button
                 className="btn btn-default"
                 type="submit"

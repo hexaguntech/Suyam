@@ -12,7 +12,6 @@ export default class Contact extends React.Component {
             <br />
             <p style={{ float: `right`, fontStyle: 'italic' }}> ... குறள்</p>
           </p>
-
         </div>
         <div className="contacth">
           <div className="container mt3">
@@ -59,7 +58,6 @@ export default class Contact extends React.Component {
               // }}
             >
               <img className="cimage" src="assets/mail.png" alt="mail-logo" />
-              <p>Mail</p>
               <b>
                 <span style={{ color: `#0A79DF` }}>suyamias@gmail.com</span>
               </b>
@@ -75,7 +73,6 @@ export default class Contact extends React.Component {
                 src="assets/telegram.png"
                 alt="telegram-logo"
               />
-              <p>Telegram</p>
               <b>
                 <span style={{ color: `#0A79DF` }}>+91-9486204334</span>
               </b>
@@ -91,7 +88,6 @@ export default class Contact extends React.Component {
                 src="assets/whatsapp.png"
                 alt="whatsapp-logo"
               />
-              <p>Whatsapp</p>
               <b>
                 <span style={{ color: `#0A79DF` }}>+91-9486334648</span>
               </b>
@@ -100,7 +96,6 @@ export default class Contact extends React.Component {
 
             <div className="socialbtn">
               <img className="cimage" src="assets/phone.png" alt="phone-logo" />
-              <p>Phone</p>
               <b>
                 <span style={{ color: `#0A79DF` }}>0413-2204334</span>
               </b>

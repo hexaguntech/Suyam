@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import {
-    Page,
-    Text,
-    View,
-    Document,
-    StyleSheet,
-    Image
-} from "@react-pdf/renderer";
+  Page,
+  Text,
+  View,
+  Document,
+  StyleSheet,
+  Image,
+} from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
     page: {
@@ -78,6 +78,5 @@ export function Application({ course,name,dob,gender,email,phone,addressLine1,ad
             </Page>
         </Document>
     );
-
+  );
 }
-

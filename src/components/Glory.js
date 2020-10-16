@@ -10,7 +10,16 @@ export default class Glory extends React.Component {
             ஆக்கம் அதர்வினாய்ச் செல்லும் அசைவுஇலா <br />
             ஊக்கம் உடையான் உழை.
             <br />
-            <p style={{ float: `right`, marginBottom: `0px`, fontStyle: 'italic' }}> ... குறள்</p>
+            <p
+              style={{
+                float: `right`,
+                marginBottom: `0px`,
+                fontStyle: 'italic',
+              }}
+            >
+              {' '}
+              ... குறள்
+            </p>
           </p>
         </div>
         <div
@@ -427,7 +436,7 @@ export default class Glory extends React.Component {
                         <th scope="row">
                           <span style={{ fontWeight: `500` }}>
                             Civil Services Examination 2015 (IAS, IPS etc.) – Thiru
-                            P. SUTHANDIRA BALAN Selected as I.R.A.S.{' '}
+                            P. SUDHANDIRA BALAN Selected as I.R.A.S.(AIR 1014){' '}
                           </span>
                         </th>
                         <td>
@@ -448,16 +457,23 @@ export default class Glory extends React.Component {
                       <thead>
                         <tr>
                           <th scope="col">
-                            Name of <br />
-                            the <br /> post
+                            Name <br />
+                            of the
+                            <br /> post
                           </th>
                           <th scope="col">No. of the Candidates selected</th>
                         </tr>
                       </thead>
                       <tr>
-                        <th scope="row"><span style={{fontWeight:`500`}}>Civil Services Examination 2016(IAS, IPS etc.) – Thiru P.
-                          SUTHANDIRA BALAN Selected as I.R.S.(AIR 1014){' '}</span> </th>
-                        <td><span style={{color:`#0A79DF`}}>1</span></td>
+                        <th scope="row">
+                          <span style={{ fontWeight: `500` }}>
+                            Civil Services Examination 2016 (IAS, IPS etc.) – Thiru
+                            P. SUDHANDIRA BALAN Selected as I.R.S.(AIR 854){' '}
+                          </span>
+                        </th>
+                        <td>
+                          <span style={{ color: `#0A79DF` }}>1</span>
+                        </td>
                       </tr>
                     </table>
                   </div>
