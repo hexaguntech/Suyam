@@ -1,4 +1,65 @@
 .applive__header {
   background-color: #2c6fbe;
   /* display: flex; */
+  height: auto;
+  width: 100%;
+}
+
+.__applive_container{
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+}
+
+.__applive_left{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.__applive_appislive{
+  font-weight: 700;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.__applive_app_logo{
+  flex: 0.2;
+}
+
+.__applive_play_logo{
+  flex: 0.8;
+}
+
+@media (max-width: 600px) {
+
+  .__applive_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    padding-top: 30px;
+  }
+  .__applive_appislive{
+    font-weight: 700;
+    color: white;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .__applive_left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .__applive_app_logo{
+    flex: 0.2;
+    padding: 30px;
+  }
+  .__applive_play_logo{
+    flex: 0.8;
+    padding: 30px;
+  }
+  
 }
