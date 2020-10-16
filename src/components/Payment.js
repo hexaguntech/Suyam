@@ -83,7 +83,7 @@ export default class Payment extends React.Component {
             <div className="p__list">
               <ul>
                 <li>
-                  <span>coursefee@suyamias.com</span>
+                  <span>support@suyamias.com</span>
                 </li>
                 <li>
                   <span>suyamias@gmail.com</span>
