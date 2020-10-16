@@ -100,7 +100,7 @@ export default class Header extends React.Component {
               Special Online Preparatory Course for Competitive Exams in
               Puducherry Government as well as TNPSC, SSC, RRB and such other
               exams through “SUYAM I.A.S.” Mobile App commences on October
-              15,2020. Register immediately.
+              25,2020. Register immediately.
             </marquee>
           </div>
         </div>

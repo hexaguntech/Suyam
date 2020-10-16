@@ -547,7 +547,7 @@ export default class Glory extends React.Component {
                           </span>{' '}
                         </th>
                         <td>
-                          <span style={{ color: `#0A79DF` }}>47</span>
+                          <span style={{ color: `#0A79DF` }}>48</span>
                         </td>
                       </tr>
                     </table>

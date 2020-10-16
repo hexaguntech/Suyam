@@ -6,6 +6,7 @@ import { Form, Button, Modal, Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { Application } from './Application';
+import { DropDownList } from '@progress/kendo-react-dropdowns';
 
 export default class Registration extends Component {
   constructor(props) {
@@ -56,10 +57,11 @@ export default class Registration extends Component {
       modalShow: false,
       appmodal: false,
       submitted: false,
+      success: false
     };
   }
 
-  handleClose() {
+  handleClose() { 
     this.setState({
       modalShow: false,
       appmodal: false,
@@ -240,6 +242,20 @@ export default class Registration extends Component {
     this.setState({ agree: !this.state.agree });
   };
 
+  d_courses = ['Mission Perseverance 2020','Operation Red Kepi 2020'];
+  d_gender = ['Male','Female','Prefer not to say'];
+  d_bloodgroup = ['A+',
+    'A-',
+    'B+',
+    'B-',
+    'O+',
+    'O-',
+    'AB+',
+    'AB-',];
+  d_verticalreservation = ['General','OBC','MBC','SC','ST','EBC','BCM','BT'];
+
+
+
   render() {
     return (
       <div>
@@ -279,9 +295,18 @@ export default class Registration extends Component {
                   <option value="1" disabled selected>
                     Select
                   </option>
-                  <option>Mission Perseverance 2020</option>
+                  <option>Mission Perseverance 2020</option> 
                   <option>Operation Red Kepi 2020</option>
                 </Form.Control>
+                {/* <DropDownList
+                  className="mb-3"
+                  style={{ width: '100%' }}
+                  label=""
+                  name="course"
+                  data={this.d_courses}
+                  required={true}
+                  onChange={this.handleChange}
+                /> */}
                 <hr />
                 <Form.Group>
                   <Form.Label>
@@ -292,13 +317,13 @@ export default class Registration extends Component {
                   <Form.Control
                     as="input"
                     placeholder="Enter your name"
-                    required
                     value={this.state.name}
                     type="text"
                     className="form-control"
                     value={this.state.name}
                     onChange={this.handleChange}
                     name="name"
+                    required
                   ></Form.Control>
                 </Form.Group>
                 <div className="regrow">
@@ -338,6 +363,14 @@ export default class Registration extends Component {
                       <option>Female</option>
                       <option>Prefer not say</option>
                     </Form.Control>
+                    {/* <DropDownList
+                      style={{ width: '100%' }}
+                      label=""
+                      name="gender"
+                      data={this.d_gender}
+                      required={true}
+                      onChange={this.handleChange}
+                    /> */}
                   </div>
                 </div>
                 <Form.Group>
@@ -366,6 +399,7 @@ export default class Registration extends Component {
                         placeholder="name@example.com"
                         name="email"
                         onChange={this.handleChange}
+                        required
                       ></Form.Control>
                     </div>
                   </div>
@@ -402,6 +436,7 @@ export default class Registration extends Component {
                         placeholder="State"
                         name="state"
                         onChange={(event) => this.handleChange(event)}
+                        required
                       ></Form.Control>
                     </div>
                     <div className="smtag">
@@ -415,6 +450,7 @@ export default class Registration extends Component {
                         placeholder="Pincode"
                         name="pincode"
                         onChange={(event) => this.handleChange(event)}
+                        required
                       ></Form.Control>
                     </div>
                   </div>
@@ -424,6 +460,14 @@ export default class Registration extends Component {
                     <Form.Label>
                       <b>Blood Group</b>
                     </Form.Label>
+                    {/* <DropDownList
+                      style={{ width: '100%' }}
+                      label=""
+                      name="bloodgroup"
+                      data={this.d_bloodgroup}
+                      required={true}
+                      onChange={this.handleChange}
+                    /> */}
                     <Form.Control
                       as="select"
                       placeholder="State"
@@ -508,6 +552,14 @@ export default class Registration extends Component {
                           <span style={{ color: `red` }}>*</span>
                         </b>
                       </Form.Label>
+                      {/* <DropDownList
+                        style={{ width: '100%' }}
+                        label=""
+                        name="verticalreservation"
+                        data={this.d_verticalreservation}
+                        required={true}
+                        onChange={this.handleChange}
+                      /> */}
                       <Form.Control
                         as="select"
                         required
