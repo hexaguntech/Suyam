@@ -9,6 +9,7 @@ exports.create = (req, res) => {
     course: req.body.course,
     name: req.body.name,
     dob: req.body.dob,
+    gender: req.body.gender,
     email: req.body.email,
     phone: req.body.phone,
     addressLine1: req.body.addressLine1,
