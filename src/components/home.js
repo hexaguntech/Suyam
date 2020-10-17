@@ -64,7 +64,7 @@ export default class Home extends React.Component {
             <div className="v2"></div>
             <div className="courses">
               <div class="img-holder">
-                <img src="assets\Coursesi1.jpg" alt="image description" />
+                <img src="assets\Coursesi3.jpg" alt="image description" />
                 <Link to="/MissionPerseverance2020">
                   <Button
                     className="courcbtn"
@@ -80,7 +80,7 @@ export default class Home extends React.Component {
 
               <div class="img-holder">
                 <img src="assets\Coursesi2.jpg" alt="image description" />
-                <Link to="/MissionPerseverance2020">
+                <Link to="/OperationRedKEPI2020">
                   <Button
                     className="courcbtn"
                     style={{

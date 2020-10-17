@@ -175,7 +175,7 @@ export default class Registration extends Component {
       belongTo: this.state.belongTo,
       verticalReservation: this.state.verticalReservation,
       horizontalReservation: this.state.horizontalReservation,
-      photoPath: this.state.photoPath,
+      photoPath: this.state.photoLink,
     };
 
     console.log(data);
@@ -252,8 +252,6 @@ export default class Registration extends Component {
 
   onChangeImage(e) {
     this.setState({ photoFile: e.target.files[0] });
-    console.log(this.state.photoFile);
-    console.log(this.state.photoFile);
   }
   handleChange(event) {
     this.setState({ [event.target.name]: event.target.value });
@@ -414,6 +412,7 @@ export default class Registration extends Component {
                         as="input"
                         required
                         name="phone"
+                        type="number"
                         onChange={(event) => this.handleChange(event)}
                       ></Form.Control>
                     </div>
@@ -544,6 +543,8 @@ export default class Registration extends Component {
                   <Form.Control
                     as="input"
                     placeholder="additional qualications,if any"
+                    name="additionalQualification"
+                    onChange={(event) => this.handleChange(event)}
                   />
                 </Form.Group>
                 <Form.Group>
