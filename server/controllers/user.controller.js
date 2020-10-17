@@ -214,9 +214,10 @@ exports.downloadData = (req, res) => {
         fields: {
           course: 'string',
           name: 'string',
-          dob: 'string',
           email: 'string',
           phone: 'string',
+          dob: 'string',
+          gender: 'string',
           addressLine1: 'string',
           addressLine2: 'string',
           state: 'string',
@@ -224,13 +225,14 @@ exports.downloadData = (req, res) => {
           bloodGroup: 'string',
           bloodDonorVolunteer: 'string',
           studied: 'string',
+          additionalQualification: 'string',
           studying: 'string',
           additionalQualification: 'string',
           working: 'string',
           verticalReservation: 'string',
           horizontalReservation: 'string',
-          dateApplied: 'string',
           photo: 'string',
+          dateApplied: 'string',
         },
       });
 

@@ -544,6 +544,8 @@ export default class Registration extends Component {
                   <Form.Control
                     as="input"
                     placeholder="additional qualications,if any"
+                    name="additionalQualification"
+                    onChange={(event) => this.handleChange(event)}
                   />
                 </Form.Group>
                 <Form.Group>
