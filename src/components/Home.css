@@ -78,6 +78,61 @@
   padding: 20px;
   margin: 20px;
 }
+
+.img-holder {
+  width: 45%;
+  position: relative;
+}
+
+.img-holder img {
+  width: 100%;
+}
+
+.img-holder Link {
+  position: absolute;
+  top: 80%;
+  right: 80%;
+}
+
+.courcbtn {
+  background-color: #0a79df;
+  position: absolute;
+  top: 85%;
+  right: 60%;
+  margin: 0px;
+  font-size: 1vw;
+  /* bottom: 10px; your button position
+  right: 10px; your button position */
+}
+
+@media (max-width: 780px) {
+  .img-holder {
+    margin-top: 10px;
+    width: 90%;
+    position: relative;
+  }
+
+  .img-holder img {
+    width: 100%;
+  }
+
+  .img-holder Link {
+    position: absolute;
+    top: 80%;
+    right: 80%;
+  }
+
+  .courcbtn {
+    position: absolute;
+    top: 85%;
+    right: 70%;
+    padding: 3px 6px;
+    font-size: 1.7vw;
+    /* bottom: 10px; your button position
+    right: 10px; your button position */
+  }
+}
+
 .__coursesofferedcard {
   background-color: #f5f5f5;
   width: 45%;
@@ -98,7 +153,6 @@
 
 @media only screen and (max-width: 880px) {
   .courses-offered {
-    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,7 +169,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 0px;
+  }
+
+  .img-holder {
     margin-top: 10px;
+    /* width: 60%; */
   }
 
   .mp {
@@ -452,8 +511,8 @@ video {
     display: flex;
     width: 100%;
     height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     justify-content: center;
     background-color: #ebebeb;
     font-size: small;

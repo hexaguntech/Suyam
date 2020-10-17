@@ -63,7 +63,36 @@ export default class Home extends React.Component {
             </h2>
             <div className="v2"></div>
             <div className="courses">
-              <div className="rk">
+              <div class="img-holder">
+                <img src="assets\Coursesi1.jpg" alt="image description" />
+                <Link to="/MissionPerseverance2020">
+                  <Button
+                    className="courcbtn"
+                    style={{
+                      margin: '0px',
+                    }}
+                    type="link"
+                  >
+                    MORE DETAILS
+                  </Button>
+                </Link>
+              </div>
+
+              <div class="img-holder">
+                <img src="assets\Coursesi2.jpg" alt="image description" />
+                <Link to="/MissionPerseverance2020">
+                  <Button
+                    className="courcbtn"
+                    style={{
+                      margin: '0px',
+                    }}
+                    type="link"
+                  >
+                    MORE DETAILS
+                  </Button>
+                </Link>
+              </div>
+              {/* <div className="rk">
                 <p
                   style={{
                     fontWeight: `500`,
@@ -166,8 +195,8 @@ export default class Home extends React.Component {
                     }}
                   />
                 </div>
-              </div>
-              <div className="rk">
+                  </div>*/}
+              {/* <div className="rk">
                 <p
                   style={{
                     fontWeight: `500`,
@@ -266,7 +295,7 @@ export default class Home extends React.Component {
                     }}
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

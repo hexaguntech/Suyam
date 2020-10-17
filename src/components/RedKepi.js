@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Redkepi.css';
+import './RedKepi.css';
 
 export default class RedKepi extends React.Component {
   render() {

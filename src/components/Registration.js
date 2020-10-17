@@ -57,11 +57,11 @@ export default class Registration extends Component {
       modalShow: false,
       appmodal: false,
       submitted: false,
-      success: false
+      success: false,
     };
   }
 
-  handleClose() { 
+  handleClose() {
     this.setState({
       modalShow: false,
       appmodal: false,
@@ -95,10 +95,37 @@ export default class Registration extends Component {
   applicationPreview(e) {
     e.preventDefault();
 
-    if (this.state.photoLink != '') {
+    if (this.state.course == '') {
+      alert('select a course');
+      window.scrollTo(0, 0);
+    } else if (this.state.gender == '') {
+      alert('select your gender');
+      window.scrollTo(0, 0);
+    } else if (this.state.verticalReservation == '') {
+      alert('select vertical reservation');
+    } else if (this.state.photoLink != '') {
       this.appClick();
     } else {
       alert('select a image and click upload');
+    }
+
+    this.setState({
+      dob: this.state.dob.split('-').reverse().join('-'),
+    });
+
+    if (this.state.bloodGroup == '' || this.state.bloodGroup == 'Select') {
+      this.setState({
+        bloodGroup: '-',
+      });
+    }
+
+    if (
+      this.state.horizontalReservation == '' ||
+      this.state.horizontalReservation == 'Select'
+    ) {
+      this.setState({
+        horizontalReservation: '-',
+      });
     }
   }
 
@@ -230,6 +257,7 @@ export default class Registration extends Component {
   }
   handleChange(event) {
     this.setState({ [event.target.name]: event.target.value });
+    console.log(event.target.value);
   }
 
   handleCheckClickBloodVol = () => {
@@ -242,19 +270,19 @@ export default class Registration extends Component {
     this.setState({ agree: !this.state.agree });
   };
 
-  d_courses = ['Mission Perseverance 2020','Operation Red Kepi 2020'];
-  d_gender = ['Male','Female','Prefer not to say'];
-  d_bloodgroup = ['A+',
-    'A-',
-    'B+',
-    'B-',
-    'O+',
-    'O-',
-    'AB+',
-    'AB-',];
-  d_verticalreservation = ['General','OBC','MBC','SC','ST','EBC','BCM','BT'];
-
-
+  d_courses = ['Mission Perseverance 2020', 'Operation Red Kepi 2020'];
+  d_gender = ['Male', 'Female', 'Prefer not to say'];
+  d_bloodgroup = ['A+', 'A-', 'B+', 'B-', 'O+', 'O-', 'AB+', 'AB-'];
+  d_verticalreservation = [
+    'General',
+    'OBC',
+    'MBC',
+    'SC',
+    'ST',
+    'EBC',
+    'BCM',
+    'BT',
+  ];
 
   render() {
     return (
@@ -279,7 +307,7 @@ export default class Registration extends Component {
           <div className="header" style={{ marginTop: `30px` }}>
             <h2 style={{ fontWeight: `700` }}>ONLINE REGISTRATION</h2>
             <hr color="black" className="bline" />
-            <p style={{color:`red`}}>* Fields are mandatory</p>
+            <p style={{ color: `red` }}>* Fields are mandatory</p>
             <form className="" onSubmit={this.applicationPreview}>
               <Form.Group>
                 <Form.Label>
@@ -293,10 +321,10 @@ export default class Registration extends Component {
                   name="course"
                   onChange={this.handleChange}
                 >
-                  <option value="1" disabled selected>
+                  <option disabled selected>
                     Select
                   </option>
-                  <option>Mission Perseverance 2020</option> 
+                  <option>Mission Perseverance 2020</option>
                   <option>Operation Red Kepi 2020</option>
                 </Form.Control>
                 {/* <DropDownList
@@ -357,7 +385,7 @@ export default class Registration extends Component {
                       name="gender"
                       onChange={this.handleChange}
                     >
-                      <option value="1" disabled selected>
+                      <option disabled selected>
                         Select
                       </option>
                       <option>Male</option>
@@ -475,9 +503,7 @@ export default class Registration extends Component {
                       onChange={(event) => this.handleChange(event)}
                       name="bloodGroup"
                     >
-                      <option value="1" disabled selected>
-                        Select
-                      </option>
+                      <option>Select</option>
                       <option>A+</option>
                       <option>A-</option>
                       <option>B+</option>
@@ -589,9 +615,7 @@ export default class Registration extends Component {
                         onChange={(event) => this.handleChange(event)}
                         name="horizontalReservation"
                       >
-                        <option value="1" disabled selected>
-                          Select
-                        </option>
+                        <option>Select</option>
                         <option>XSM</option>
                         <option>PH</option>
                         <option>MSP</option>
@@ -904,18 +928,18 @@ export default class Registration extends Component {
             }}
           >
             <Button
-              variant="primary"
-              style={{ margin: `0px` }}
-              onClick={this.saveApplication}
-            >
-              Submit
-            </Button>
-            <Button
               variant="secondary"
               style={{ margin: `0px` }}
               onClick={this.handleClose}
             >
               Edit
+            </Button>
+            <Button
+              variant="primary"
+              style={{ margin: `0px` }}
+              onClick={this.saveApplication}
+            >
+              Submit
             </Button>
           </Modal.Footer>
         </Modal>
