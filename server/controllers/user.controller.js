@@ -1,6 +1,9 @@
 const Applicant = require('../models/user');
 const ApplicantImage = require('../models/userImage');
 const multer = require('multer');
+var json2xls = require('json2xls');
+const fs = require('fs');
+const XLSX = require('xlsx');
 
 const DIR = './public/';
 
@@ -176,4 +179,78 @@ exports.getImage = (req, res) => {
         .status(500)
         .send({ message: 'Error retrieving Applicant with id=' + id });
     });
+};
+
+exports.downloadData = (req, res) => {
+  // json.forEach(function (instance, indexx, record) {
+  //   var tempArry = {
+  //     course: record[indexx].course,
+  //     name: record[indexx].name,
+  //     dob: record[indexx].dob,
+  //     email: record[indexx].email,
+  //     phone: record[indexx].phone,
+  //     address_line1: record[indexx].addressLine1,
+  //     address_line2: record[indexx].addressLine2,
+  //     state: record[indexx].state,
+  //     pincode: record[indexx].pincode,
+  //     bloodGroup: record[indexx].bloodGroup,
+  //   };
+  //   jsonArray.push(tempArry);
+  // });
+
+  Applicant.find({})
+    .then((data) => {
+      // const wb = XLSX.utils.book_new(); // create workbook
+      // const ws = XLSX.utils.json_to_sheet(data); // convert data to sheet
+      // XLSX.utils.book_append_sheet(wb, ws, 'users_sheet'); // add sheet to workbook
+
+      // const filename = 'users.xlsx';
+      // const wb_opts = { bookType: 'xlsx', type: 'binary' }; // workbook options
+      // XLSX.writeFile(wb, filename, wb_opts); // write workbook file
+
+      // const stream = fs.createReadStream(filename); // create read stream
+      // stream.pipe(res);
+      var xls = json2xls(data, {
+        fields: {
+          course: 'string',
+          name: 'string',
+          dob: 'string',
+          email: 'string',
+          phone: 'string',
+          addressLine1: 'string',
+          addressLine2: 'string',
+          state: 'string',
+          pincode: 'string',
+          bloodGroup: 'string',
+          bloodDonorVolunteer: 'string',
+          studied: 'string',
+          studying: 'string',
+          additionalQualification: 'string',
+          working: 'string',
+          verticalReservation: 'string',
+          horizontalReservation: 'string',
+          dateApplied: 'string',
+          photo: 'string',
+        },
+      });
+
+      // const stream = fs.createReadStream(xlsvc); // create read stream
+      // stream.pipe(res);
+
+      // var xls = json2xls(data);
+      // res.xls('data.xlsx', xls);
+      // fs.writeFileSync('applicantData.xlsx', xls, 'binary');
+      res.file(xls);
+      // jsonArray.push(data);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message:
+          err.message || 'Some error occurred while retrieving Applicants.',
+      });
+    });
+  //this code is for sorting  xls with required value
+  // jsonArray.sort(function (a, b) {
+  //   return parseFloat(b.ColoumnName4) - parseFloat(a.ColoumnName4);
+  // });
 };

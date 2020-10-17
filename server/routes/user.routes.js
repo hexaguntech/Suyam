@@ -17,6 +17,8 @@ router.get('/get', applicant.getAllApplicants);
 
 router.get('/get/name/:name', applicant.getApplicantsByName);
 
+router.get('/download/xls', applicant.downloadData);
+
 // router.post('/upload/image', applicant.uploadImge);
 
 // router.get('/sendmail', transport.sendMail);

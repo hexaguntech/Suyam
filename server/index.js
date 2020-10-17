@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
+var json2xls = require('json2xls');
 
 const userRoute = require('./routes/user.routes');
 
@@ -13,6 +14,8 @@ const app = express();
 var corsOptions = {
   origin: 'http://localhost:3000',
 };
+
+app.use(json2xls.middleware);
 
 app.use(cors(corsOptions));
 // app.use(fileUpload());
