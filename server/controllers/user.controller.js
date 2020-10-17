@@ -241,8 +241,8 @@ exports.downloadData = (req, res) => {
 
       // var xls = json2xls(data);
       // res.xls('data.xlsx', xls);
-      // fs.writeFileSync('applicantData.xlsx', xls, 'binary');
-      res.file(xls);
+      fs.writeFileSync('applicantData.xlsx', xls, 'binary');
+      // res.file(xls);
       // jsonArray.push(data);
     })
     .catch((err) => {
