@@ -3,7 +3,6 @@ import './Home.css';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
-import Card from 'react-bootstrap/Card';
 
 export default class Home extends React.Component {
   render() {
@@ -44,10 +43,10 @@ export default class Home extends React.Component {
                   <span style={{ color: `#0A79DF` }}>
                     service to the humanity"
                   </span>
-                </h2>
+                </h2> 
               </div>
               <div className="himage">
-                <img className="tagline" src="assets/wimage.png" />
+                <img className="tagline" src="assets/wimage.png" alt="Welcome illustration"/>
               </div>
             </div>
           </div>
@@ -64,7 +63,7 @@ export default class Home extends React.Component {
             <div className="v2"></div>
             <div className="courses">
               <div class="img-holder">
-                <img src="assets\Coursesi1.jpg" alt="image description" />
+                <img src="assets\Mission Perseverance-04n.jpg" alt="mp card" />
                 <Link to="/MissionPerseverance2020">
                   <Button
                     className="courcbtn"
@@ -79,8 +78,8 @@ export default class Home extends React.Component {
               </div>
 
               <div class="img-holder">
-                <img src="assets\Coursesi2.jpg" alt="image description" />
-                <Link to="/MissionPerseverance2020">
+                <img src="assets\Coursesi2.jpg" alt="rk card" />
+                <Link to="/OperationRedKEPI2020">
                   <Button
                     className="courcbtn"
                     style={{
@@ -563,7 +562,7 @@ export default class Home extends React.Component {
             </h2>
             <div className="v2"></div>
             <div>
-              <img className="hiring" src="assets/hiring.jpg" />
+              <img className="hiring" src="assets/hiring.jpg" alt="hiring card"/>
             </div>
           </div>
         </div>

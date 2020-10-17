@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Header.css';
 import './Head2.css';
-import NavBar from './NavBar';
 import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
 
 export default class Header extends React.Component {
@@ -11,7 +9,7 @@ export default class Header extends React.Component {
       <div className="jumbotron">
         <div>
           <div className="logo">
-            <img src="assets/suyamheaderlogo.jpg" />
+            <img src="assets/suyamheaderlogo.jpg" alt="suyamlogo"/>
           </div>
 
           <Navbar expand="lg" collapseOnSelect="true">

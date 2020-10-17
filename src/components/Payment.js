@@ -38,6 +38,7 @@ export default class Payment extends React.Component {
                 <img
                   style={{ height: `250px` }}
                   src="assets/paymentvector.png"
+                  alt="Payment illustration"
                 />
               </div>
             </div>

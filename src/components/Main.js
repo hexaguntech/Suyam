@@ -7,7 +7,6 @@ import Contact from './Contact';
 import Home from './home';
 import Registration from './Registration';
 import Glory from './Glory';
-import Courses from './Courses';
 import MissionPerseverance from './MissionPerseverance';
 import RedKepi from './RedKepi';
 import Institute from './Institute';
@@ -15,7 +14,6 @@ import Payment from './Payment';
 import SubmitApplication from './SubmitApplication';
 import AppLive from './AppLive';
 
-import NavBar from './NavBar';
 
 export default class Main extends React.Component {
   render() {

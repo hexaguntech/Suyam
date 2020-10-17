@@ -71,6 +71,14 @@
 .htex h1 span {
   font-size: 55px;
 }
+.proverb1{
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  justify-content: center;
+  background-color: #ebebeb;
+}
 
 @media only screen and (max-width: 770px) {
   .contacth {
@@ -101,5 +109,15 @@
 
   .htex h1 span b {
     font-size: 18px;
+  }
+
+  .proverb1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    justify-content: center;
+    background-color: #ebebeb;
+    font-size: small;
   }
 }

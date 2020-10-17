@@ -278,7 +278,6 @@ export function Application({
                 fontSize: 13,
                 textAlign: 'justify',
                 fontFamily: 'Times-Roman',
-                textAlign: `justify`,
               }}
             >
               {' '}
@@ -291,7 +290,6 @@ export function Application({
                 fontSize: 13,
                 textAlign: 'justify',
                 fontFamily: 'Times-Roman',
-                textAlign: `justify`,
               }}
             >
               {' '}
@@ -302,13 +300,12 @@ export function Application({
               style={{
                 margin: 5,
                 fontSize: 14,
-                textAlign: `justify`,
                 fontFamily: 'Times-Roman',
                 color: `#2c6ec2`
               }}
             >
               {' '}
-              {name}
+              ({name})
             </Text>
             <View
               style={{
@@ -325,7 +322,7 @@ export function Application({
                   fontSize: 13,
                   textAlign: 'justify',
                   fontFamily: 'Times-Roman',
-                  textAlign: `justify`,
+
                   
                 }}
               >
@@ -337,7 +334,7 @@ export function Application({
                   fontSize: 13,
                   textAlign: 'justify',
                   fontFamily: 'Times-Roman',
-                  textAlign: `justify`,
+
                 }}
               >
                 On confirmation of fees payment made by you, Payment Receipt and
@@ -350,7 +347,7 @@ export function Application({
                   fontSize: 13,
                   textAlign: 'justify',
                   fontFamily: 'Times-Roman',
-                  textAlign: `justify`,
+
                 }}
               >
                 (SUYAM ADMINISTRATION)

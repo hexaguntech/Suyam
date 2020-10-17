@@ -3,10 +3,8 @@ import './Registration.css';
 import ApplicantDataService from '../services/ApplicantDataService';
 import axios from 'axios';
 import { Form, Button, Modal, Table } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { Application } from './Application';
-import { DropDownList } from '@progress/kendo-react-dropdowns';
 
 export default class Registration extends Component {
   constructor(props) {
@@ -639,7 +637,7 @@ export default class Registration extends Component {
                     />
                     <img
                       src={this.state.photoLink}
-                      alt="Applicant photo"
+                      alt="Applicant"
                       width="130"
                       height="170"
                       hidden={() => {
@@ -790,7 +788,7 @@ export default class Registration extends Component {
           <Modal.Body>
             <img
               src={this.state.photoLink}
-              alt="Applicant photo"
+              alt="Applicant"
               width="130"
               height="170"
               style={{

@@ -8,13 +8,11 @@ import {
   MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
-  MDBFormInline,
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
   MDBDropdownItem,
 } from 'mdbreact';
-import { Button, Modal, ModalBody, ModalHeader } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 class NavbarPage extends Component {

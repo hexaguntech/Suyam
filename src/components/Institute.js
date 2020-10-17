@@ -38,7 +38,7 @@ export default class Institute extends React.Component {
               </div>
             </div>
             <div className="ip__right">
-              <img src="assets/founder.png" />
+              <img src="assets/founder.png" alt="founder"/>
             </div>
           </div>
         </div>
@@ -66,7 +66,6 @@ export default class Institute extends React.Component {
               career by organising I.A.S. Awareness Camps, publicizing through
               media and by conducting coaching programmes for the aspirants.
             </p>
-            <img />
           </div>
           <div className="content2 container mt3">
             <div>
@@ -84,7 +83,7 @@ export default class Institute extends React.Component {
             </div>
             <div
               style={{
-                display: `flex`,
+                display: `flex`, 
                 flexDirection: `column`,
                 alignItems: `center`,
               }}
@@ -92,6 +91,7 @@ export default class Institute extends React.Component {
               <img
                 style={{ height: `300px`, width: `300px` }}
                 src="assets/ips.png"
+                alt="ips"
               />
               <p><b>P. Suthandira Balan,</b> IRS,</p>
               <p style={{ color: `#0a79df`, textAlign: `center` }}>

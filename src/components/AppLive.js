@@ -29,6 +29,7 @@ export default class Payment extends React.Component {
                       <img
                         src="assets/appsuyamlogo.png"
                         style={{ height: `100px`, width: `100px`,padding:`10px` }}
+                        alt="suyam-app-logo"
                       />
                       <b style={{color:`white`,textAlign:`justify`}}>Suyam IAS</b>
                     </div>

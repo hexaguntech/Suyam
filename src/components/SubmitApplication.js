@@ -125,7 +125,7 @@ export default class SubmitApplication extends React.Component {
 
           <img
             src={this.state.photoLink}
-            alt="Applicant photo"
+            alt="Applicant"
             width="130"
             height="170"
             style={{

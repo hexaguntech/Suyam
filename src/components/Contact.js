@@ -5,7 +5,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div>
-        <div className="proverb">
+        <div className="proverb1">
           <p>
             எப்பொருள் யார்யார்வாய்க் கேட்பினும் அப்பொருள் <br />
             மெய்ப்பொருள் காண்பது அறிவு.
@@ -28,7 +28,6 @@ export default class Contact extends React.Component {
                 <br />
                 <span
                   style={{
-                    fontSize: `small`,
                     fontWeight: `400`,
                     fontSize: `18px`,
                     color: `#666666`,
@@ -39,7 +38,7 @@ export default class Contact extends React.Component {
               </h1>
 
               <div>
-                <img style={{ height: `350px` }} src="assets/contactus.png" />
+                <img style={{ height: `350px` }} src="assets/contactus.png" alt="contactus illustration"/>
               </div>
             </div>
           </div>
@@ -108,6 +107,7 @@ export default class Contact extends React.Component {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.6254565494983!2d79.80579931478216!3d11.931132991544413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDU1JzUyLjEiTiA3OcKwNDgnMjguOCJF!5e0!3m2!1sen!2sin!4v1601752744830!5m2!1sen!2sin"
           style={{ border: `0`, width: `100%`, height: `450px` }}
+          title="Maps frame"
           width="600px"
           height="450"
           frameborder="0"

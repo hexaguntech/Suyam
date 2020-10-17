@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
         <div className="footer scl">
           <div className="container mt3 scl">
             <div className="logo">
-              <img src="assets/suyamheaderlogo.jpg" />
+              <img src="assets/suyamheaderlogo.jpg" alt="suyamlogo" />
             </div>
             <div>
               <ul className="footer-list">
@@ -21,7 +21,7 @@ export default class Footer extends React.Component {
                 <li>
                   <Link class="text-dark1" to="/Institute">
                     The Institute
-                  </Link>
+                  </Link> 
                 </li>
                 <li>
                   <Link class="text-dark1" to="/Glory">
