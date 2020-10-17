@@ -63,7 +63,7 @@ export default class Home extends React.Component {
             <div className="v2"></div>
             <div className="courses">
               <div class="img-holder">
-                <img src="assets\Mission Perseverance-04n.jpg" alt="mp card" />
+                <img src="assets\Mission Perseverance-04nn.jpg" alt="mp card" />
                 <Link to="/MissionPerseverance2020">
                   <Button
                     className="courcbtn"
