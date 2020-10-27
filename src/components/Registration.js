@@ -21,6 +21,7 @@ export default class Registration extends Component {
     this.onChangeImage = this.onChangeImage.bind(this);
 
     this.handleClose = this.handleClose.bind(this);
+    this.viewApplicationClose = this.viewApplicationClose.bind(this);
 
     this.modalClick = this.modalClick.bind(this);
     this.appClick = this.appClick.bind(this);
@@ -64,6 +65,12 @@ export default class Registration extends Component {
   handleClose() {
     this.setState({
       modalShow: false,
+      appmodal: false,
+    });
+  }
+
+  viewApplicationClose() {
+    this.setState({
       appmodal: false,
     });
   }
@@ -208,6 +215,7 @@ export default class Registration extends Component {
         //   photoLink: '',
         // });
 
+        this.viewApplicationClose();
         this.modalClick();
       })
       .catch((e) => {
@@ -931,7 +939,7 @@ export default class Registration extends Component {
             <Button
               variant="secondary"
               style={{ margin: `0px` }}
-              onClick={this.handleClose}
+              onClick={this.viewApplicationClose}
             >
               Edit
             </Button>

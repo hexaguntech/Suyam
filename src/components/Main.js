@@ -16,6 +16,7 @@ import SubmitApplication from './SubmitApplication';
 import AppLive from './AppLive';
 
 import NavBar from './NavBar';
+import CsvDownload from './CSVDownload';
 
 export default class Main extends React.Component {
   render() {
@@ -43,6 +44,7 @@ export default class Main extends React.Component {
             <Route path="/Contactus" component={Contact} />
             <Route path="/SubmitApplication" component={SubmitApplication} />
             <Route path="/AppLive" component={AppLive} />
+            <Route path="/download-csv" component={CsvDownload} />
           </Switch>
         </div>
         <Footer />

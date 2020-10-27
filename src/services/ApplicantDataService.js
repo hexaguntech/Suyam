@@ -9,6 +9,10 @@ class ApplicantDataService {
     return http.get(`/applicant/get/${id}`);
   }
 
+  getAllApplicant() {
+    return http.get(`/applicant/get`);
+  }
+
   updateApplicant(id, data) {
     return http.put(`/applicant/update/${id}`, data);
   }
