@@ -69,6 +69,20 @@ export default class Payment extends React.Component {
             MICR Code : <span style={{ color: `#0A79DF` }}>605012008</span>
             <br />
           </p>
+          <br/>
+          <img
+          style={{ height: `100px`, width: `200px`, padding: `5px` }}
+          src="assets/gpay.png"
+          alt="suyamapplogo"
+        />
+        <p>G Pay Number :<b style={{ color: `#0A79DF` }}> 9486204334</b></p>
+        <p>UPI ID :<b style={{ color: `#0A79DF` }}> suyamassist@okaxis</b></p>
+        <img
+          style={{ height: `180px`, width: `220px`, padding: `5px` }}
+          src="assets/qrcode.png"
+          alt="suyamapplogo"
+        />
+          <br />
           <br />
           <p>
             Please send payment details / screenshot of payment transaction

@@ -330,8 +330,9 @@ export default class Registration extends Component {
                   <option disabled selected>
                     Select
                   </option>
-                  <option>Mission Perseverance 2020</option>
                   <option>Operation Red Kepi 2020</option>
+                  <option>Mission Perseverance 2020</option>
+                  
                 </Form.Control>
                 {/* <DropDownList
                   className="mb-3"

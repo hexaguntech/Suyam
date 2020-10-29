@@ -54,12 +54,13 @@ export default class Header extends React.Component {
                   id="basic-nav-dropdown"
                   style={{ paddingLeft: `0px` }}
                 >
-                  <NavDropdown.Item href="/Missionperseverance2020">
-                    Mission Perseverance 2020
-                  </NavDropdown.Item>
                   <NavDropdown.Item href="/OperationRedKEPI2020">
                     Operation Red Kepi 2020
                   </NavDropdown.Item>
+                  <NavDropdown.Item href="/Missionperseverance2020">
+                    Mission Perseverance 2020
+                  </NavDropdown.Item>
+                  
                 </NavDropdown>
                 <Nav.Link href="/Register">
                   <span
@@ -97,10 +98,7 @@ export default class Header extends React.Component {
           </Navbar>
           <div className="announcement">
             <marquee style={{ fontWeight: `400` }}>
-              Special Online Preparatory Course for Competitive Exams in
-              Puducherry Government as well as TNPSC, SSC, RRB and such other
-              exams through “SUYAM I.A.S.” Mobile App commences on October
-              25,2020. Register immediately.
+              Crash course for puducherry Police Constable Exam begins on October 26,2020. Register immediately!!!
             </marquee>
           </div>
         </div>

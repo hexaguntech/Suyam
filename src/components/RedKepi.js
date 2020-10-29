@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './RedKepi.css';
+import './Redkepi.css';
 
 export default class RedKepi extends React.Component {
   render() {
@@ -15,26 +15,65 @@ export default class RedKepi extends React.Component {
         <h1 style={{ color: `#0a79df`, fontWeight: `500` }}>
           OPERATION RED KEPI 2020
         </h1>
+        <img
+          style={{ height: `100px`, width: `600px`}}
+          src="assets/redkpired.jpg"
+          alt="suyamapplogo"
+        />
         <p>
-          <b>Special Coaching for Police Constable Exam in Puducherry</b>{' '}
-          through
+          <b>Course begins on <b style={{ color: `#0a79df` }}>26th October</b></b>
         </p>
+        <br/>
+        <br/>
 
+        <p><b>Initially Online Video Classes through</b></p>
         <img
           style={{ height: `100px`, width: `100px`, padding: `20px` }}
           src="assets/suyamapplogo.png"
           alt="suyamapplogo"
         />
         <p>
-          <b style={{ color: `#0a79df` }}>Suyam IAS</b> Mobile App
+          <b style={{ color: `#0a79df` }}>Suyam IAS</b><br/> Mobile App
         </p>
+        <br/>
+        
         <strong>
-          New Batch commences shortly... Date will be announced soon.
+        From Mid Nov. 2020, Classroom coaching will be at
         </strong>
         <br />
         <br />
+        <h5><b style={{ color: `#0a79df` }}>RINA MAHAL,</b></h5>
+        <p><b>Moolakulam, Puducherry</b></p>
+       
+        <div className="rk__table1">
+        <table>
+          <tr>
+            <td>
+            <b>Course Fee : <b style={{ color: `#0a79df` }}>Rs.7500</b><br/>
+               In 2 Instalments<br/>
+                1 st – Rs.4000 (to be paid before 26 th October 2020)<br/>
+                2 nd – Rs.3500 (to be paid immediately after passing<br/>
+                the Physical Ground Test )</b>
+              </td>
+              <td><b>
+              For Old Batch Students : <b style={{ color: `#0a79df` }}>Rs.5000</b><br/>
+              In 2 Instalments<br/>
+              1 st – Rs.3000 (to be paid before 26 th October 2020)<br/>
+              2 nd – Rs.2000 (to be paid immediately after passing<br/>
+              the Physical Ground Test )</b>
+                </td>
+          </tr>
+        </table>  
+        </div>    
+        <br />
+        <p><b>Puducherry Government’s announcement:</b></p>
+        <br />
+        <p><b>Physical Ground Test : From <b style={{ color: `#0a79df` }}>November 4, 2020 </b>to <b style={{ color: `#0a79df` }}> December 3, 2020</b></b></p>
+        <br />
+        <p><b>Written Test :<b style={{ color: `#0a79df` }}> December 20, 2020</b></b></p>
+        <br/>
         <p>
-          This Special Coaching Programme aims at grooming aspirants for the the
+          This Special Crash course Programme aims at grooming aspirants for the the
           much awaited competitive examination for the recruitment of{' '}
           <b>Police Constables</b> in the <b>Government of Puducherry.</b> The
           objective of this Coaching programme is to support the Police
@@ -128,10 +167,12 @@ export default class RedKepi extends React.Component {
         <div>
           <hr />
           <p>
-            The above subjects will be taught by way of a range of pre-recorded
-            video classes, learning materials and online tests through{' '}
-            <b>“Suyam IAS”</b> App.
+          Initially, the above subjects will be taught by way of a range of pre-recorded video classes, learning materials and
+online tests through <b>“Suyam IAS”</b> App.
           </p>
+          <p>
+          From Mid November 2020, Classroom coaching will be conducted at <b style={{ color: `#0a79df` }}>RINA MAHAL,</b> Moolakulam, Puducherry.
+            </p>
           <p>
             Teaching, board works, text materials and test papers will be
             bilingual, ie., both in Tamil and English for the ease of Puducherry
@@ -184,8 +225,7 @@ export default class RedKepi extends React.Component {
         <p>
           Register here to avail the benefits of{' '}
           <b>Operation Red Kepi 2020, </b>
-          Special Coaching for Police Constable Exam in Puducherry through{' '}
-          <b>“Suyam IAS”</b> Mobile App.
+          Special Crash course for Police Constable Exam in Puducherry.
         </p>
         <br />
         <h4>
