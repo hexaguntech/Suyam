@@ -28,7 +28,7 @@ export default class MissionPerseverance extends React.Component {
         <p>
           <p><b  style={{ color: `#0a79df` }}>Suyam IAS</b> Mobile App</p>
         </p>
-        <p>New Batch commences on <b>October 25, 2020</b></p>
+        <p>New Batch commences soon...Date will be announced shortly</p>
         <br />
       
 
