@@ -49,7 +49,7 @@ export default class Header extends React.Component {
                   </span>
                 </Nav.Link>
 
-                <NavDropdown
+                {/* <NavDropdown
                   title="Courses"
                   id="basic-nav-dropdown"
                   style={{ paddingLeft: `0px` }}
@@ -71,7 +71,7 @@ export default class Header extends React.Component {
                   >
                     Registration
                   </span>
-                </Nav.Link>
+                </Nav.Link> */}
 
                 <Nav.Link href="/Payment">
                   <span
@@ -96,11 +96,12 @@ export default class Header extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <div className="announcement">
+          {/* <div className="announcement">
             <marquee style={{ fontWeight: `400` }}>
-              Crash course for puducherry Police Constable Exam begins on October 26,2020. Register immediately!!!
+              Crash course for puducherry Police Constable Exam begins on
+              October 26,2020. Register immediately!!!
             </marquee>
-          </div>
+          </div> */}
         </div>
       </div>
     );

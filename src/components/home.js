@@ -51,7 +51,7 @@ export default class Home extends React.Component {
               </div>
             </div>
           </div>
-          <div className="courses-offered container ">
+          {/* <div className="courses-offered container ">
             <h2
               style={{
                 marginTop: `20px`,
@@ -80,7 +80,7 @@ export default class Home extends React.Component {
 
               <div class="img-holder">
                 <img src="assets\Coursesi7.jpg" alt="image description" />
-                
+
                 <Link to="/MissionPerseverance2020">
                   <Button
                     className="courcbtn"
@@ -197,7 +197,7 @@ export default class Home extends React.Component {
                   />
                 </div>
                   </div>*/}
-              {/* <div className="rk">
+          {/* <div className="rk">
                 <p
                   style={{
                     fontWeight: `500`,
@@ -296,11 +296,11 @@ export default class Home extends React.Component {
                     }}
                   />
                 </div>
-              </div> */}
+              </div> to be commented
             </div>
-          </div>
+          </div> */}
 
-          <div className=" courses-offered container">
+          {/* <div className=" courses-offered container">
             <h2 className="cahead">CURRENT AFFAIRS</h2>
             <div className="v2"></div>
             <div className="courses">
@@ -443,7 +443,8 @@ export default class Home extends React.Component {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
+
           <div className="onvideo">
             <div className="onvideo-in container ">
               <div>
